@@ -1,0 +1,11 @@
+Fitting 3 folds for each of 24 candidates, totalling 72 fits
+Melhor MLP:
+{'classifier__activation': 'tanh', 'classifier__alpha': 0.001, 'classifier__hidden_layer_sizes': (100, 50), 'classifier__learning_rate': 'constant', 'classifier__solver': 'adam'}
+              precision    recall  f1-score   support
+
+           0       0.96      0.92      0.94      6808
+           1       0.98      0.99      0.99     29701
+
+    accuracy                           0.98     36509
+   macro avg       0.97      0.96      0.96     36509
+weighted avg       0.98      0.98      0.98     36509
