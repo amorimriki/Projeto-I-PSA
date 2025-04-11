@@ -3,7 +3,8 @@ import { Container, Button, Row, Col, Card, Carousel, Navbar, Nav } from 'react-
 import { Link } from 'react-router-dom';
 import '../App.css';
 
-import CustomNavbar from './NavBar';
+import CustomNavbar from './CustomNavBar';
+import CustomFooter from './CustomFooter';
 
 
 function HomePage() {
@@ -88,10 +89,8 @@ function HomePage() {
         </div>
         
       </Container>
-
-      <footer className="bg-dark text-white text-center py-3">
-        <p className="mb-0">&copy; 2025 Previsão Académica. Todos os direitos reservados.</p>
-      </footer>
+      {/* Footer */}
+      <CustomFooter />
     </div>
   );
 }

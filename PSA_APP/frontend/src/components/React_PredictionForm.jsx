@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Container, Button, Row, Col, Card, Carousel, Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import '../App.css';
-import CustomNavbar from './NavBar';
-
+import CustomNavbar from './CustomNavBar';
+import CustomFooter from './CustomFooter';
 
 
 const initialFormState = {
@@ -51,7 +50,6 @@ export default function PredictionForm() {
     <>
       {/* NavBar */}
       <CustomNavbar />
-      
       <Container className="mt-4">
         <h2>Prever Resultado Final</h2>
         <form onSubmit={handleSubmit}>
@@ -68,9 +66,18 @@ export default function PredictionForm() {
             </div>
           ))}
           <Button variant="primary" type="submit">Prever</Button>
+
         </form>
         {result && <div className="alert alert-info mt-3">Resultado Previsto: {result}</div>}
       </Container>
+      
+      <Container fluid className="mt-3">
+        
+          {/* Footer */}
+        <CustomFooter />
+     
+      </Container>
+      
     </>
   );
 }
