@@ -14,8 +14,7 @@ try:
     import joblib
     import pandas as pd
 except ImportError:
-    print("📦 A instalar dependências necessárias...")
-    os.system('pip install -r requirements.txt')
+    print("📦 Erro dependências necessárias...")
 
 # Definição do backend
 from flask import Flask, request, jsonify
@@ -23,10 +22,16 @@ from flask_cors import CORS
 import joblib
 import pandas as pd
 
+
 app = Flask(__name__)
 CORS(app)
 
-model = joblib.load("ML_MODEL/mlp_pipeline.pkl")
+
+import os
+
+model_path = os.path.join(os.path.dirname(__file__), 'mlp_pipeline.pkl')
+model = joblib.load(model_path)
+
 
 categorical_features = ['code_module', 'gender', 'region', 'highest_education',
                         'imd_band', 'age_band', 'disability', 'assessment_type', 'is_banked']

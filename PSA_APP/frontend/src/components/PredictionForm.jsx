@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Container, Button, Row, Col, Card, Carousel, Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import '../App.css';
+import CustomNavbar from './NavBar';
+
+
 
 const initialFormState = {
   code_module: '',
@@ -19,6 +25,7 @@ const initialFormState = {
   weight: 0,
   score: 0,
 };
+
 
 export default function PredictionForm() {
   const [form, setForm] = useState(initialFormState);
@@ -41,24 +48,29 @@ export default function PredictionForm() {
   };
 
   return (
-    <div className="container mt-4">
-      <h2>Prever Resultado Final</h2>
-      <form onSubmit={handleSubmit}>
-        {Object.keys(initialFormState).map((key) => (
-          <div className="mb-3" key={key}>
-            <label className="form-label">{key}</label>
-            <input
-              type="text"
-              className="form-control"
-              name={key}
-              value={form[key]}
-              onChange={handleChange}
-            />
-          </div>
-        ))}
-        <button className="btn btn-primary" type="submit">Prever</button>
-      </form>
-      {result && <div className="alert alert-info mt-3">Resultado Previsto: {result}</div>}
-    </div>
+    <>
+      {/* NavBar */}
+      <CustomNavbar />
+      
+      <Container className="mt-4">
+        <h2>Prever Resultado Final</h2>
+        <form onSubmit={handleSubmit}>
+          {Object.keys(initialFormState).map((key) => (
+            <div className="mb-3" key={key}>
+              <label className="form-label">{key}</label>
+              <input
+                type="text"
+                className="form-control"
+                name={key}
+                value={form[key]}
+                onChange={handleChange}
+              />
+            </div>
+          ))}
+          <Button variant="primary" type="submit">Prever</Button>
+        </form>
+        {result && <div className="alert alert-info mt-3">Resultado Previsto: {result}</div>}
+      </Container>
+    </>
   );
 }
