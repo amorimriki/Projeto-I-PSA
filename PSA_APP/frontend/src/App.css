@@ -40,6 +40,12 @@ body {
   color: var(--cor-acento) !important;
 }
 
+.link-sem-estilo {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 /* Seção Hero */
 .hero {
   background: linear-gradient(
@@ -171,3 +177,4 @@ footer a:hover {
     font-size: 0.9rem;
   }
 }
+

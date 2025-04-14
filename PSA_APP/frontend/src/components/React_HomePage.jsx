@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Button, Row, Col, Card, Carousel, Navbar, Nav } from 'react-bootstrap';
+import { Container, Button, Row, Col, Card, Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../App.css';
 
@@ -28,7 +28,7 @@ function HomePage() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://via.placeholder.com/1920x600?text=Análise+Académica"
+              src="https://www.meupositivo.com.br/doseujeito/wp-content/uploads/2022/03/14-dicas-e-ferramentas-uteis-para-estudar-online.jpg"
               alt="Primeira Slide"
             />
             <Carousel.Caption>
@@ -39,7 +39,7 @@ function HomePage() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://via.placeholder.com/1920x600?text=Previsão+Personalizada"
+              src="https://static.vecteezy.com/ti/fotos-gratis/p1/4525039-binario-codigo-fundo-abstrato-tecnologia-digital-binario-dados-e-seguro-dados-conceito-gratis-foto.jpg"
               alt="Segunda Slide"
             />
             <Carousel.Caption>
@@ -75,6 +75,7 @@ function HomePage() {
               </Card>
             </Col>
             <Col md={4}>
+            <Link to="/prediction-file" className="link-sem-estilo">
               <Card>
                 <Card.Body>
                   <Card.Title>Relatórios Detalhados</Card.Title>
@@ -83,14 +84,16 @@ function HomePage() {
                   </Card.Text>
                 </Card.Body>
               </Card>
+              </Link>
             </Col>
           </Row>
         </section>
         </div>
         
       </Container>
-      {/* Footer */}
+      <footer>
       <CustomFooter />
+      </footer>
     </div>
   );
 }
