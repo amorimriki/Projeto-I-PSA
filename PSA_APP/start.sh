@@ -18,9 +18,9 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 echo "✅ Ambiente virtual ativo."
-echo "🚀 A iniciar o servidor Flask..."
-# Inicia o servidor Flask em segundo plano
-python app.py &
+echo "🚀 A iniciar o servidor FastAPI..."
+# Inicia o servidor FastAPI em segundo plano
+uvicorn app:app --reload &
 
 # Inicia o servidor React
 cd ../frontend || exit

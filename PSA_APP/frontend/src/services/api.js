@@ -1,6 +1,32 @@
-import axios from 'axios';
+import axios from "axios";
 
-export const predict = async (data) => {
-  const response = await axios.post('http://localhost:5000/predict', data);
+// Para enviar JSON para a rota FastAPI
+export const predictJson = async (data) => {
+  const response = await axios.post(
+    "http://localhost:8000/predict-json",
+    data,
+    {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
+  return response.data;
+};
+
+// Para enviar ficheiro CSV para FastAPI
+export const predictFile = async (file) => {
+  const formData = new FormData();
+  formData.append("file", file);
+
+  const response = await axios.post(
+    "http://localhost:8000/predict-file",
+    formData,
+    {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    }
+  );
   return response.data;
 };

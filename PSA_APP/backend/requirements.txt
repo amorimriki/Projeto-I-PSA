@@ -1,5 +1,8 @@
-flask
-flask-cors
 pandas
 joblib
 scikit-learn
+fastapi
+pydantic
+typing
+uvicorn
+python-multipart

@@ -1,29 +1,49 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { Container, Button, Table, Alert, Form, Row, Col, Spinner, Card } from 'react-bootstrap';
-import Papa from 'papaparse';
-import CustomNavbar from './CustomNavBar';
-import CustomFooter from './CustomFooter';
+import React, { useState } from "react";
+import axios from "axios";
+import {
+  Container,
+  Button,
+  Table,
+  Alert,
+  Form,
+  Row,
+  Col,
+  Spinner,
+  Card,
+  Dropdown,
+  DropdownButton,
+  FormCheck,
+} from "react-bootstrap";
+import Papa from "papaparse";
+import CustomNavbar from "./CustomNavBar";
+import CustomFooter from "./CustomFooter";
 
 export default function CsvPredictionPage() {
   const [csvData, setCsvData] = useState([]);
   const [predictions, setPredictions] = useState([]);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [file, setFile] = useState(null);
+  const [visibleColumns, setVisibleColumns] = useState([
+    "n_student",
+    "previsao",
+  ]);
 
   const handleFileUpload = (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
+    const uploadedFile = e.target.files[0];
+    if (!uploadedFile) return;
 
-    Papa.parse(file, {
+    setFile(uploadedFile);
+
+    Papa.parse(uploadedFile, {
       header: true,
       skipEmptyLines: true,
       complete: (results) => {
         setCsvData(results.data);
-        setError('');
+        setError("");
       },
       error: (err) => {
-        setError('Erro ao processar o ficheiro CSV.');
+        setError("Erro ao processar o ficheiro CSV.");
         console.error(err);
       },
     });
@@ -31,11 +51,26 @@ export default function CsvPredictionPage() {
 
   const handlePredict = async () => {
     setLoading(true);
+    setError("");
+
     try {
-      const res = await axios.post("http://localhost:5000/predict", { data: csvData });
+      const formData = new FormData();
+      formData.append("file", file);
+
+      const res = await axios.post(
+        "http://localhost:8000/predict-file",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+
       setPredictions(res.data);
+      setVisibleColumns(["n_student", "previsao"]); // Aqui está a correção
     } catch (err) {
-      setError('Erro ao obter previsões.');
+      setError("Erro ao obter previsões.");
       console.error(err);
     } finally {
       setLoading(false);
@@ -44,82 +79,145 @@ export default function CsvPredictionPage() {
 
   return (
     <>
-    <div className="d-flex flex-column min-vh-100">
-    <main className="flex-grow-1">
-      <CustomNavbar />
+      <div className="d-flex flex-column min-vh-100">
+        <main className="flex-grow-1">
+          <CustomNavbar />
 
-      <Container className="mt-5">
-      <Card className="p-4 shadow rounded-4">
-        <Row>
-          <Col md={6} className="mx-auto">
-            <h2 className="text-center mb-4" style={{ color: 'var(--cor-primaria)' }}>Importar CSV para Previsão em Lote</h2>
-
-            <Form.Group className="mb-3">
-              <Form.Label style={{ color: 'var(--cor-primaria)' }}><strong>Selecionar Ficheiro CSV</strong></Form.Label>
-              <Form.Control 
-                type="file" 
-                accept=".csv" 
-                onChange={handleFileUpload} 
-                className="border-primary" 
-                style={{ borderColor: 'var(--cor-acento)' }}
-              />
-            </Form.Group>
-
-            {csvData.length > 0 && (
-              <Button 
-                variant="success" 
-                block 
-                onClick={handlePredict} 
-                disabled={loading}
-                style={{ backgroundColor: 'var(--cor-acento)', borderColor: 'var(--cor-acento)' }}
+          <Container className="mt-5">
+            <Card className="p-4 shadow rounded-4">
+              <h2
+                className="text-center mb-4"
+                style={{ color: "var(--cor-primaria)" }}
               >
-                {loading ? (
-                  <>
-                    <Spinner animation="border" size="sm" /> A processar...
-                  </>
-                ) : (
-                  'Fazer Previsões'
-                )}
-              </Button>
-            )}
+                Importar CSV para Previsão em Lote
+              </h2>
 
-            {error && <Alert variant="danger" className="mt-3">{error}</Alert>}
+              <Row className="justify-content-center">
+                <Col md={6}>
+                  <Form.Group className="mb-3">
+                    <Form.Label style={{ color: "var(--cor-primaria)" }}>
+                      <strong>Selecionar Ficheiro CSV</strong>
+                    </Form.Label>
+                    <Form.Control
+                      type="file"
+                      accept=".csv"
+                      onChange={handleFileUpload}
+                      className="border-primary"
+                      style={{ borderColor: "var(--cor-acento)" }}
+                    />
+                  </Form.Group>
 
-            {predictions.length > 0 && (
-              <>
-                <h4 className="mt-4 text-center" style={{ color: 'var(--cor-primaria)' }}>Resultados das Previsões</h4>
-                <Table striped bordered hover responsive className="mt-3" style={{ backgroundColor: 'var(--cor-fundo-claro)' }}>
-                  <thead style={{ backgroundColor: 'var(--cor-primaria)', color: 'var(--cor-texto-claro)' }}>
-                    <tr>
-                      {Object.keys(csvData[0]).map((key) => (
-                        <th key={key}>{key}</th>
-                      ))}
-                      <th>Previsão</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {csvData.map((row, index) => (
-                      <tr key={index}>
-                        {Object.values(row).map((value, i) => (
-                          <td key={i}>{value}</td>
-                        ))}
-                        <td><strong>{predictions[index]?.previsao || "Sem previsão"}</strong></td>
-                      </tr>
+                  {csvData.length > 0 && (
+                    <Button
+                      variant="success"
+                      block="true"
+                      onClick={handlePredict}
+                      disabled={loading}
+                      style={{
+                        backgroundColor: "var(--cor-acento)",
+                        borderColor: "var(--cor-acento)",
+                      }}
+                    >
+                      {loading ? (
+                        <>
+                          <Spinner animation="border" size="sm" /> A
+                          processar...
+                        </>
+                      ) : (
+                        "Fazer Previsões"
+                      )}
+                    </Button>
+                  )}
+
+                  {error && (
+                    <Alert variant="danger" className="mt-3">
+                      {error}
+                    </Alert>
+                  )}
+                </Col>
+              </Row>
+
+              {predictions.length > 0 && (
+                <>
+                  <DropdownButton
+                    id="dropdown-column-filter"
+                    title="Selecionar Colunas"
+                    className="mb-3 custom-dropdown-button"
+                  >
+                    {Object.keys(predictions[0]).map((key) => (
+                      <Dropdown.Item
+                        key={key}
+                        as="div"
+                        className="d-flex align-items-center"
+                        style={{ color: "var(--cor-primaria)" }}
+                      >
+                        <FormCheck
+                          type="checkbox"
+                          label={key}
+                          checked={visibleColumns.includes(key)}
+                          onChange={() => {
+                            setVisibleColumns((prev) =>
+                              prev.includes(key)
+                                ? prev.filter((col) => col !== key)
+                                : [...prev, key]
+                            );
+                          }}
+                        />
+                      </Dropdown.Item>
                     ))}
-                  </tbody>
-                </Table>
-              </>
-            )}
-          </Col>
-        </Row>
-        </Card>
-      </Container>
-      </main>
+                  </DropdownButton>
 
-     <footer>
-      <CustomFooter />
-  </footer>
-</div>
+                  <h4 className="mt-5 text-center">Resultados das Previsões</h4>
+                  <div className="table-responsive mt-3">
+                    <Table
+                      striped
+                      bordered
+                      hover
+                      responsive="md"
+                      className="shadow-sm rounded-4 overflow-hidden"
+                      style={{
+                        backgroundColor: "var(--cor-fundo-claro)",
+                        minWidth: "100%",
+                        borderColor: "var(--cor-primaria)",
+                      }}
+                    >
+                      <thead
+                        style={{
+                          backgroundColor: "var(--cor-primaria)",
+                          color: "var(--cor-texto-claro)",
+                        }}
+                      >
+                        <tr>
+                          {visibleColumns.map((key) => (
+                            <th key={key} className="text-center">
+                              {key}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {predictions.map((row, index) => (
+                          <tr key={index}>
+                            {visibleColumns.map((key, i) => (
+                              <td key={i} className="text-center align-middle">
+                                {row[key]}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </Table>
+                  </div>
+                </>
+              )}
+            </Card>
+          </Container>
+        </main>
+
+        <footer>
+          <CustomFooter />
+        </footer>
+      </div>
     </>
   );
 }

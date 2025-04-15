@@ -43,6 +43,20 @@ body {
 .link-sem-estilo {
   text-decoration: none;
   color: inherit;
+  display: block; /* faz com que o Card use toda a área do link */
+}
+
+.link-sem-estilo .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-sem-estilo .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 191, 166, 0.3); /* sombra com cor-acento */
+}
+
+.link-sem-estilo .card:hover {
+  background-color: #f0fdfa; /* um tom bem clarinho de verde água */
 }
 
 
@@ -176,5 +190,63 @@ footer a:hover {
   .card-text {
     font-size: 0.9rem;
   }
+}
+
+.custom-navbar .nav-link {
+  color: var(--cor-texto-claro) !important;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: var(--cor-acento) !important;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background: var(--cor-acento);
+  border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: #ddd;
+  height: 6px;
+  border-radius: 5px;
+}
+
+input[type=range]::-moz-range-thumb {
+  background: var(--cor-acento);
+  border: none;
+}
+
+input[type=range]::-moz-range-track {
+  background: #ddd;
+  height: 6px;
+  border-radius: 5px;
+}
+
+/* Fallback para browsers que não suportam pseudoelementos */
+input[type=range] {
+  accent-color: var(--cor-acento);
+}
+
+.custom-dropdown-button .dropdown-toggle {
+  background-color: transparent;
+  border: 1px solid var(--cor-primaria);
+  color: var(--cor-primaria);
+}
+
+.custom-dropdown-button .dropdown-toggle {
+  background-color: transparent;
+  border: 1px solid var(--cor-primaria);
+  color: var(--cor-primaria);
+}
+
+.custom-dropdown-button .dropdown-toggle:hover,
+.custom-dropdown-button .dropdown-toggle:focus,
+.custom-dropdown-button .dropdown-toggle:active,
+.custom-dropdown-button.show .dropdown-toggle {
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  border-color: var(--cor-primaria);
+  box-shadow: none;
 }
 
