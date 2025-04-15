@@ -1,0 +1,501 @@
+n_student,code_module,gender,region,highest_education,imd_band,age_band,num_of_prev_attempts,studied_credits,disability,date_submitted,is_banked,score,assessment_type,date,weight,sum_click
+1,AAA,M,South Region,Post Graduate Qualification,20-30%,55<=,1,30,N,44,0.0,52.0,Exam,263,50.0,4777
+2,GGG,F,South Region,Lower Than A Level,40-50%,0-35,0,60,Y,213,0.0,79.0,Exam,78,50.0,2735
+3,DDD,M,North Region,Lower Than A Level,80-90%,55<=,2,30,N,58,0.0,78.0,Exam,189,28.0,8273
+4,AAA,F,Scotland,Post Graduate Qualification,30-40%,35-55,0,120,Y,131,0.0,87.0,CMA,46,12.5,8278
+5,CCC,M,South East Region,HE Qualification,50-60%,0-35,2,30,Y,103,0.0,56.0,Exam,188,50.0,6368
+6,DDD,M,North Region,HE Qualification,40-50%,55<=,0,120,N,194,0.0,62.0,Exam,255,12.5,821
+7,DDD,F,Yorkshire Region,HE Qualification,20-30%,55<=,2,120,N,156,0.0,40.0,Exam,221,12.5,7525
+8,AAA,M,West Midlands Region,Post Graduate Qualification,90-100%,35-55,1,30,Y,97,0.0,59.0,TMA,240,28.0,162
+9,EEE,F,West Midlands Region,Lower Than A Level,10-20,0-35,2,60,N,225,0.0,80.0,TMA,268,28.0,7777
+10,CCC,F,Scotland,Post Graduate Qualification,60-70%,0-35,1,90,Y,204,0.0,58.0,CMA,0,0.0,1932
+11,AAA,F,East Midlands Region,Post Graduate Qualification,50-60%,0-35,1,30,Y,78,0.0,75.0,TMA,33,50.0,3535
+12,CCC,M,East Midlands Region,HE Qualification,40-50%,35-55,2,90,N,123,0.0,62.0,CMA,78,50.0,5956
+13,CCC,M,Wales,A Level or Equivalent,0-10%,0-35,0,30,Y,217,0.0,70.0,TMA,235,50.0,3446
+14,DDD,F,East Anglian Region,Lower Than A Level,60-70%,35-55,0,90,Y,3,0.0,48.0,Exam,97,25.0,2790
+15,GGG,F,Scotland,HE Qualification,90-100%,35-55,3,60,N,89,0.0,66.0,TMA,81,12.5,2707
+16,CCC,M,South East Region,A Level or Equivalent,80-90%,35-55,0,60,N,103,0.0,20.0,CMA,191,28.0,7959
+17,BBB,F,South Region,A Level or Equivalent,10-20,55<=,3,30,Y,118,0.0,62.0,TMA,252,50.0,3933
+18,DDD,F,East Midlands Region,No Formal quals,30-40%,0-35,0,120,N,132,0.0,41.0,Exam,37,0.0,3385
+19,EEE,F,South East Region,Lower Than A Level,90-100%,0-35,0,90,N,95,0.0,83.0,CMA,13,50.0,6636
+20,GGG,M,London Region,A Level or Equivalent,90-100%,35-55,1,120,N,142,0.0,77.0,Exam,208,12.5,922
+21,BBB,M,East Anglian Region,HE Qualification,80-90%,35-55,3,120,N,27,0.0,72.0,Exam,88,12.5,8089
+22,BBB,M,Ireland,No Formal quals,70-80%,0-35,0,120,Y,232,0.0,88.0,CMA,55,28.0,9774
+23,EEE,F,South Region,Lower Than A Level,80-90%,35-55,3,60,Y,16,0.0,51.0,Exam,93,25.0,564
+24,GGG,F,Yorkshire Region,Post Graduate Qualification,70-80%,0-35,1,30,Y,58,0.0,91.0,Exam,92,28.0,3258
+25,DDD,F,London Region,HE Qualification,70-80%,55<=,1,30,N,89,0.0,79.0,TMA,84,50.0,2500
+26,FFF,M,London Region,A Level or Equivalent,50-60%,35-55,3,60,N,198,0.0,61.0,Exam,244,0.0,4566
+27,GGG,F,Scotland,A Level or Equivalent,50-60%,0-35,1,60,N,25,0.0,82.0,Exam,21,28.0,9179
+28,EEE,F,East Anglian Region,HE Qualification,20-30%,35-55,2,30,N,24,0.0,48.0,Exam,121,25.0,6881
+29,BBB,F,Wales,A Level or Equivalent,40-50%,0-35,2,120,N,266,0.0,53.0,Exam,127,28.0,3636
+30,DDD,F,Yorkshire Region,No Formal quals,40-50%,0-35,1,90,N,180,0.0,56.0,CMA,112,12.5,6030
+31,GGG,M,East Midlands Region,Lower Than A Level,30-40%,35-55,2,90,N,67,0.0,57.0,TMA,129,50.0,223
+32,FFF,M,South East Region,No Formal quals,40-50%,55<=,0,90,Y,48,0.0,49.0,Exam,131,50.0,6297
+33,FFF,F,Scotland,A Level or Equivalent,50-60%,0-35,3,120,Y,174,0.0,83.0,Exam,84,50.0,350
+34,CCC,M,East Midlands Region,Post Graduate Qualification,20-30%,0-35,0,30,N,51,1.0,61.0,CMA,80,50.0,7314
+35,CCC,M,Scotland,Lower Than A Level,20-30%,0-35,3,60,N,101,0.0,70.0,Exam,68,50.0,1928
+36,AAA,F,Scotland,Lower Than A Level,70-80%,55<=,1,30,N,215,0.0,56.0,CMA,147,50.0,7743
+37,EEE,F,Scotland,HE Qualification,80-90%,55<=,0,120,Y,187,0.0,38.0,TMA,15,0.0,8540
+38,GGG,M,East Anglian Region,HE Qualification,30-40%,35-55,1,60,Y,56,0.0,69.0,TMA,104,25.0,4732
+39,GGG,F,Wales,Post Graduate Qualification,70-80%,55<=,1,120,N,46,0.0,36.0,Exam,164,50.0,1017
+40,AAA,M,Scotland,Lower Than A Level,80-90%,35-55,3,90,N,158,0.0,64.0,Exam,200,25.0,2226
+41,BBB,F,South West Region,Post Graduate Qualification,40-50%,35-55,3,90,Y,173,0.0,44.0,Exam,196,50.0,7206
+42,BBB,M,Ireland,HE Qualification,70-80%,55<=,3,120,Y,241,0.0,95.0,CMA,184,28.0,7170
+43,AAA,F,East Midlands Region,HE Qualification,60-70%,35-55,0,60,Y,240,0.0,79.0,Exam,264,50.0,6207
+44,BBB,M,South Region,Lower Than A Level,40-50%,55<=,2,60,Y,4,0.0,67.0,Exam,99,12.5,2419
+45,CCC,M,North Region,No Formal quals,80-90%,35-55,3,30,N,83,0.0,84.0,TMA,213,0.0,6240
+46,GGG,M,South East Region,A Level or Equivalent,30-40%,55<=,3,90,Y,247,0.0,52.0,Exam,161,28.0,1893
+47,AAA,F,Yorkshire Region,HE Qualification,80-90%,55<=,0,30,Y,53,0.0,73.0,TMA,156,28.0,5322
+48,GGG,M,West Midlands Region,HE Qualification,70-80%,35-55,3,30,N,160,0.0,68.0,Exam,250,12.5,7718
+49,FFF,M,Wales,No Formal quals,70-80%,0-35,0,120,Y,225,0.0,69.0,TMA,96,50.0,6878
+50,CCC,F,South Region,No Formal quals,90-100%,35-55,1,120,Y,14,0.0,84.0,Exam,17,0.0,1125
+51,DDD,F,London Region,Post Graduate Qualification,30-40%,55<=,3,30,Y,223,0.0,76.0,TMA,96,28.0,3117
+52,CCC,M,North Western Region,Post Graduate Qualification,0-10%,0-35,3,90,N,60,0.0,69.0,CMA,0,0.0,4161
+53,AAA,M,South West Region,A Level or Equivalent,40-50%,35-55,1,120,Y,121,0.0,40.0,TMA,215,28.0,4042
+54,DDD,F,West Midlands Region,A Level or Equivalent,20-30%,35-55,1,30,N,45,0.0,51.0,TMA,131,50.0,4433
+55,FFF,F,North Region,Lower Than A Level,30-40%,35-55,1,30,N,61,0.0,63.0,TMA,259,28.0,8638
+56,AAA,F,South Region,Post Graduate Qualification,20-30%,0-35,3,30,Y,85,0.0,66.0,Exam,124,28.0,2658
+57,EEE,F,West Midlands Region,HE Qualification,30-40%,55<=,2,30,Y,209,0.0,48.0,Exam,81,25.0,3483
+58,GGG,F,South Region,Post Graduate Qualification,30-40%,35-55,2,30,Y,77,0.0,100.0,Exam,170,50.0,2944
+59,FFF,M,South East Region,HE Qualification,80-90%,35-55,2,30,Y,201,0.0,88.0,CMA,58,12.5,7210
+60,GGG,F,South West Region,No Formal quals,30-40%,35-55,3,120,N,222,0.0,74.0,CMA,31,12.5,7653
+61,BBB,M,North Region,Post Graduate Qualification,90-100%,35-55,1,90,Y,221,0.0,66.0,TMA,160,50.0,8787
+62,EEE,M,London Region,No Formal quals,0-10%,35-55,3,30,Y,2,0.0,62.0,CMA,105,12.5,1986
+63,EEE,M,Scotland,A Level or Equivalent,70-80%,55<=,1,60,Y,5,0.0,51.0,TMA,104,50.0,1074
+64,FFF,F,East Midlands Region,A Level or Equivalent,10-20,55<=,3,120,N,92,0.0,66.0,TMA,227,12.5,4305
+65,EEE,M,London Region,Lower Than A Level,20-30%,35-55,3,120,Y,7,0.0,69.0,TMA,187,25.0,3007
+66,DDD,M,Scotland,Post Graduate Qualification,70-80%,0-35,1,30,Y,234,0.0,46.0,CMA,69,12.5,969
+67,EEE,F,North Western Region,No Formal quals,10-20,55<=,2,120,N,107,0.0,70.0,Exam,86,28.0,8772
+68,GGG,M,East Anglian Region,HE Qualification,0-10%,0-35,1,30,N,160,0.0,63.0,CMA,55,50.0,2824
+69,GGG,M,East Anglian Region,A Level or Equivalent,0-10%,55<=,0,90,Y,208,0.0,36.0,TMA,112,0.0,1211
+70,AAA,F,East Anglian Region,A Level or Equivalent,20-30%,35-55,0,90,Y,239,0.0,52.0,TMA,12,0.0,229
+71,GGG,M,Wales,HE Qualification,20-30%,55<=,1,120,Y,49,0.0,59.0,CMA,17,50.0,4284
+72,AAA,M,Ireland,No Formal quals,0-10%,35-55,3,120,Y,10,0.0,93.0,TMA,181,25.0,3185
+73,GGG,M,Yorkshire Region,No Formal quals,10-20,55<=,0,60,Y,155,0.0,73.0,TMA,112,12.5,501
+74,DDD,F,Yorkshire Region,Post Graduate Qualification,30-40%,35-55,0,120,N,69,0.0,45.0,CMA,228,25.0,48
+75,AAA,F,East Anglian Region,Post Graduate Qualification,40-50%,35-55,3,60,N,168,0.0,72.0,CMA,170,0.0,3566
+76,CCC,F,East Midlands Region,Lower Than A Level,60-70%,35-55,3,90,Y,67,0.0,42.0,CMA,188,50.0,3055
+77,BBB,M,North Region,A Level or Equivalent,70-80%,35-55,2,90,Y,251,0.0,81.0,TMA,78,50.0,8880
+78,FFF,M,South West Region,Post Graduate Qualification,80-90%,0-35,3,30,N,47,0.0,58.0,TMA,145,25.0,386
+79,GGG,F,North Region,No Formal quals,70-80%,35-55,1,90,Y,183,0.0,64.0,Exam,181,25.0,969
+80,EEE,M,South West Region,HE Qualification,80-90%,0-35,1,60,Y,186,0.0,85.0,Exam,249,12.5,9197
+81,GGG,M,North Region,No Formal quals,10-20,0-35,2,120,Y,89,0.0,46.0,CMA,195,28.0,5820
+82,EEE,F,Ireland,A Level or Equivalent,80-90%,35-55,0,30,Y,138,0.0,44.0,Exam,70,28.0,3052
+83,BBB,F,Wales,No Formal quals,20-30%,0-35,0,60,Y,88,0.0,56.0,TMA,247,12.5,7397
+84,BBB,M,Wales,Lower Than A Level,40-50%,55<=,3,120,N,18,0.0,81.0,Exam,145,28.0,2302
+85,BBB,M,East Anglian Region,A Level or Equivalent,40-50%,35-55,1,30,Y,153,1.0,42.0,TMA,105,0.0,2283
+86,EEE,M,North Western Region,HE Qualification,20-30%,0-35,0,90,Y,259,0.0,23.0,CMA,262,28.0,9799
+87,GGG,F,Scotland,Lower Than A Level,90-100%,35-55,2,60,Y,107,0.0,58.0,CMA,69,12.5,4366
+88,BBB,F,North Western Region,A Level or Equivalent,10-20,35-55,2,120,N,58,0.0,73.0,TMA,192,28.0,122
+89,DDD,F,West Midlands Region,HE Qualification,90-100%,35-55,1,30,N,124,0.0,83.0,Exam,67,50.0,6799
+90,AAA,F,Wales,Lower Than A Level,90-100%,0-35,2,30,N,106,0.0,58.0,CMA,51,25.0,9472
+91,EEE,M,Wales,Lower Than A Level,70-80%,55<=,2,90,N,244,1.0,59.0,CMA,8,0.0,3727
+92,EEE,F,London Region,A Level or Equivalent,0-10%,55<=,1,120,Y,246,0.0,82.0,Exam,250,50.0,8450
+93,GGG,F,London Region,Post Graduate Qualification,70-80%,0-35,3,90,N,7,0.0,37.0,Exam,183,50.0,9139
+94,EEE,F,Scotland,Lower Than A Level,0-10%,35-55,3,90,Y,140,0.0,59.0,TMA,178,12.5,4958
+95,EEE,F,South East Region,Lower Than A Level,60-70%,0-35,2,120,Y,7,0.0,68.0,Exam,197,25.0,524
+96,BBB,F,West Midlands Region,HE Qualification,80-90%,0-35,3,120,N,93,0.0,72.0,Exam,127,25.0,9079
+97,GGG,M,North Western Region,No Formal quals,0-10%,0-35,3,120,N,38,0.0,57.0,Exam,19,0.0,8399
+98,BBB,M,East Midlands Region,A Level or Equivalent,20-30%,35-55,2,60,N,80,1.0,66.0,TMA,64,12.5,148
+99,AAA,F,London Region,A Level or Equivalent,70-80%,0-35,3,120,N,186,0.0,28.0,TMA,181,0.0,8001
+100,AAA,M,East Midlands Region,Post Graduate Qualification,10-20,35-55,2,30,N,83,0.0,55.0,CMA,240,28.0,437
+101,BBB,F,South Region,Post Graduate Qualification,80-90%,0-35,0,90,Y,87,0.0,72.0,TMA,23,50.0,3749
+102,AAA,F,London Region,A Level or Equivalent,60-70%,55<=,1,60,N,241,0.0,50.0,CMA,82,0.0,8186
+103,GGG,M,Ireland,Post Graduate Qualification,0-10%,0-35,1,120,N,92,0.0,66.0,Exam,184,50.0,4453
+104,FFF,M,South East Region,HE Qualification,60-70%,0-35,3,60,N,85,0.0,72.0,CMA,98,12.5,5336
+105,BBB,F,West Midlands Region,A Level or Equivalent,10-20,55<=,3,120,Y,43,0.0,60.0,CMA,61,28.0,4551
+106,DDD,F,Scotland,Post Graduate Qualification,90-100%,35-55,3,60,N,136,0.0,68.0,Exam,21,12.5,2823
+107,DDD,F,South Region,A Level or Equivalent,40-50%,35-55,1,90,Y,73,0.0,51.0,CMA,211,28.0,5728
+108,EEE,M,West Midlands Region,No Formal quals,10-20,0-35,0,90,N,35,0.0,62.0,TMA,125,28.0,8677
+109,AAA,F,North Western Region,Lower Than A Level,50-60%,55<=,0,30,N,100,0.0,74.0,TMA,41,50.0,8391
+110,DDD,F,East Anglian Region,A Level or Equivalent,10-20,35-55,1,30,Y,155,0.0,67.0,TMA,97,12.5,1982
+111,EEE,F,Ireland,Lower Than A Level,60-70%,0-35,0,120,N,254,0.0,56.0,TMA,30,12.5,6996
+112,FFF,M,West Midlands Region,Post Graduate Qualification,20-30%,55<=,1,90,Y,170,0.0,68.0,CMA,157,0.0,9663
+113,GGG,F,Ireland,Lower Than A Level,70-80%,35-55,0,60,Y,215,0.0,76.0,CMA,111,12.5,2311
+114,GGG,F,Ireland,A Level or Equivalent,20-30%,35-55,2,60,Y,169,0.0,34.0,Exam,246,0.0,7225
+115,GGG,M,East Midlands Region,No Formal quals,60-70%,55<=,2,60,N,251,0.0,82.0,CMA,121,25.0,9713
+116,DDD,F,North Region,Post Graduate Qualification,70-80%,55<=,1,30,N,54,0.0,60.0,CMA,206,25.0,604
+117,FFF,F,East Anglian Region,A Level or Equivalent,50-60%,55<=,0,60,N,90,0.0,71.0,CMA,109,25.0,8175
+118,DDD,M,North Western Region,Post Graduate Qualification,40-50%,55<=,3,30,Y,100,0.0,83.0,Exam,55,12.5,5785
+119,AAA,F,South Region,HE Qualification,80-90%,0-35,0,30,N,154,0.0,44.0,TMA,56,12.5,9609
+120,DDD,M,West Midlands Region,Lower Than A Level,60-70%,55<=,2,120,Y,140,0.0,54.0,CMA,113,0.0,4597
+121,FFF,M,South West Region,HE Qualification,0-10%,35-55,2,60,N,172,0.0,61.0,Exam,197,28.0,7759
+122,FFF,F,South Region,A Level or Equivalent,60-70%,35-55,0,60,Y,9,0.0,53.0,Exam,178,0.0,7532
+123,AAA,F,North Region,No Formal quals,60-70%,0-35,0,90,Y,227,0.0,91.0,Exam,218,25.0,8740
+124,FFF,F,South Region,Post Graduate Qualification,70-80%,35-55,3,120,Y,264,0.0,52.0,TMA,15,0.0,838
+125,FFF,F,Wales,Lower Than A Level,30-40%,35-55,3,90,N,247,0.0,57.0,CMA,60,28.0,3815
+126,GGG,M,North Western Region,Post Graduate Qualification,10-20,55<=,0,120,Y,246,0.0,68.0,Exam,53,12.5,847
+127,AAA,F,South West Region,A Level or Equivalent,30-40%,35-55,0,60,Y,154,0.0,47.0,TMA,167,0.0,4709
+128,CCC,M,North Region,Post Graduate Qualification,50-60%,0-35,0,30,Y,33,0.0,59.0,Exam,25,25.0,4507
+129,CCC,F,East Midlands Region,Lower Than A Level,0-10%,55<=,0,30,Y,128,0.0,70.0,Exam,64,25.0,6575
+130,FFF,F,West Midlands Region,A Level or Equivalent,40-50%,55<=,1,30,Y,159,0.0,60.0,Exam,99,12.5,4773
+131,CCC,F,South East Region,Post Graduate Qualification,90-100%,0-35,0,30,Y,88,0.0,64.0,Exam,73,0.0,4468
+132,CCC,M,Yorkshire Region,No Formal quals,50-60%,55<=,3,30,N,92,0.0,57.0,Exam,191,28.0,5192
+133,FFF,F,North Region,A Level or Equivalent,90-100%,55<=,2,90,N,240,1.0,42.0,TMA,170,12.5,3320
+134,CCC,F,Scotland,A Level or Equivalent,90-100%,0-35,1,120,Y,116,0.0,70.0,CMA,186,0.0,4698
+135,DDD,F,North Western Region,No Formal quals,40-50%,55<=,0,60,N,93,0.0,91.0,CMA,22,50.0,4311
+136,EEE,F,West Midlands Region,HE Qualification,20-30%,0-35,2,90,N,162,0.0,65.0,CMA,180,25.0,3673
+137,AAA,M,East Anglian Region,Lower Than A Level,30-40%,0-35,1,120,Y,98,0.0,68.0,CMA,107,28.0,1564
+138,EEE,F,North Region,HE Qualification,60-70%,35-55,2,30,Y,112,0.0,75.0,TMA,161,28.0,1840
+139,FFF,M,Wales,Post Graduate Qualification,80-90%,35-55,0,120,Y,90,0.0,46.0,TMA,205,28.0,6058
+140,GGG,M,Yorkshire Region,No Formal quals,90-100%,55<=,0,120,N,205,0.0,91.0,TMA,77,25.0,7131
+141,AAA,M,Wales,HE Qualification,0-10%,55<=,3,30,Y,16,0.0,68.0,Exam,15,0.0,726
+142,FFF,M,Yorkshire Region,A Level or Equivalent,50-60%,0-35,0,30,N,172,0.0,89.0,Exam,95,12.5,9436
+143,GGG,M,East Anglian Region,Post Graduate Qualification,20-30%,55<=,0,30,Y,115,0.0,54.0,Exam,146,0.0,6697
+144,EEE,M,South East Region,Post Graduate Qualification,90-100%,0-35,1,60,N,180,0.0,92.0,CMA,1,12.5,9257
+145,FFF,F,North Western Region,HE Qualification,20-30%,0-35,3,30,Y,90,0.0,77.0,Exam,9,28.0,282
+146,AAA,M,Scotland,HE Qualification,20-30%,55<=,1,60,Y,81,0.0,73.0,CMA,124,0.0,1081
+147,AAA,M,West Midlands Region,No Formal quals,90-100%,0-35,2,30,N,113,0.0,69.0,Exam,80,28.0,3885
+148,BBB,M,East Midlands Region,Lower Than A Level,70-80%,35-55,0,60,N,256,0.0,61.0,CMA,139,50.0,2881
+149,DDD,F,Wales,HE Qualification,10-20,55<=,2,120,N,57,1.0,83.0,Exam,149,28.0,2970
+150,CCC,F,Wales,HE Qualification,0-10%,35-55,1,90,N,153,0.0,67.0,Exam,128,28.0,9344
+151,GGG,M,Ireland,A Level or Equivalent,60-70%,55<=,0,120,N,115,0.0,35.0,TMA,238,12.5,6985
+152,BBB,F,Yorkshire Region,Post Graduate Qualification,60-70%,0-35,0,120,N,265,0.0,48.0,Exam,57,50.0,947
+153,CCC,M,London Region,Lower Than A Level,0-10%,55<=,1,30,Y,202,0.0,62.0,Exam,197,28.0,4760
+154,CCC,M,South East Region,A Level or Equivalent,70-80%,35-55,1,60,N,40,0.0,70.0,TMA,210,28.0,9909
+155,FFF,F,West Midlands Region,No Formal quals,60-70%,0-35,1,90,Y,104,0.0,64.0,CMA,44,50.0,66
+156,CCC,M,Yorkshire Region,No Formal quals,20-30%,55<=,1,30,Y,192,0.0,83.0,TMA,96,50.0,8828
+157,DDD,F,Ireland,HE Qualification,40-50%,55<=,1,30,N,236,0.0,36.0,TMA,22,0.0,8505
+158,AAA,F,South Region,HE Qualification,50-60%,55<=,0,30,Y,220,0.0,67.0,CMA,43,12.5,564
+159,BBB,M,Yorkshire Region,No Formal quals,30-40%,35-55,1,120,N,67,0.0,38.0,Exam,26,50.0,9793
+160,CCC,M,East Midlands Region,HE Qualification,60-70%,35-55,0,60,N,196,0.0,76.0,CMA,96,50.0,9017
+161,FFF,F,West Midlands Region,Lower Than A Level,0-10%,55<=,0,60,Y,255,1.0,64.0,Exam,35,25.0,3670
+162,DDD,M,South East Region,HE Qualification,40-50%,0-35,1,90,Y,138,0.0,71.0,Exam,108,50.0,9217
+163,EEE,M,Ireland,Post Graduate Qualification,90-100%,0-35,1,60,N,148,0.0,52.0,CMA,54,12.5,2251
+164,AAA,M,South Region,HE Qualification,10-20,35-55,3,60,N,98,0.0,84.0,TMA,191,28.0,804
+165,AAA,F,North Western Region,A Level or Equivalent,0-10%,0-35,0,30,Y,75,0.0,81.0,CMA,218,28.0,4631
+166,BBB,F,South West Region,Lower Than A Level,20-30%,35-55,1,30,Y,108,0.0,74.0,Exam,184,28.0,9583
+167,AAA,M,Ireland,A Level or Equivalent,10-20,55<=,1,120,Y,187,0.0,63.0,CMA,68,28.0,1235
+168,CCC,F,South West Region,A Level or Equivalent,50-60%,35-55,1,30,Y,198,0.0,74.0,CMA,129,25.0,6720
+169,FFF,F,West Midlands Region,Post Graduate Qualification,50-60%,35-55,3,30,N,153,0.0,54.0,Exam,54,50.0,6906
+170,AAA,F,Wales,Lower Than A Level,70-80%,55<=,3,30,N,39,0.0,78.0,TMA,96,28.0,6016
+171,AAA,F,Ireland,Lower Than A Level,80-90%,0-35,2,30,N,132,0.0,90.0,CMA,86,0.0,3549
+172,EEE,F,North Western Region,Lower Than A Level,70-80%,35-55,0,120,N,131,0.0,81.0,Exam,118,28.0,7938
+173,EEE,M,Scotland,Lower Than A Level,40-50%,35-55,2,30,Y,83,0.0,54.0,Exam,207,50.0,4141
+174,GGG,M,South West Region,Lower Than A Level,10-20,55<=,1,90,Y,241,0.0,70.0,CMA,153,28.0,6966
+175,DDD,M,East Midlands Region,Post Graduate Qualification,80-90%,0-35,3,90,N,115,0.0,46.0,TMA,34,25.0,9546
+176,CCC,F,Scotland,HE Qualification,90-100%,35-55,3,90,N,108,0.0,74.0,CMA,78,12.5,5335
+177,AAA,F,North Region,A Level or Equivalent,20-30%,55<=,2,90,N,220,0.0,72.0,TMA,66,12.5,5077
+178,AAA,M,North Region,Lower Than A Level,10-20,35-55,3,30,N,40,0.0,37.0,TMA,33,50.0,5611
+179,FFF,F,South Region,HE Qualification,70-80%,55<=,1,90,N,146,0.0,48.0,TMA,96,12.5,8089
+180,GGG,M,South East Region,HE Qualification,30-40%,0-35,3,30,N,111,0.0,61.0,TMA,168,12.5,2892
+181,DDD,M,Wales,A Level or Equivalent,80-90%,0-35,2,120,N,102,0.0,60.0,CMA,168,0.0,5577
+182,GGG,M,West Midlands Region,Post Graduate Qualification,80-90%,0-35,1,90,N,45,0.0,47.0,Exam,150,50.0,3618
+183,BBB,F,Ireland,No Formal quals,20-30%,0-35,2,60,N,194,0.0,71.0,Exam,70,50.0,1559
+184,DDD,F,London Region,No Formal quals,60-70%,35-55,3,90,Y,39,0.0,69.0,Exam,2,12.5,6683
+185,AAA,M,East Midlands Region,HE Qualification,50-60%,35-55,2,90,N,188,0.0,62.0,Exam,31,12.5,1507
+186,AAA,M,South West Region,A Level or Equivalent,50-60%,0-35,2,30,Y,163,0.0,54.0,Exam,81,12.5,2063
+187,DDD,M,West Midlands Region,No Formal quals,30-40%,0-35,0,90,Y,23,0.0,81.0,Exam,42,25.0,3642
+188,AAA,M,Scotland,HE Qualification,40-50%,0-35,3,60,N,23,0.0,90.0,CMA,104,28.0,2000
+189,CCC,F,East Anglian Region,Post Graduate Qualification,40-50%,35-55,3,30,N,3,0.0,58.0,TMA,0,25.0,1294
+190,DDD,F,North Region,No Formal quals,90-100%,0-35,2,30,Y,180,0.0,56.0,Exam,60,50.0,4065
+191,GGG,M,East Anglian Region,HE Qualification,10-20,0-35,0,120,Y,247,1.0,72.0,CMA,269,0.0,8014
+192,DDD,M,North Western Region,HE Qualification,0-10%,0-35,3,120,N,115,1.0,60.0,Exam,179,28.0,9945
+193,AAA,F,East Midlands Region,Lower Than A Level,60-70%,55<=,1,90,Y,68,0.0,63.0,Exam,223,0.0,1603
+194,CCC,F,London Region,Post Graduate Qualification,70-80%,0-35,2,120,N,253,0.0,76.0,TMA,5,50.0,1322
+195,CCC,M,Ireland,Lower Than A Level,0-10%,55<=,3,120,N,180,0.0,36.0,TMA,102,50.0,5956
+196,BBB,M,South Region,A Level or Equivalent,0-10%,55<=,1,120,N,168,0.0,85.0,TMA,9,0.0,2441
+197,GGG,M,London Region,Lower Than A Level,80-90%,0-35,3,30,Y,248,0.0,66.0,Exam,70,0.0,1098
+198,EEE,F,East Midlands Region,Lower Than A Level,30-40%,55<=,1,30,Y,187,0.0,59.0,Exam,89,0.0,5073
+199,EEE,F,London Region,No Formal quals,50-60%,0-35,2,30,N,53,1.0,64.0,Exam,225,50.0,9697
+200,DDD,F,East Midlands Region,HE Qualification,90-100%,35-55,3,120,Y,137,0.0,64.0,TMA,157,12.5,9318
+201,BBB,M,East Midlands Region,Post Graduate Qualification,40-50%,35-55,3,30,Y,167,0.0,39.0,CMA,227,0.0,8488
+202,FFF,M,Yorkshire Region,Lower Than A Level,30-40%,35-55,0,120,Y,102,0.0,87.0,Exam,125,28.0,3787
+203,DDD,F,South West Region,Post Graduate Qualification,80-90%,35-55,2,30,Y,84,0.0,66.0,Exam,208,50.0,2096
+204,BBB,F,East Anglian Region,Lower Than A Level,70-80%,55<=,1,30,Y,211,1.0,72.0,Exam,96,25.0,2208
+205,GGG,M,North Region,A Level or Equivalent,90-100%,0-35,3,60,Y,2,0.0,79.0,CMA,73,25.0,5988
+206,GGG,F,Yorkshire Region,Lower Than A Level,80-90%,0-35,3,90,Y,178,0.0,50.0,Exam,114,28.0,175
+207,GGG,F,Ireland,No Formal quals,50-60%,0-35,1,120,N,37,0.0,72.0,CMA,190,12.5,7169
+208,GGG,M,Yorkshire Region,HE Qualification,50-60%,35-55,2,60,Y,238,0.0,61.0,Exam,169,0.0,6014
+209,GGG,F,Wales,A Level or Equivalent,50-60%,35-55,0,30,Y,168,0.0,78.0,CMA,203,50.0,1667
+210,BBB,M,Wales,Lower Than A Level,30-40%,0-35,0,120,Y,29,0.0,33.0,Exam,55,0.0,8867
+211,BBB,M,North Region,Post Graduate Qualification,30-40%,35-55,3,30,Y,189,0.0,64.0,TMA,207,50.0,1823
+212,CCC,M,London Region,A Level or Equivalent,40-50%,0-35,1,90,Y,24,0.0,56.0,TMA,40,25.0,5147
+213,EEE,M,South West Region,A Level or Equivalent,40-50%,0-35,3,60,Y,111,0.0,71.0,TMA,31,0.0,1356
+214,AAA,M,North Region,Lower Than A Level,70-80%,0-35,1,90,Y,205,0.0,72.0,TMA,14,28.0,3072
+215,GGG,M,East Midlands Region,A Level or Equivalent,90-100%,0-35,0,60,Y,184,0.0,54.0,Exam,61,12.5,3259
+216,FFF,M,Scotland,Post Graduate Qualification,20-30%,0-35,2,30,N,46,0.0,54.0,TMA,154,28.0,6199
+217,AAA,F,South West Region,A Level or Equivalent,20-30%,0-35,1,90,Y,227,0.0,63.0,CMA,208,12.5,546
+218,BBB,M,South East Region,Post Graduate Qualification,80-90%,0-35,0,90,Y,38,0.0,52.0,TMA,186,0.0,5231
+219,FFF,M,East Anglian Region,Lower Than A Level,50-60%,35-55,3,30,Y,15,0.0,78.0,TMA,129,0.0,7965
+220,FFF,F,South West Region,HE Qualification,90-100%,0-35,1,90,Y,21,0.0,59.0,TMA,126,12.5,2083
+221,FFF,F,East Midlands Region,A Level or Equivalent,0-10%,0-35,2,120,N,212,0.0,21.0,Exam,113,25.0,2040
+222,CCC,F,East Midlands Region,HE Qualification,30-40%,35-55,3,60,N,148,0.0,59.0,TMA,198,50.0,4534
+223,BBB,M,South Region,Post Graduate Qualification,10-20,35-55,3,60,N,240,0.0,49.0,CMA,12,28.0,1752
+224,FFF,F,North Region,A Level or Equivalent,60-70%,35-55,0,60,N,58,0.0,41.0,TMA,88,28.0,9807
+225,GGG,M,East Midlands Region,No Formal quals,70-80%,0-35,1,120,N,201,0.0,46.0,TMA,214,28.0,1849
+226,DDD,M,Wales,HE Qualification,50-60%,55<=,3,60,N,31,0.0,67.0,TMA,202,0.0,2642
+227,FFF,M,Ireland,A Level or Equivalent,50-60%,55<=,2,30,N,161,0.0,85.0,CMA,73,28.0,1600
+228,CCC,M,Scotland,HE Qualification,50-60%,35-55,1,90,N,254,1.0,70.0,TMA,24,50.0,4402
+229,AAA,F,East Anglian Region,A Level or Equivalent,30-40%,55<=,2,120,N,253,0.0,56.0,CMA,100,50.0,3799
+230,BBB,F,North Region,Lower Than A Level,30-40%,35-55,3,60,N,8,0.0,72.0,CMA,175,12.5,618
+231,CCC,M,West Midlands Region,HE Qualification,60-70%,0-35,2,30,N,138,0.0,58.0,TMA,116,0.0,1132
+232,FFF,M,Wales,No Formal quals,0-10%,55<=,0,90,N,9,0.0,55.0,CMA,165,50.0,5491
+233,BBB,M,North Western Region,No Formal quals,90-100%,0-35,2,90,N,213,0.0,48.0,Exam,40,25.0,5795
+234,DDD,F,South East Region,Post Graduate Qualification,50-60%,55<=,1,120,N,47,0.0,39.0,TMA,119,0.0,7633
+235,FFF,M,London Region,A Level or Equivalent,20-30%,0-35,2,120,N,110,1.0,59.0,TMA,96,0.0,1487
+236,CCC,M,East Midlands Region,HE Qualification,40-50%,55<=,2,120,N,152,1.0,67.0,CMA,144,50.0,7848
+237,EEE,F,West Midlands Region,Post Graduate Qualification,20-30%,0-35,0,30,Y,122,0.0,64.0,CMA,215,25.0,5009
+238,GGG,F,East Midlands Region,HE Qualification,80-90%,0-35,2,30,N,101,0.0,59.0,TMA,228,12.5,9749
+239,AAA,M,South West Region,A Level or Equivalent,20-30%,55<=,2,120,Y,240,0.0,51.0,Exam,129,50.0,2113
+240,CCC,F,Wales,No Formal quals,80-90%,0-35,3,60,N,190,1.0,74.0,CMA,136,25.0,1044
+241,BBB,F,South West Region,Lower Than A Level,10-20,0-35,3,90,N,216,1.0,45.0,CMA,116,0.0,2431
+242,FFF,M,South Region,No Formal quals,40-50%,0-35,1,90,Y,50,0.0,77.0,Exam,93,25.0,7979
+243,GGG,F,South West Region,Post Graduate Qualification,20-30%,55<=,3,30,N,80,0.0,50.0,Exam,167,0.0,1582
+244,FFF,M,South Region,Lower Than A Level,10-20,55<=,3,90,Y,87,0.0,54.0,TMA,202,50.0,1308
+245,BBB,F,South East Region,Post Graduate Qualification,70-80%,0-35,3,60,Y,193,0.0,43.0,Exam,148,50.0,4917
+246,FFF,M,South Region,A Level or Equivalent,90-100%,0-35,3,90,Y,103,0.0,57.0,TMA,182,28.0,8793
+247,EEE,M,West Midlands Region,Lower Than A Level,10-20,55<=,0,30,N,95,0.0,80.0,Exam,151,28.0,1620
+248,GGG,M,East Midlands Region,Post Graduate Qualification,90-100%,55<=,3,30,N,197,0.0,73.0,CMA,73,28.0,7503
+249,GGG,F,London Region,A Level or Equivalent,20-30%,0-35,0,60,N,0,0.0,80.0,TMA,41,50.0,4766
+250,BBB,M,East Anglian Region,No Formal quals,0-10%,0-35,0,60,Y,166,0.0,73.0,TMA,211,12.5,5362
+251,AAA,F,South West Region,A Level or Equivalent,10-20,0-35,3,90,Y,125,1.0,48.0,TMA,100,50.0,5192
+252,EEE,M,North Western Region,HE Qualification,40-50%,35-55,2,90,N,80,0.0,60.0,Exam,44,25.0,6622
+253,CCC,M,East Anglian Region,A Level or Equivalent,20-30%,55<=,0,30,N,250,0.0,53.0,CMA,81,50.0,6093
+254,FFF,F,Wales,A Level or Equivalent,50-60%,35-55,2,60,N,168,0.0,85.0,TMA,16,50.0,6704
+255,DDD,M,South Region,HE Qualification,30-40%,55<=,2,60,N,72,0.0,47.0,TMA,72,0.0,100
+256,FFF,M,East Midlands Region,Post Graduate Qualification,10-20,55<=,3,60,N,140,0.0,78.0,TMA,13,0.0,6657
+257,FFF,F,Scotland,Post Graduate Qualification,40-50%,55<=,1,90,Y,69,0.0,78.0,TMA,156,0.0,5875
+258,CCC,M,North Region,A Level or Equivalent,70-80%,55<=,3,60,Y,261,0.0,92.0,CMA,222,50.0,4271
+259,FFF,M,West Midlands Region,HE Qualification,50-60%,55<=,1,30,Y,244,0.0,59.0,Exam,131,12.5,237
+260,EEE,M,London Region,HE Qualification,70-80%,55<=,1,30,N,2,0.0,76.0,CMA,46,25.0,7226
+261,EEE,M,Yorkshire Region,No Formal quals,20-30%,55<=,3,90,Y,62,0.0,99.0,TMA,106,25.0,8032
+262,GGG,F,West Midlands Region,Post Graduate Qualification,30-40%,35-55,3,120,Y,48,0.0,56.0,CMA,107,12.5,5218
+263,BBB,F,South East Region,Lower Than A Level,10-20,0-35,1,90,Y,75,0.0,42.0,TMA,264,12.5,4025
+264,AAA,M,Scotland,Post Graduate Qualification,10-20,0-35,3,120,Y,174,0.0,37.0,Exam,204,25.0,6073
+265,DDD,F,North Western Region,Post Graduate Qualification,0-10%,35-55,1,60,Y,108,0.0,76.0,Exam,78,28.0,2542
+266,FFF,M,North Region,No Formal quals,0-10%,35-55,2,90,N,182,0.0,37.0,Exam,154,0.0,1537
+267,FFF,F,Scotland,Lower Than A Level,20-30%,35-55,3,30,Y,191,0.0,59.0,TMA,246,0.0,754
+268,CCC,M,South West Region,No Formal quals,20-30%,35-55,2,60,N,64,0.0,72.0,CMA,18,25.0,7396
+269,BBB,M,South Region,Lower Than A Level,30-40%,55<=,0,30,N,99,0.0,68.0,Exam,25,12.5,7823
+270,EEE,M,London Region,A Level or Equivalent,0-10%,0-35,2,60,N,31,0.0,71.0,TMA,216,28.0,5507
+271,DDD,M,Ireland,Lower Than A Level,40-50%,55<=,2,90,N,127,0.0,68.0,TMA,153,25.0,4235
+272,GGG,M,South Region,No Formal quals,40-50%,0-35,1,120,N,42,0.0,84.0,CMA,153,0.0,540
+273,EEE,M,Ireland,Post Graduate Qualification,30-40%,0-35,2,60,Y,77,1.0,51.0,Exam,173,50.0,5510
+274,BBB,F,East Anglian Region,Lower Than A Level,40-50%,35-55,3,120,Y,269,0.0,55.0,TMA,91,12.5,8461
+275,AAA,M,North Region,Lower Than A Level,80-90%,55<=,1,60,N,161,0.0,53.0,CMA,180,50.0,7926
+276,GGG,F,East Midlands Region,HE Qualification,90-100%,35-55,0,30,N,188,0.0,77.0,Exam,130,25.0,5131
+277,AAA,M,Yorkshire Region,Post Graduate Qualification,30-40%,55<=,3,30,N,246,0.0,79.0,CMA,75,0.0,8697
+278,CCC,F,Wales,A Level or Equivalent,30-40%,0-35,0,60,Y,215,0.0,72.0,CMA,176,28.0,1129
+279,CCC,F,South Region,No Formal quals,60-70%,35-55,2,120,N,167,0.0,83.0,TMA,183,50.0,3145
+280,FFF,F,London Region,A Level or Equivalent,50-60%,35-55,3,90,Y,192,1.0,47.0,TMA,130,28.0,8553
+281,AAA,M,South East Region,Post Graduate Qualification,50-60%,0-35,3,90,N,12,0.0,90.0,TMA,48,0.0,3720
+282,BBB,M,South East Region,Lower Than A Level,80-90%,0-35,0,30,Y,239,0.0,88.0,CMA,54,50.0,9648
+283,DDD,F,Scotland,Lower Than A Level,0-10%,0-35,3,90,N,146,0.0,76.0,TMA,153,28.0,4067
+284,GGG,M,London Region,Post Graduate Qualification,20-30%,35-55,3,30,Y,203,0.0,92.0,CMA,199,28.0,4195
+285,EEE,F,North Region,Lower Than A Level,20-30%,55<=,3,90,N,79,0.0,40.0,CMA,117,50.0,9873
+286,BBB,M,East Anglian Region,Lower Than A Level,70-80%,35-55,2,60,Y,42,0.0,57.0,TMA,262,0.0,9244
+287,BBB,F,Ireland,Lower Than A Level,80-90%,55<=,0,30,Y,88,0.0,54.0,Exam,45,28.0,7281
+288,CCC,F,Scotland,No Formal quals,30-40%,35-55,3,30,Y,147,0.0,76.0,Exam,188,25.0,2509
+289,AAA,M,South East Region,No Formal quals,80-90%,35-55,1,60,Y,94,0.0,49.0,Exam,128,50.0,5016
+290,FFF,F,Wales,HE Qualification,80-90%,0-35,1,30,Y,150,0.0,76.0,CMA,48,12.5,6533
+291,FFF,M,Wales,A Level or Equivalent,80-90%,55<=,1,90,Y,1,0.0,86.0,CMA,24,12.5,4727
+292,GGG,F,South Region,Post Graduate Qualification,50-60%,35-55,1,90,Y,21,0.0,75.0,CMA,265,0.0,681
+293,CCC,F,North Region,Post Graduate Qualification,80-90%,35-55,2,30,N,6,0.0,69.0,TMA,117,25.0,3932
+294,BBB,M,East Midlands Region,Post Graduate Qualification,90-100%,0-35,3,90,N,205,0.0,50.0,CMA,143,28.0,5560
+295,DDD,M,South East Region,HE Qualification,20-30%,0-35,0,120,N,113,0.0,52.0,TMA,199,12.5,4016
+296,CCC,M,North Western Region,No Formal quals,70-80%,55<=,3,30,N,82,0.0,84.0,TMA,156,0.0,7339
+297,GGG,F,North Region,HE Qualification,90-100%,35-55,2,60,N,178,0.0,77.0,Exam,133,25.0,719
+298,GGG,M,East Anglian Region,Post Graduate Qualification,70-80%,55<=,1,120,Y,209,0.0,64.0,Exam,147,25.0,74
+299,CCC,F,Ireland,A Level or Equivalent,60-70%,35-55,2,30,Y,123,1.0,59.0,Exam,70,0.0,9485
+300,GGG,F,London Region,Lower Than A Level,70-80%,55<=,3,60,Y,112,0.0,35.0,TMA,232,0.0,4157
+301,CCC,M,South East Region,No Formal quals,20-30%,0-35,0,90,Y,11,0.0,49.0,TMA,153,28.0,8511
+302,EEE,M,Wales,No Formal quals,20-30%,35-55,2,60,Y,125,0.0,94.0,TMA,89,0.0,2149
+303,CCC,F,London Region,HE Qualification,80-90%,55<=,0,120,N,52,1.0,46.0,CMA,198,28.0,9644
+304,AAA,F,London Region,No Formal quals,10-20,0-35,2,90,N,139,0.0,68.0,TMA,160,28.0,9747
+305,CCC,M,London Region,Post Graduate Qualification,60-70%,0-35,0,30,N,96,0.0,80.0,Exam,25,50.0,6713
+306,GGG,M,Wales,Post Graduate Qualification,30-40%,55<=,0,90,N,4,0.0,46.0,Exam,120,25.0,4207
+307,AAA,M,East Anglian Region,HE Qualification,40-50%,35-55,1,30,Y,56,0.0,68.0,TMA,211,25.0,7141
+308,GGG,M,West Midlands Region,Post Graduate Qualification,70-80%,35-55,0,30,Y,68,0.0,79.0,TMA,62,25.0,8652
+309,FFF,M,South West Region,A Level or Equivalent,10-20,0-35,1,60,Y,117,1.0,65.0,Exam,67,50.0,9078
+310,FFF,F,Ireland,HE Qualification,80-90%,35-55,3,60,N,58,0.0,100.0,TMA,252,28.0,3936
+311,AAA,F,North Western Region,A Level or Equivalent,50-60%,35-55,3,60,Y,32,0.0,40.0,Exam,1,28.0,9307
+312,EEE,F,West Midlands Region,Lower Than A Level,30-40%,35-55,1,120,N,49,1.0,81.0,CMA,107,0.0,1075
+313,FFF,F,Ireland,A Level or Equivalent,0-10%,0-35,1,120,Y,18,0.0,62.0,Exam,48,50.0,3876
+314,CCC,M,Scotland,Lower Than A Level,10-20,55<=,2,60,Y,213,0.0,77.0,CMA,139,0.0,4615
+315,GGG,M,North Region,Lower Than A Level,50-60%,35-55,2,120,N,196,0.0,72.0,TMA,217,50.0,7265
+316,FFF,M,North Region,A Level or Equivalent,60-70%,0-35,2,90,Y,46,0.0,54.0,TMA,43,0.0,6379
+317,FFF,F,Yorkshire Region,HE Qualification,80-90%,0-35,3,90,Y,166,0.0,68.0,CMA,268,12.5,9118
+318,EEE,F,North Region,Post Graduate Qualification,30-40%,55<=,2,120,N,140,0.0,37.0,TMA,77,25.0,4652
+319,AAA,M,Wales,Post Graduate Qualification,30-40%,35-55,0,120,Y,83,0.0,74.0,CMA,215,25.0,6792
+320,AAA,M,North Western Region,Lower Than A Level,30-40%,35-55,0,90,N,181,0.0,69.0,TMA,97,28.0,9247
+321,BBB,F,East Midlands Region,Lower Than A Level,60-70%,55<=,2,30,Y,78,0.0,75.0,Exam,235,12.5,7456
+322,EEE,F,South Region,HE Qualification,70-80%,55<=,0,90,Y,214,0.0,81.0,TMA,148,25.0,4674
+323,CCC,M,Yorkshire Region,No Formal quals,0-10%,0-35,3,90,Y,13,1.0,71.0,Exam,65,28.0,541
+324,AAA,M,South Region,A Level or Equivalent,60-70%,0-35,0,120,Y,214,0.0,67.0,Exam,233,12.5,2161
+325,GGG,F,Ireland,Lower Than A Level,40-50%,55<=,3,90,Y,127,1.0,52.0,CMA,86,25.0,2251
+326,EEE,M,South Region,Post Graduate Qualification,0-10%,35-55,1,120,Y,247,0.0,54.0,TMA,78,0.0,9244
+327,FFF,M,South Region,HE Qualification,20-30%,0-35,1,120,Y,28,0.0,83.0,CMA,204,50.0,4569
+328,GGG,M,Yorkshire Region,A Level or Equivalent,80-90%,0-35,1,60,Y,201,0.0,87.0,TMA,253,12.5,2744
+329,GGG,F,Scotland,HE Qualification,60-70%,35-55,1,90,N,56,0.0,61.0,Exam,129,28.0,6041
+330,FFF,F,London Region,A Level or Equivalent,50-60%,0-35,0,30,N,217,0.0,66.0,Exam,83,12.5,4675
+331,EEE,F,North Region,A Level or Equivalent,0-10%,35-55,2,60,Y,61,0.0,51.0,TMA,186,28.0,1560
+332,FFF,F,North Region,Lower Than A Level,40-50%,35-55,0,120,Y,156,0.0,83.0,TMA,45,12.5,1164
+333,BBB,F,Wales,HE Qualification,20-30%,35-55,3,120,N,201,0.0,75.0,CMA,182,28.0,5419
+334,GGG,F,Yorkshire Region,HE Qualification,70-80%,55<=,0,30,Y,16,0.0,94.0,TMA,267,25.0,2722
+335,DDD,F,Wales,Post Graduate Qualification,50-60%,55<=,0,120,Y,5,0.0,52.0,TMA,99,0.0,470
+336,DDD,M,East Midlands Region,Post Graduate Qualification,0-10%,55<=,3,90,N,57,0.0,59.0,TMA,77,25.0,9608
+337,CCC,M,East Midlands Region,Lower Than A Level,80-90%,35-55,1,60,Y,168,0.0,68.0,CMA,161,0.0,1468
+338,AAA,M,Wales,Lower Than A Level,50-60%,35-55,1,120,Y,81,0.0,75.0,TMA,43,25.0,7925
+339,FFF,M,Yorkshire Region,No Formal quals,20-30%,55<=,1,120,N,218,0.0,62.0,Exam,237,25.0,808
+340,FFF,M,Wales,Post Graduate Qualification,50-60%,0-35,2,30,Y,176,0.0,52.0,CMA,133,12.5,8363
+341,CCC,M,North Region,A Level or Equivalent,90-100%,35-55,3,90,Y,203,0.0,78.0,CMA,191,50.0,6719
+342,CCC,M,West Midlands Region,HE Qualification,10-20,0-35,3,120,N,70,0.0,76.0,Exam,17,28.0,5073
+343,CCC,F,South West Region,Lower Than A Level,70-80%,0-35,0,30,Y,265,0.0,51.0,Exam,11,28.0,8012
+344,GGG,F,North Western Region,HE Qualification,20-30%,35-55,2,120,N,97,0.0,85.0,Exam,179,28.0,1645
+345,BBB,M,South Region,HE Qualification,50-60%,35-55,1,30,Y,207,0.0,83.0,TMA,122,0.0,8249
+346,FFF,M,South West Region,No Formal quals,10-20,0-35,2,30,Y,1,0.0,67.0,Exam,245,28.0,1129
+347,GGG,F,Yorkshire Region,Post Graduate Qualification,10-20,0-35,3,90,N,123,0.0,66.0,TMA,221,28.0,1353
+348,CCC,M,East Anglian Region,Lower Than A Level,50-60%,55<=,3,120,N,73,0.0,73.0,CMA,50,12.5,767
+349,FFF,M,South West Region,HE Qualification,80-90%,55<=,0,90,Y,165,0.0,52.0,CMA,70,25.0,3895
+350,GGG,F,North Western Region,Lower Than A Level,90-100%,35-55,0,30,N,21,0.0,65.0,Exam,47,28.0,8874
+351,BBB,M,East Midlands Region,A Level or Equivalent,60-70%,55<=,3,60,N,153,0.0,33.0,TMA,18,50.0,3454
+352,GGG,F,Ireland,No Formal quals,90-100%,55<=,1,120,Y,218,0.0,78.0,Exam,261,28.0,7329
+353,BBB,M,South Region,A Level or Equivalent,50-60%,55<=,1,60,Y,156,0.0,42.0,Exam,83,0.0,1790
+354,CCC,F,North Western Region,Lower Than A Level,70-80%,55<=,2,120,Y,229,0.0,88.0,TMA,154,0.0,9669
+355,BBB,F,London Region,Lower Than A Level,60-70%,0-35,3,90,N,19,0.0,60.0,Exam,52,0.0,885
+356,FFF,F,East Anglian Region,Post Graduate Qualification,20-30%,35-55,3,90,N,40,0.0,62.0,CMA,106,28.0,7734
+357,CCC,M,Yorkshire Region,HE Qualification,90-100%,55<=,1,90,N,147,0.0,56.0,Exam,134,12.5,3906
+358,FFF,F,South Region,HE Qualification,50-60%,0-35,1,90,N,107,0.0,61.0,TMA,68,50.0,4492
+359,DDD,M,South West Region,A Level or Equivalent,90-100%,0-35,3,90,Y,83,0.0,86.0,TMA,10,28.0,9730
+360,EEE,M,East Midlands Region,No Formal quals,60-70%,0-35,0,60,N,133,0.0,28.0,CMA,142,12.5,2073
+361,BBB,M,Scotland,HE Qualification,40-50%,55<=,3,90,Y,206,0.0,84.0,TMA,191,12.5,312
+362,EEE,M,West Midlands Region,Post Graduate Qualification,0-10%,55<=,3,30,N,265,0.0,70.0,TMA,68,28.0,6269
+363,EEE,F,London Region,A Level or Equivalent,90-100%,35-55,1,30,Y,72,0.0,47.0,CMA,22,28.0,5317
+364,BBB,F,East Anglian Region,A Level or Equivalent,20-30%,55<=,1,60,Y,47,0.0,49.0,Exam,180,12.5,810
+365,CCC,M,West Midlands Region,Post Graduate Qualification,20-30%,55<=,0,120,Y,232,0.0,90.0,CMA,8,12.5,6841
+366,DDD,M,South Region,No Formal quals,30-40%,0-35,0,30,N,99,0.0,51.0,Exam,92,12.5,2032
+367,FFF,F,East Midlands Region,Post Graduate Qualification,90-100%,35-55,2,120,Y,58,0.0,48.0,CMA,16,28.0,9699
+368,GGG,M,East Midlands Region,No Formal quals,0-10%,55<=,3,60,Y,257,0.0,82.0,Exam,153,12.5,7129
+369,FFF,F,North Western Region,Post Graduate Qualification,80-90%,55<=,1,120,N,64,0.0,70.0,CMA,148,0.0,2705
+370,GGG,M,South West Region,Post Graduate Qualification,10-20,0-35,0,120,Y,82,1.0,51.0,Exam,266,28.0,8788
+371,FFF,M,North Western Region,Lower Than A Level,0-10%,0-35,2,120,N,153,0.0,68.0,CMA,105,0.0,2147
+372,BBB,F,North Region,A Level or Equivalent,10-20,55<=,2,120,N,265,0.0,50.0,Exam,34,25.0,615
+373,DDD,M,South West Region,Post Graduate Qualification,10-20,35-55,1,60,Y,78,0.0,82.0,CMA,118,28.0,947
+374,GGG,F,North Region,Post Graduate Qualification,40-50%,35-55,1,30,Y,149,0.0,81.0,TMA,13,25.0,5677
+375,AAA,M,North Western Region,HE Qualification,30-40%,0-35,2,90,N,47,0.0,73.0,Exam,13,12.5,4651
+376,CCC,M,North Region,A Level or Equivalent,0-10%,0-35,0,120,Y,247,0.0,70.0,CMA,265,12.5,7866
+377,FFF,M,London Region,HE Qualification,0-10%,55<=,2,30,N,97,0.0,91.0,Exam,139,50.0,2013
+378,FFF,F,North Western Region,A Level or Equivalent,40-50%,0-35,3,30,N,24,0.0,65.0,Exam,118,12.5,3697
+379,GGG,M,South West Region,HE Qualification,90-100%,55<=,3,60,N,67,0.0,47.0,CMA,237,25.0,490
+380,CCC,M,South East Region,Post Graduate Qualification,90-100%,35-55,1,30,Y,6,0.0,72.0,Exam,33,12.5,4350
+381,CCC,M,North Western Region,Post Graduate Qualification,90-100%,35-55,0,60,N,136,0.0,96.0,CMA,168,28.0,2428
+382,BBB,M,Scotland,Lower Than A Level,70-80%,55<=,0,120,Y,163,0.0,50.0,TMA,9,12.5,4987
+383,AAA,F,East Anglian Region,HE Qualification,10-20,0-35,3,120,Y,82,0.0,60.0,Exam,121,50.0,8733
+384,BBB,F,Wales,No Formal quals,70-80%,35-55,2,90,Y,137,0.0,71.0,TMA,144,12.5,9479
+385,BBB,M,Wales,Lower Than A Level,30-40%,0-35,1,90,Y,72,0.0,64.0,Exam,222,25.0,9825
+386,BBB,F,South West Region,HE Qualification,40-50%,35-55,2,90,N,236,0.0,50.0,Exam,256,25.0,4920
+387,BBB,M,South West Region,HE Qualification,0-10%,55<=,2,30,Y,45,1.0,82.0,Exam,267,12.5,2926
+388,BBB,M,West Midlands Region,Lower Than A Level,10-20,55<=,2,120,N,105,0.0,100.0,CMA,3,25.0,9544
+389,DDD,M,East Anglian Region,Post Graduate Qualification,70-80%,55<=,0,60,N,261,0.0,68.0,TMA,105,25.0,7282
+390,CCC,F,East Anglian Region,HE Qualification,70-80%,35-55,3,90,Y,175,0.0,51.0,Exam,84,50.0,4376
+391,BBB,F,London Region,Post Graduate Qualification,50-60%,0-35,0,60,N,165,0.0,42.0,CMA,213,28.0,9490
+392,CCC,F,South West Region,Lower Than A Level,70-80%,0-35,3,60,N,144,0.0,69.0,Exam,120,50.0,4868
+393,CCC,F,East Anglian Region,Post Graduate Qualification,80-90%,0-35,1,90,Y,53,0.0,82.0,CMA,131,0.0,6986
+394,EEE,F,West Midlands Region,A Level or Equivalent,0-10%,35-55,1,120,N,177,0.0,72.0,Exam,196,50.0,6862
+395,DDD,F,North Region,No Formal quals,80-90%,35-55,2,90,N,243,0.0,65.0,TMA,18,12.5,4423
+396,BBB,F,East Midlands Region,HE Qualification,0-10%,35-55,3,60,N,126,0.0,56.0,TMA,129,28.0,6870
+397,FFF,F,East Midlands Region,No Formal quals,40-50%,35-55,3,90,N,131,0.0,49.0,Exam,11,12.5,8159
+398,GGG,F,North Region,Post Graduate Qualification,0-10%,35-55,3,60,Y,92,0.0,78.0,CMA,80,0.0,2073
+399,AAA,M,Yorkshire Region,HE Qualification,80-90%,0-35,2,60,N,72,0.0,79.0,Exam,261,28.0,6170
+400,FFF,F,West Midlands Region,Post Graduate Qualification,0-10%,35-55,2,90,N,247,0.0,42.0,CMA,124,25.0,701
+401,DDD,F,East Anglian Region,A Level or Equivalent,40-50%,35-55,1,30,N,42,0.0,89.0,Exam,266,50.0,8113
+402,GGG,F,South East Region,Lower Than A Level,40-50%,0-35,0,90,N,40,0.0,74.0,CMA,139,12.5,6825
+403,DDD,F,West Midlands Region,HE Qualification,30-40%,35-55,3,30,Y,169,0.0,86.0,TMA,1,0.0,7867
+404,CCC,F,North Western Region,A Level or Equivalent,0-10%,0-35,3,60,N,211,0.0,45.0,Exam,7,25.0,4264
+405,GGG,F,North Region,A Level or Equivalent,50-60%,0-35,0,60,Y,167,1.0,45.0,TMA,249,50.0,7968
+406,CCC,F,Scotland,HE Qualification,90-100%,55<=,3,30,N,38,1.0,63.0,TMA,138,25.0,8146
+407,FFF,F,Ireland,Post Graduate Qualification,20-30%,55<=,2,60,Y,244,0.0,73.0,Exam,123,50.0,7776
+408,FFF,F,South Region,A Level or Equivalent,40-50%,55<=,2,30,Y,150,0.0,92.0,Exam,227,28.0,8558
+409,GGG,F,North Region,No Formal quals,60-70%,55<=,3,30,Y,110,0.0,76.0,CMA,9,25.0,8719
+410,GGG,F,South East Region,A Level or Equivalent,90-100%,35-55,2,60,Y,46,0.0,61.0,CMA,211,25.0,4886
+411,BBB,M,East Anglian Region,Post Graduate Qualification,10-20,55<=,2,120,Y,62,0.0,50.0,TMA,111,25.0,3935
+412,DDD,M,South East Region,Post Graduate Qualification,0-10%,0-35,3,30,N,224,0.0,83.0,CMA,7,28.0,4619
+413,BBB,F,South East Region,No Formal quals,80-90%,35-55,1,90,N,68,0.0,51.0,CMA,252,0.0,5191
+414,DDD,F,South West Region,A Level or Equivalent,20-30%,55<=,0,90,N,202,0.0,89.0,Exam,13,50.0,6875
+415,BBB,M,South West Region,Post Graduate Qualification,60-70%,0-35,2,60,Y,60,0.0,61.0,CMA,239,25.0,7856
+416,CCC,F,London Region,HE Qualification,90-100%,35-55,1,120,N,160,0.0,89.0,TMA,241,28.0,5401
+417,GGG,M,North Region,Lower Than A Level,0-10%,35-55,2,60,Y,15,0.0,75.0,CMA,148,0.0,3022
+418,FFF,M,London Region,Lower Than A Level,30-40%,55<=,2,120,Y,93,0.0,63.0,TMA,235,50.0,5738
+419,DDD,M,North Region,Lower Than A Level,10-20,35-55,0,30,N,137,0.0,57.0,Exam,166,28.0,5984
+420,DDD,M,West Midlands Region,A Level or Equivalent,20-30%,0-35,2,30,N,37,0.0,60.0,TMA,19,50.0,1770
+421,FFF,M,South Region,No Formal quals,50-60%,35-55,0,30,Y,126,0.0,71.0,CMA,215,25.0,9969
+422,BBB,F,South East Region,Post Graduate Qualification,30-40%,0-35,0,30,Y,163,0.0,66.0,Exam,134,0.0,8989
+423,DDD,M,West Midlands Region,HE Qualification,60-70%,35-55,0,90,N,76,0.0,56.0,CMA,128,28.0,3215
+424,AAA,F,Ireland,HE Qualification,20-30%,55<=,1,90,N,173,0.0,63.0,Exam,245,0.0,6694
+425,CCC,F,East Midlands Region,A Level or Equivalent,30-40%,0-35,3,60,N,90,0.0,66.0,Exam,188,25.0,2976
+426,GGG,M,Wales,Lower Than A Level,10-20,35-55,1,120,N,237,0.0,33.0,CMA,43,0.0,3737
+427,FFF,M,North Western Region,A Level or Equivalent,50-60%,35-55,3,30,Y,263,0.0,72.0,CMA,85,0.0,9903
+428,GGG,F,North Region,No Formal quals,30-40%,35-55,3,30,N,178,0.0,50.0,Exam,43,12.5,752
+429,AAA,M,Ireland,No Formal quals,70-80%,0-35,0,120,N,208,0.0,48.0,Exam,144,0.0,1392
+430,DDD,M,East Midlands Region,Post Graduate Qualification,50-60%,0-35,2,120,N,72,0.0,40.0,CMA,50,50.0,6789
+431,DDD,F,East Anglian Region,Post Graduate Qualification,60-70%,0-35,0,60,Y,106,0.0,38.0,TMA,241,28.0,677
+432,AAA,F,Yorkshire Region,No Formal quals,10-20,55<=,2,120,Y,181,0.0,45.0,CMA,50,12.5,105
+433,FFF,M,South Region,No Formal quals,0-10%,55<=,3,30,Y,36,1.0,54.0,Exam,265,28.0,4753
+434,CCC,F,London Region,No Formal quals,80-90%,0-35,0,30,Y,136,0.0,94.0,CMA,119,28.0,1946
+435,EEE,M,London Region,A Level or Equivalent,80-90%,35-55,2,30,N,55,0.0,57.0,TMA,199,25.0,5544
+436,FFF,M,West Midlands Region,No Formal quals,80-90%,55<=,1,30,Y,186,0.0,68.0,CMA,247,25.0,1095
+437,EEE,M,South West Region,HE Qualification,20-30%,0-35,2,30,N,257,0.0,71.0,Exam,69,12.5,6985
+438,AAA,F,East Midlands Region,Lower Than A Level,60-70%,35-55,0,60,N,57,1.0,67.0,CMA,56,25.0,1782
+439,BBB,F,Yorkshire Region,No Formal quals,10-20,55<=,1,30,N,122,0.0,64.0,Exam,38,25.0,4541
+440,EEE,F,Ireland,Lower Than A Level,50-60%,35-55,2,60,N,187,0.0,47.0,Exam,17,25.0,3257
+441,CCC,F,South Region,A Level or Equivalent,20-30%,35-55,2,30,Y,229,0.0,87.0,CMA,219,28.0,6213
+442,BBB,F,East Midlands Region,Lower Than A Level,60-70%,35-55,2,90,Y,167,0.0,92.0,Exam,243,12.5,4869
+443,EEE,M,Yorkshire Region,A Level or Equivalent,0-10%,35-55,2,90,Y,113,0.0,40.0,Exam,73,28.0,1561
+444,AAA,M,Wales,HE Qualification,70-80%,55<=,2,90,N,251,0.0,50.0,TMA,109,50.0,4006
+445,BBB,M,North Region,A Level or Equivalent,10-20,55<=,1,90,N,106,0.0,61.0,TMA,179,28.0,9867
+446,AAA,M,London Region,A Level or Equivalent,80-90%,55<=,3,60,N,36,1.0,51.0,TMA,31,50.0,9314
+447,EEE,F,Ireland,Post Graduate Qualification,30-40%,0-35,1,60,N,91,0.0,73.0,TMA,233,0.0,3981
+448,AAA,M,London Region,No Formal quals,10-20,55<=,1,120,N,17,0.0,54.0,Exam,24,0.0,9493
+449,CCC,F,Ireland,No Formal quals,40-50%,35-55,1,30,Y,62,0.0,97.0,CMA,225,50.0,5682
+450,EEE,M,West Midlands Region,HE Qualification,60-70%,55<=,3,90,N,149,0.0,83.0,Exam,56,50.0,5782
+451,EEE,F,South West Region,HE Qualification,90-100%,35-55,0,60,Y,138,0.0,68.0,Exam,179,28.0,943
+452,EEE,F,Ireland,No Formal quals,0-10%,0-35,3,30,N,185,0.0,80.0,Exam,231,50.0,4550
+453,FFF,M,London Region,Post Graduate Qualification,70-80%,35-55,1,30,N,184,0.0,82.0,CMA,63,12.5,9137
+454,FFF,M,West Midlands Region,No Formal quals,0-10%,35-55,2,60,Y,204,0.0,57.0,TMA,231,0.0,600
+455,FFF,M,Ireland,Post Graduate Qualification,10-20,35-55,2,90,Y,259,0.0,53.0,Exam,212,0.0,6376
+456,CCC,M,Wales,HE Qualification,90-100%,0-35,1,120,N,213,1.0,66.0,Exam,257,50.0,9609
+457,BBB,F,South West Region,Lower Than A Level,40-50%,55<=,2,30,N,255,0.0,78.0,TMA,17,25.0,1524
+458,AAA,M,Ireland,HE Qualification,50-60%,55<=,1,120,N,134,0.0,67.0,Exam,174,25.0,3766
+459,DDD,M,West Midlands Region,HE Qualification,30-40%,0-35,2,90,N,60,0.0,41.0,CMA,228,50.0,250
+460,EEE,F,East Anglian Region,A Level or Equivalent,90-100%,35-55,3,90,Y,87,0.0,53.0,Exam,225,12.5,9736
+461,AAA,M,East Midlands Region,A Level or Equivalent,60-70%,55<=,0,120,N,206,0.0,64.0,Exam,83,25.0,78
+462,EEE,M,Scotland,A Level or Equivalent,80-90%,0-35,0,90,Y,128,0.0,64.0,TMA,245,50.0,3123
+463,CCC,M,Yorkshire Region,A Level or Equivalent,40-50%,55<=,3,30,N,2,0.0,95.0,Exam,109,12.5,9089
+464,EEE,M,Scotland,Post Graduate Qualification,30-40%,0-35,3,120,Y,241,0.0,44.0,Exam,253,12.5,7064
+465,FFF,M,East Anglian Region,No Formal quals,70-80%,35-55,1,90,Y,120,0.0,73.0,CMA,87,28.0,8417
+466,DDD,F,Scotland,Lower Than A Level,80-90%,55<=,1,120,N,101,0.0,87.0,TMA,71,12.5,1209
+467,GGG,M,East Anglian Region,HE Qualification,10-20,0-35,1,30,Y,37,0.0,99.0,TMA,29,25.0,5153
+468,EEE,M,South Region,Post Graduate Qualification,90-100%,55<=,2,90,N,132,0.0,59.0,CMA,171,25.0,4898
+469,AAA,M,East Anglian Region,Lower Than A Level,30-40%,55<=,1,30,Y,201,0.0,72.0,Exam,176,50.0,2178
+470,FFF,M,East Anglian Region,Post Graduate Qualification,20-30%,55<=,3,90,N,20,0.0,74.0,TMA,138,50.0,7610
+471,GGG,M,South East Region,Post Graduate Qualification,50-60%,55<=,0,60,Y,241,0.0,68.0,TMA,193,12.5,8895
+472,DDD,F,East Anglian Region,HE Qualification,50-60%,0-35,2,90,N,108,0.0,64.0,Exam,185,0.0,2544
+473,GGG,M,Wales,No Formal quals,40-50%,35-55,1,120,N,83,0.0,72.0,Exam,217,28.0,5522
+474,FFF,F,East Midlands Region,A Level or Equivalent,70-80%,0-35,2,90,Y,82,0.0,27.0,TMA,163,0.0,2370
+475,BBB,F,North Region,No Formal quals,40-50%,0-35,2,30,Y,68,0.0,75.0,Exam,160,12.5,3281
+476,BBB,M,Ireland,HE Qualification,20-30%,0-35,1,30,Y,128,0.0,67.0,TMA,12,12.5,4710
+477,GGG,M,Yorkshire Region,HE Qualification,60-70%,35-55,2,90,Y,195,0.0,62.0,Exam,88,0.0,328
+478,CCC,M,South West Region,HE Qualification,70-80%,55<=,0,120,N,139,0.0,96.0,Exam,41,28.0,5579
+479,AAA,M,East Midlands Region,Lower Than A Level,0-10%,55<=,3,60,Y,233,0.0,55.0,CMA,209,0.0,4228
+480,AAA,F,London Region,No Formal quals,60-70%,55<=,3,120,N,22,0.0,59.0,Exam,228,50.0,6794
+481,GGG,M,North Region,No Formal quals,70-80%,35-55,0,60,Y,152,0.0,95.0,CMA,250,25.0,120
+482,EEE,M,South Region,Post Graduate Qualification,70-80%,55<=,2,30,N,60,0.0,53.0,Exam,207,50.0,6749
+483,EEE,M,South Region,Post Graduate Qualification,20-30%,35-55,1,120,N,51,1.0,57.0,TMA,139,25.0,964
+484,AAA,M,North Western Region,Post Graduate Qualification,10-20,55<=,2,60,N,152,0.0,63.0,TMA,33,12.5,4224
+485,AAA,M,East Anglian Region,HE Qualification,20-30%,55<=,0,90,N,236,0.0,78.0,Exam,17,28.0,3675
+486,BBB,M,East Midlands Region,No Formal quals,70-80%,0-35,2,30,Y,31,0.0,68.0,Exam,56,0.0,5694
+487,CCC,F,West Midlands Region,HE Qualification,30-40%,35-55,3,90,Y,54,0.0,46.0,TMA,111,28.0,2076
+488,FFF,F,South East Region,Lower Than A Level,60-70%,0-35,2,30,N,35,0.0,57.0,Exam,4,0.0,6865
+489,EEE,M,Scotland,Post Graduate Qualification,20-30%,0-35,0,120,Y,109,0.0,56.0,CMA,181,50.0,5643
+490,AAA,M,London Region,HE Qualification,10-20,0-35,3,120,Y,176,0.0,64.0,CMA,12,50.0,8524
+491,BBB,M,South Region,HE Qualification,90-100%,35-55,2,30,N,96,0.0,71.0,CMA,258,0.0,5249
+492,DDD,F,Yorkshire Region,Lower Than A Level,40-50%,35-55,2,30,Y,212,0.0,71.0,CMA,89,28.0,1316
+493,BBB,M,South Region,A Level or Equivalent,70-80%,55<=,3,30,Y,136,1.0,38.0,CMA,103,0.0,1196
+494,EEE,F,South West Region,No Formal quals,0-10%,0-35,1,120,Y,5,0.0,81.0,Exam,185,12.5,3170
+495,EEE,M,Ireland,A Level or Equivalent,90-100%,55<=,3,60,N,108,1.0,69.0,Exam,249,50.0,9621
+496,BBB,M,South Region,Post Graduate Qualification,50-60%,0-35,1,90,Y,34,0.0,86.0,CMA,254,12.5,355
+497,FFF,M,South West Region,HE Qualification,80-90%,35-55,0,90,N,38,0.0,72.0,Exam,75,50.0,9718
+498,GGG,M,East Midlands Region,Lower Than A Level,10-20,35-55,0,120,Y,149,0.0,82.0,Exam,107,50.0,28
+499,EEE,F,East Midlands Region,Lower Than A Level,0-10%,35-55,3,90,Y,117,0.0,72.0,CMA,155,25.0,1013
+500,BBB,F,South East Region,No Formal quals,80-90%,0-35,3,30,Y,260,0.0,85.0,Exam,81,12.5,9019

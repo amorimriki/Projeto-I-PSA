@@ -92,16 +92,33 @@ export default function PredictionForm() {
     setForm(updatedForm);
   };
 
-  const handleSubmit = async (e) => {
+  const handlePredict = async (e) => {
     e.preventDefault();
+    setResult(null);
+  
     try {
-      const res = await axios.post("http://localhost:5000/predict", form);
-      setResult(res.data.prediction);
-    } catch (err) {
-      alert("Erro na previsão");
-      console.error(err);
+      const response = await axios.post(
+        "http://localhost:8000/predict-json",
+        [form],
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+  
+      const resultado = response.data?.[0];
+      if (resultado && "previsao" in resultado) {
+        setResult(`Estudante ${resultado.n_student} - Previsão: ${resultado.previsao}`);
+      } else {
+        setResult("Resposta inesperada do servidor.");
+      }
+    } catch (error) {
+      console.error("Erro ao obter previsão:", error);
+      setResult("Erro ao prever resultado.");
     }
   };
+  
 
   return (
     <>
@@ -109,7 +126,7 @@ export default function PredictionForm() {
       <Container className="mt-4 mb-4">
         <Card className="p-4 shadow rounded-4">
           <h2 style={{ color: "var(--cor-primaria)" }} className="mb-4 text-center">Prever Resultado Final</h2>
-          <Form onSubmit={handleSubmit}>
+          <Form onSubmit={handlePredict}>
             <Row>
               {/* Campos especiais: data */}
               <Col md={6} className="mb-3">

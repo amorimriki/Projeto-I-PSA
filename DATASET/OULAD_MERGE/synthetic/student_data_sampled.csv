@@ -1,0 +1,1001 @@
+code_module,gender,region,highest_education,imd_band,age_band,num_of_prev_attempts,studied_credits,disability,final_result,date_submitted,is_banked,score,assessment_type,date,weight,sum_click
+BBB,F,London Region,No Formal quals,50-60%,35-55,0,120,N,Fail,85.0,0.0,78.0,TMA,82.0,18.0,265.0
+DDD,F,South West Region,A Level or Equivalent,10-20,0-35,0,120,N,Fail,87.0,0.0,32.0,TMA,88.0,17.5,985.0
+CCC,M,North Western Region,Lower Than A Level,10-20,0-35,0,80,N,Fail,21.0,0.0,67.0,CMA,18.0,2.0,3753.0
+BBB,F,London Region,Lower Than A Level,10-20,35-55,2,120,N,Fail,-1.0,1.0,60.0,CMA,47.0,1.0,1153.0
+FFF,M,West Midlands Region,Lower Than A Level,10-20,35-55,0,60,N,Fail,60.0,0.0,76.0,CMA,222.0,0.0,1414.0
+FFF,M,Wales,Lower Than A Level,20-30%,0-35,1,60,Y,Fail,236.0,0.0,60.0,CMA,236.0,0.0,868.0
+EEE,M,Yorkshire Region,A Level or Equivalent,50-60%,0-35,0,60,N,Fail,152.0,0.0,51.0,TMA,131.0,28.0,567.0
+DDD,F,North Western Region,HE Qualification,60-70%,35-55,2,150,N,Fail,173.0,0.0,28.0,CMA,170.0,3.0,955.0
+CCC,M,South East Region,Lower Than A Level,40-50%,0-35,0,60,N,Fail,20.0,0.0,20.0,CMA,18.0,2.0,1573.0
+CCC,M,South Region,A Level or Equivalent,90-100%,0-35,0,60,N,Fail,32.0,0.0,96.0,TMA,33.0,16.0,1884.0
+DDD,F,London Region,Lower Than A Level,10-20,35-55,0,60,N,Fail,81.0,0.0,58.0,CMA,79.0,3.0,1338.0
+DDD,M,South Region,A Level or Equivalent,90-100%,35-55,0,60,N,Fail,200.0,0.0,36.0,TMA,200.0,15.0,1628.0
+FFF,F,Scotland,Lower Than A Level,90-100%,0-35,0,60,N,Fail,143.0,0.0,73.0,CMA,222.0,0.0,1389.0
+DDD,M,Wales,A Level or Equivalent,60-70%,0-35,0,60,N,Fail,84.0,0.0,22.0,TMA,81.0,12.5,1270.0
+EEE,M,London Region,A Level or Equivalent,0-10%,0-35,0,30,N,Fail,53.0,0.0,22.0,TMA,32.0,9.0,1591.0
+EEE,M,South Region,Lower Than A Level,70-80%,0-35,0,60,N,Fail,28.0,0.0,66.0,TMA,33.0,16.0,1608.0
+BBB,F,Yorkshire Region,A Level or Equivalent,30-40%,0-35,0,120,N,Fail,108.0,0.0,66.0,TMA,110.0,20.0,1088.0
+FFF,M,London Region,Lower Than A Level,20-30%,0-35,0,60,N,Fail,73.0,0.0,80.0,TMA,47.0,12.5,1954.0
+DDD,F,Ireland,A Level or Equivalent,30-40%,35-55,1,60,N,Fail,22.0,0.0,76.0,TMA,25.0,10.0,694.0
+BBB,F,North Region,Lower Than A Level,50-60%,35-55,1,180,N,Fail,95.0,0.0,100.0,CMA,89.0,1.0,1352.0
+FFF,M,Ireland,Lower Than A Level,30-40%,0-35,0,90,N,Fail,145.0,0.0,64.0,CMA,227.0,0.0,3550.0
+CCC,M,East Midlands Region,A Level or Equivalent,50-60%,0-35,1,250,N,Fail,244.0,0.0,34.0,Exam,128.2432009680228,100.0,947.0
+FFF,M,North Western Region,Lower Than A Level,0-10%,0-35,0,60,Y,Fail,223.0,0.0,71.0,CMA,222.0,0.0,3684.0
+BBB,F,East Anglian Region,A Level or Equivalent,80-90%,0-35,0,60,N,Fail,151.0,0.0,78.0,TMA,152.0,18.0,311.0
+FFF,M,South West Region,Lower Than A Level,70-80%,35-55,0,120,N,Fail,65.0,0.0,83.0,CMA,236.0,0.0,2665.0
+FFF,M,West Midlands Region,A Level or Equivalent,0-10%,0-35,0,120,N,Fail,227.0,0.0,74.0,CMA,236.0,0.0,1373.0
+GGG,F,London Region,Lower Than A Level,20-30%,0-35,0,30,Y,Fail,201.0,0.0,60.0,CMA,229.0,0.0,626.0
+FFF,M,West Midlands Region,A Level or Equivalent,20-30%,0-35,0,120,N,Fail,22.0,0.0,76.0,TMA,19.0,12.5,401.0
+CCC,M,North Western Region,A Level or Equivalent,30-40%,0-35,0,30,N,Fail,104.0,0.0,89.0,TMA,87.0,25.0,1764.0
+BBB,M,London Region,Lower Than A Level,0-10%,35-55,0,60,N,Fail,187.0,0.0,63.0,TMA,187.0,18.0,352.0
+FFF,M,North Region,A Level or Equivalent,10-20,35-55,1,60,N,Fail,180.0,0.0,54.0,TMA,173.0,25.0,3740.0
+FFF,F,East Midlands Region,A Level or Equivalent,0-10%,0-35,1,150,N,Fail,82.0,0.0,52.0,CMA,222.0,0.0,3323.0
+CCC,M,West Midlands Region,Lower Than A Level,80-90%,0-35,0,60,N,Fail,88.0,0.0,82.0,TMA,88.0,17.5,2005.0
+EEE,M,Yorkshire Region,A Level or Equivalent,10-20,0-35,0,60,N,Fail,66.0,0.0,78.0,TMA,68.0,28.0,1240.0
+GGG,F,South West Region,Lower Than A Level,50-60%,0-35,0,30,Y,Fail,52.0,0.0,80.0,TMA,61.0,0.0,304.0
+CCC,F,Wales,Lower Than A Level,50-60%,35-55,0,120,N,Fail,245.0,0.0,24.0,Exam,128.2432009680228,100.0,6378.0
+DDD,M,West Midlands Region,Lower Than A Level,0-10%,0-35,0,90,N,Fail,226.0,0.0,80.0,CMA,227.0,0.0,2817.0
+EEE,M,London Region,HE Qualification,80-90%,0-35,0,60,N,Fail,26.0,0.0,48.0,TMA,32.0,9.0,811.0
+CCC,M,South Region,A Level or Equivalent,20-30%,35-55,0,120,N,Fail,32.0,0.0,76.0,TMA,32.0,9.0,3015.0
+BBB,F,Yorkshire Region,A Level or Equivalent,20-30%,0-35,0,60,N,Fail,15.0,0.0,100.0,TMA,19.0,0.0,61.0
+FFF,M,Ireland,A Level or Equivalent,0-10%,0-35,2,60,N,Fail,87.0,0.0,56.0,TMA,87.0,25.0,846.0
+CCC,M,Yorkshire Region,A Level or Equivalent,40-50%,0-35,0,60,N,Fail,25.0,0.0,57.0,TMA,25.0,10.0,764.0
+BBB,F,Ireland,A Level or Equivalent,30-40%,0-35,3,60,N,Fail,119.0,0.0,100.0,CMA,117.0,1.0,191.0
+CCC,M,Yorkshire Region,A Level or Equivalent,10-20,0-35,0,120,N,Fail,69.0,0.0,100.0,CMA,67.0,7.0,1639.0
+DDD,M,South Region,Lower Than A Level,40-50%,35-55,0,150,N,Fail,17.0,0.0,90.0,TMA,20.0,5.0,629.0
+DDD,M,East Midlands Region,HE Qualification,30-40%,35-55,0,60,N,Fail,207.0,0.0,50.0,TMA,207.0,20.0,446.0
+FFF,M,North Western Region,Lower Than A Level,0-10%,0-35,0,60,Y,Fail,97.0,0.0,75.40245881057695,TMA,87.0,25.0,357.0
+BBB,F,South Region,A Level or Equivalent,30-40%,0-35,0,60,N,Fail,189.0,0.0,100.0,CMA,187.0,1.0,1977.0
+GGG,F,North Western Region,Lower Than A Level,50-60%,0-35,0,30,N,Fail,135.0,0.0,65.0,TMA,117.0,0.0,259.0
+FFF,M,East Anglian Region,A Level or Equivalent,50-60%,0-35,0,120,N,Fail,222.0,0.0,66.0,CMA,222.0,0.0,1351.0
+BBB,F,South West Region,Lower Than A Level,50-60%,0-35,1,180,Y,Fail,-1.0,1.0,74.0,TMA,96.0,18.0,695.0
+DDD,M,Ireland,Lower Than A Level,30-40%,35-55,0,60,N,Fail,209.0,0.0,80.0,CMA,206.0,6.0,1776.0
+DDD,F,East Anglian Region,HE Qualification,40-50%,0-35,1,145,N,Fail,25.0,0.0,80.0,CMA,23.0,2.0,983.0
+BBB,F,South West Region,A Level or Equivalent,0-10%,0-35,1,60,N,Fail,10.0,0.0,1.0,TMA,19.0,0.0,892.0
+BBB,F,Scotland,Lower Than A Level,40-50%,0-35,2,60,Y,Fail,21.0,0.0,50.0,TMA,19.0,5.0,890.0
+CCC,M,East Anglian Region,A Level or Equivalent,90-100%,0-35,0,30,N,Fail,109.0,0.0,23.0,TMA,109.0,22.0,4070.0
+DDD,F,West Midlands Region,Lower Than A Level,0-10%,0-35,0,90,N,Fail,173.0,0.0,78.0,CMA,170.0,3.0,404.0
+FFF,M,Ireland,HE Qualification,30-40%,0-35,1,60,N,Fail,106.0,0.0,85.0,TMA,96.0,25.0,2159.0
+BBB,F,East Anglian Region,HE Qualification,30-40%,35-55,0,60,N,Fail,189.0,0.0,100.0,CMA,187.0,1.0,423.0
+FFF,M,London Region,Lower Than A Level,0-10%,35-55,0,120,N,Fail,30.0,0.0,98.0,CMA,222.0,0.0,3692.0
+BBB,F,Wales,Lower Than A Level,50-60%,0-35,0,60,N,Fail,9.0,0.0,80.0,TMA,19.0,5.0,899.0
+FFF,F,East Anglian Region,A Level or Equivalent,70-80%,0-35,0,60,Y,Fail,55.0,0.0,75.0,CMA,236.0,0.0,6208.0
+CCC,M,West Midlands Region,A Level or Equivalent,80-90%,0-35,0,30,N,Fail,21.0,0.0,56.0,CMA,18.0,2.0,880.0
+DDD,F,South East Region,A Level or Equivalent,90-100%,0-35,0,60,N,Fail,81.0,0.0,92.0,TMA,81.0,12.5,2213.0
+BBB,F,North Western Region,A Level or Equivalent,20-30%,35-55,0,120,N,Fail,96.0,0.0,87.0,TMA,96.0,18.0,2980.0
+FFF,M,South West Region,Lower Than A Level,30-40%,0-35,0,60,N,Fail,231.0,0.0,76.0,CMA,236.0,0.0,1976.0
+BBB,F,South East Region,Lower Than A Level,0-10%,0-35,0,120,N,Fail,50.0,0.0,63.0,TMA,47.0,18.0,101.0
+FFF,M,London Region,A Level or Equivalent,10-20,0-35,0,60,N,Fail,17.0,0.0,68.0,TMA,19.0,12.5,732.0
+CCC,M,West Midlands Region,A Level or Equivalent,50-60%,0-35,0,60,N,Fail,129.0,0.0,40.0,TMA,129.0,25.0,6644.0
+BBB,F,West Midlands Region,Lower Than A Level,0-10%,0-35,0,60,N,Fail,46.0,0.0,54.0,TMA,47.0,18.0,29.0
+EEE,M,Scotland,A Level or Equivalent,0-10%,35-55,0,30,Y,Fail,68.0,0.0,89.0,TMA,68.0,28.0,671.0
+EEE,M,South Region,A Level or Equivalent,90-100%,35-55,0,60,Y,Fail,91.0,0.0,64.0,TMA,89.0,25.0,2957.0
+BBB,F,East Midlands Region,A Level or Equivalent,40-50%,0-35,1,120,N,Fail,208.0,0.0,49.0,TMA,201.0,35.0,1223.0
+DDD,F,London Region,A Level or Equivalent,70-80%,0-35,0,60,N,Fail,158.0,0.0,50.0,TMA,158.0,20.0,1662.0
+DDD,M,Scotland,A Level or Equivalent,90-100%,0-35,0,60,N,Fail,117.0,0.0,83.0,CMA,114.0,4.0,549.0
+DDD,F,Ireland,Lower Than A Level,30-40%,35-55,0,60,N,Fail,197.0,0.0,56.0,TMA,195.0,25.0,2635.0
+FFF,M,East Midlands Region,A Level or Equivalent,90-100%,0-35,0,180,N,Fail,67.0,0.0,78.0,CMA,241.0,0.0,1849.0
+GGG,M,West Midlands Region,No Formal quals,0-10%,0-35,0,30,N,Fail,224.0,0.0,100.0,CMA,229.0,0.0,388.0
+CCC,M,South East Region,A Level or Equivalent,70-80%,0-35,0,60,N,Fail,20.0,0.0,40.0,CMA,18.0,2.0,971.0
+BBB,F,South West Region,A Level or Equivalent,10-20,0-35,0,60,N,Fail,47.0,0.0,42.0,TMA,47.0,18.0,924.0
+DDD,M,London Region,A Level or Equivalent,50-60%,0-35,0,60,N,Fail,24.0,0.0,66.0,TMA,25.0,7.5,2033.0
+FFF,F,North Western Region,A Level or Equivalent,10-20,0-35,1,60,N,Fail,45.0,0.0,76.0,TMA,47.0,12.5,2054.0
+DDD,F,Scotland,Lower Than A Level,50-60%,35-55,0,120,N,Fail,54.0,0.0,64.0,CMA,51.0,3.0,1102.0
+CCC,M,West Midlands Region,A Level or Equivalent,90-100%,0-35,0,30,N,Fail,39.0,0.0,74.0,TMA,32.0,9.0,572.0
+BBB,F,North Western Region,Lower Than A Level,10-20,35-55,0,60,N,Fail,46.0,0.0,62.0,TMA,47.0,18.0,514.0
+EEE,M,East Midlands Region,A Level or Equivalent,0-10%,0-35,0,60,N,Fail,39.0,0.0,64.0,TMA,33.0,16.0,469.0
+FFF,M,West Midlands Region,Lower Than A Level,0-10%,0-35,0,60,N,Fail,18.0,0.0,94.0,TMA,19.0,12.5,1055.0
+DDD,F,North Western Region,A Level or Equivalent,0-10%,35-55,0,120,N,Fail,81.0,0.0,58.0,CMA,79.0,3.0,295.0
+FFF,M,South West Region,A Level or Equivalent,30-40%,35-55,0,60,N,Fail,226.0,0.0,80.0,CMA,227.0,0.0,2851.0
+BBB,F,Wales,Lower Than A Level,60-70%,0-35,0,60,Y,Fail,53.0,0.0,64.0,TMA,54.0,10.0,67.0
+DDD,M,South Region,A Level or Equivalent,70-80%,0-35,0,120,N,Fail,52.0,0.0,71.0,TMA,53.0,10.0,2039.0
+DDD,M,Ireland,HE Qualification,30-40%,35-55,0,60,N,Fail,200.0,0.0,32.0,TMA,200.0,15.0,1178.0
+FFF,M,South West Region,HE Qualification,50-60%,35-55,0,60,N,Fail,181.0,0.0,96.0,CMA,222.0,0.0,2695.0
+DDD,F,East Midlands Region,A Level or Equivalent,30-40%,0-35,2,120,N,Fail,25.0,0.0,58.0,TMA,25.0,7.5,721.0
+CCC,F,Scotland,HE Qualification,40-50%,35-55,0,30,N,Fail,69.0,0.0,85.0,CMA,67.0,7.0,1094.0
+DDD,M,Scotland,A Level or Equivalent,80-90%,0-35,0,60,N,Fail,54.0,0.0,83.0,CMA,51.0,3.0,278.0
+FFF,M,North Region,Lower Than A Level,30-40%,0-35,0,60,N,Fail,235.0,0.0,63.0,CMA,236.0,0.0,1884.0
+DDD,F,South West Region,A Level or Equivalent,50-60%,0-35,0,60,N,Fail,74.0,0.0,53.0,TMA,74.0,17.5,1511.0
+BBB,F,East Anglian Region,HE Qualification,30-40%,35-55,0,60,N,Fail,18.0,0.0,69.0,TMA,19.0,5.0,423.0
+CCC,F,East Anglian Region,A Level or Equivalent,60-70%,0-35,0,60,N,Fail,139.0,0.0,79.0,CMA,137.0,8.0,1570.0
+EEE,M,Scotland,A Level or Equivalent,20-30%,0-35,0,60,N,Fail,20.0,0.0,30.0,CMA,18.0,2.0,1351.0
+BBB,F,Scotland,HE Qualification,0-10%,35-55,0,60,N,Fail,153.0,0.0,45.0,TMA,152.0,35.0,374.0
+FFF,M,South West Region,A Level or Equivalent,50-60%,0-35,0,60,N,Fail,201.0,0.0,58.0,TMA,199.0,25.0,4759.0
+FFF,M,London Region,Lower Than A Level,30-40%,0-35,0,60,N,Fail,47.0,0.0,74.0,TMA,47.0,12.5,604.0
+BBB,F,London Region,A Level or Equivalent,40-50%,0-35,0,180,N,Fail,18.0,0.0,78.0,TMA,19.0,5.0,1095.0
+CCC,M,South Region,A Level or Equivalent,60-70%,0-35,1,60,Y,Fail,21.0,0.0,56.0,CMA,18.0,2.0,1222.0
+BBB,F,South West Region,A Level or Equivalent,60-70%,0-35,0,90,N,Fail,49.0,0.0,100.0,CMA,47.0,1.0,246.0
+FFF,M,South East Region,A Level or Equivalent,90-100%,0-35,0,60,N,Fail,24.0,0.0,88.0,TMA,24.0,12.5,1144.0
+BBB,F,South Region,Lower Than A Level,70-80%,35-55,0,60,N,Fail,95.0,0.0,100.0,CMA,89.0,1.0,384.0
+BBB,F,North Western Region,Lower Than A Level,0-10%,0-35,0,150,N,Fail,161.0,0.0,65.0,TMA,166.0,18.0,418.0
+BBB,F,South West Region,A Level or Equivalent,50-60%,0-35,0,90,N,Fail,119.0,0.0,80.0,CMA,117.0,1.0,718.0
+FFF,M,East Midlands Region,Lower Than A Level,0-10%,0-35,0,120,N,Fail,16.0,0.0,84.0,TMA,24.0,12.5,2791.0
+GGG,F,East Anglian Region,Lower Than A Level,50-60%,0-35,0,30,N,Fail,207.0,0.0,60.0,CMA,229.0,0.0,831.0
+CCC,M,London Region,A Level or Equivalent,80-90%,0-35,0,30,N,Fail,219.0,0.0,73.0,CMA,214.0,8.0,3634.0
+DDD,M,North Region,Lower Than A Level,30-40%,0-35,0,60,N,Fail,52.0,0.0,72.0,TMA,53.0,12.5,621.0
+BBB,F,Ireland,A Level or Equivalent,90-100%,0-35,0,60,N,Fail,18.0,0.0,100.0,TMA,19.0,0.0,199.0
+BBB,F,Wales,Lower Than A Level,30-40%,0-35,1,120,N,Fail,114.50149286847804,0.0,75.40245881057695,TMA,128.2432009680228,13.38370096324987,10.0
+DDD,M,South West Region,Lower Than A Level,30-40%,0-35,1,60,Y,Fail,59.0,0.0,55.0,TMA,53.0,10.0,1355.0
+FFF,F,Wales,A Level or Equivalent,0-10%,0-35,0,90,N,Fail,238.0,0.0,47.0,CMA,236.0,0.0,2326.0
+BBB,F,London Region,Lower Than A Level,30-40%,0-35,0,90,N,Fail,36.0,0.0,60.0,TMA,40.0,18.0,745.0
+FFF,M,London Region,A Level or Equivalent,20-30%,35-55,0,360,N,Fail,234.0,0.0,78.0,CMA,236.0,0.0,3797.0
+CCC,M,South Region,A Level or Equivalent,50-60%,0-35,0,60,N,Fail,20.0,0.0,20.0,CMA,18.0,2.0,2682.0
+CCC,M,Scotland,Lower Than A Level,80-90%,0-35,0,60,N,Fail,101.0,0.0,34.0,TMA,102.0,22.0,1511.0
+CCC,M,Scotland,HE Qualification,40-50%,0-35,0,60,N,Fail,32.0,0.0,90.0,TMA,32.0,9.0,4390.0
+FFF,M,East Anglian Region,A Level or Equivalent,0-10%,0-35,0,90,N,Fail,26.0,0.0,90.0,TMA,24.0,12.5,581.0
+GGG,F,South East Region,Lower Than A Level,60-70%,0-35,1,60,N,Fail,61.0,0.0,45.0,TMA,61.0,0.0,60.0
+FFF,F,London Region,A Level or Equivalent,10-20,0-35,0,120,N,Fail,23.0,0.0,64.0,TMA,24.0,12.5,1115.0
+BBB,F,South West Region,Lower Than A Level,50-60%,0-35,1,180,N,Fail,40.0,0.0,63.0,TMA,40.0,18.0,54.0
+CCC,F,West Midlands Region,HE Qualification,20-30%,35-55,0,30,N,Fail,69.0,0.0,98.0,CMA,67.0,7.0,1156.0
+BBB,F,South West Region,A Level or Equivalent,40-50%,0-35,0,240,N,Fail,126.0,0.0,80.0,CMA,124.0,1.0,188.0
+FFF,F,London Region,A Level or Equivalent,50-60%,0-35,0,90,N,Fail,222.0,0.0,64.0,CMA,222.0,0.0,5293.0
+BBB,F,East Anglian Region,Lower Than A Level,0-10%,0-35,0,60,N,Fail,117.0,0.0,60.0,TMA,117.0,18.0,673.0
+EEE,M,Wales,Lower Than A Level,40-50%,0-35,0,120,N,Fail,69.0,0.0,94.0,TMA,68.0,28.0,1620.0
+CCC,M,Scotland,HE Qualification,40-50%,0-35,0,60,N,Fail,33.0,0.0,83.0,TMA,33.0,16.0,546.0
+BBB,F,London Region,Lower Than A Level,30-40%,0-35,0,60,N,Fail,168.0,0.0,60.0,CMA,166.0,1.0,476.0
+FFF,M,North Region,Lower Than A Level,10-20,0-35,2,60,Y,Fail,160.0,0.0,69.0,CMA,227.0,0.0,2671.0
+BBB,F,North Western Region,Lower Than A Level,40-50%,0-35,1,60,N,Fail,48.0,0.0,60.0,TMA,47.0,18.0,435.0
+FFF,M,Ireland,HE Qualification,50-60%,0-35,0,60,N,Fail,223.0,0.0,67.0,CMA,222.0,0.0,1705.0
+FFF,M,East Anglian Region,A Level or Equivalent,70-80%,0-35,0,90,N,Fail,40.0,0.0,82.0,TMA,47.0,12.5,170.0
+FFF,M,London Region,Lower Than A Level,10-20,55<=,0,90,N,Fail,24.0,0.0,92.0,TMA,24.0,12.5,701.0
+BBB,M,Wales,A Level or Equivalent,20-30%,0-35,0,120,Y,Fail,180.0,0.0,86.0,TMA,159.0,18.0,648.0
+FFF,M,Yorkshire Region,Lower Than A Level,60-70%,0-35,0,120,N,Fail,224.0,0.0,63.0,CMA,222.0,0.0,3142.0
+DDD,M,Ireland,Lower Than A Level,30-40%,35-55,0,60,N,Fail,20.0,0.0,55.0,TMA,20.0,5.0,703.0
+BBB,F,Wales,Lower Than A Level,0-10%,0-35,1,120,Y,Fail,126.0,0.0,80.0,CMA,124.0,1.0,550.0
+DDD,F,London Region,Lower Than A Level,10-20,0-35,3,90,N,Fail,74.0,0.0,85.0,TMA,74.0,17.5,793.0
+FFF,M,West Midlands Region,No Formal quals,0-10%,0-35,0,60,N,Fail,59.0,0.0,57.0,CMA,236.0,0.0,3602.0
+EEE,M,East Midlands Region,A Level or Equivalent,30-40%,35-55,0,60,N,Fail,131.0,0.0,47.0,TMA,131.0,28.0,873.0
+FFF,M,Ireland,Lower Than A Level,90-100%,35-55,0,120,N,Fail,93.0,0.0,25.0,TMA,94.0,25.0,5223.0
+FFF,M,Wales,HE Qualification,10-20,0-35,0,150,N,Fail,214.0,0.0,75.0,CMA,241.0,0.0,2677.0
+BBB,F,Scotland,Lower Than A Level,20-30%,0-35,0,60,N,Fail,217.0,0.0,66.0,TMA,208.0,18.0,353.0
+FFF,M,Scotland,HE Qualification,0-10%,0-35,0,120,N,Fail,95.0,0.0,27.0,TMA,96.0,25.0,1953.0
+FFF,F,North Region,A Level or Equivalent,30-40%,0-35,0,120,N,Fail,173.0,0.0,51.0,TMA,173.0,25.0,3933.0
+DDD,F,London Region,HE Qualification,20-30%,35-55,2,60,N,Fail,-1.0,1.0,97.0,CMA,51.0,3.0,447.0
+DDD,M,South Region,Lower Than A Level,10-20,35-55,0,60,N,Fail,23.0,0.0,74.0,TMA,25.0,10.0,515.0
+DDD,M,South East Region,Lower Than A Level,50-60%,35-55,0,60,N,Fail,242.0,0.0,38.0,Exam,128.2432009680228,100.0,990.0
+DDD,M,North Western Region,A Level or Equivalent,50-60%,0-35,1,120,N,Fail,123.0,0.0,45.0,TMA,123.0,20.0,358.0
+BBB,F,South West Region,A Level or Equivalent,10-20,0-35,0,60,N,Fail,131.0,0.0,62.0,TMA,131.0,18.0,924.0
+FFF,F,North Region,A Level or Equivalent,20-30%,0-35,2,120,N,Fail,102.0,0.0,83.0,TMA,96.0,25.0,716.0
+EEE,M,South Region,Lower Than A Level,50-60%,35-55,0,90,N,Fail,159.0,0.0,53.0,TMA,159.0,28.0,2245.0
+FFF,M,Wales,A Level or Equivalent,30-40%,0-35,1,120,N,Fail,24.0,0.0,62.0,TMA,24.0,12.5,496.0
+FFF,M,Scotland,HE Qualification,60-70%,0-35,1,90,N,Fail,-1.0,1.0,64.0,TMA,47.0,12.5,373.0
+FFF,M,South Region,A Level or Equivalent,20-30%,0-35,1,90,N,Fail,182.0,0.0,80.0,CMA,222.0,0.0,4818.0
+DDD,F,North Western Region,A Level or Equivalent,50-60%,0-35,0,120,N,Fail,237.0,0.0,60.0,CMA,241.0,0.0,2733.0
+DDD,M,Yorkshire Region,A Level or Equivalent,30-40%,0-35,0,60,N,Fail,32.0,0.0,85.0,TMA,25.0,7.5,1154.0
+GGG,F,London Region,Lower Than A Level,30-40%,35-55,0,30,N,Fail,207.0,0.0,60.0,CMA,222.0,0.0,640.0
+BBB,F,North Western Region,Lower Than A Level,0-10%,0-35,0,150,N,Fail,102.0,0.0,100.0,CMA,96.0,1.0,418.0
+CCC,M,Yorkshire Region,A Level or Equivalent,30-40%,0-35,1,30,Y,Fail,101.0,0.0,87.0,TMA,88.0,17.5,834.0
+FFF,M,East Midlands Region,Lower Than A Level,40-50%,0-35,0,60,Y,Fail,130.0,0.0,81.0,TMA,131.0,25.0,2603.0
+CCC,F,Scotland,HE Qualification,90-100%,0-35,0,60,Y,Fail,200.0,0.0,74.0,TMA,200.0,22.0,3004.0
+DDD,M,Scotland,HE Qualification,90-100%,0-35,1,120,N,Fail,24.0,0.0,20.0,TMA,25.0,7.5,261.0
+FFF,M,Yorkshire Region,Lower Than A Level,70-80%,0-35,0,60,N,Fail,44.0,0.0,60.0,TMA,47.0,12.5,849.0
+CCC,M,South East Region,Lower Than A Level,20-30%,0-35,0,60,N,Fail,147.0,0.0,72.0,CMA,144.0,8.0,4072.0
+CCC,M,North Western Region,Lower Than A Level,10-20,0-35,0,80,N,Fail,31.0,0.0,70.0,TMA,32.0,9.0,3753.0
+GGG,F,North Western Region,A Level or Equivalent,20-30%,0-35,0,30,N,Fail,61.0,0.0,50.0,TMA,61.0,0.0,900.0
+FFF,M,Wales,A Level or Equivalent,50-60%,0-35,0,120,N,Fail,14.0,0.0,70.0,CMA,227.0,0.0,540.0
+FFF,M,Scotland,A Level or Equivalent,90-100%,0-35,0,60,Y,Fail,27.0,0.0,92.0,CMA,227.0,0.0,1110.0
+CCC,M,Scotland,HE Qualification,70-80%,0-35,0,120,N,Fail,53.0,0.0,54.0,TMA,53.0,12.5,1897.0
+GGG,F,South Region,Lower Than A Level,40-50%,0-35,0,30,Y,Fail,207.0,0.0,20.0,CMA,222.0,0.0,295.0
+GGG,F,East Anglian Region,Lower Than A Level,20-30%,35-55,0,30,N,Fail,116.0,0.0,75.0,TMA,117.0,0.0,273.0
+FFF,F,East Midlands Region,A Level or Equivalent,50-60%,0-35,0,60,N,Fail,228.0,0.0,49.0,CMA,227.0,0.0,1192.0
+DDD,M,North Region,Lower Than A Level,30-40%,0-35,1,120,N,Fail,69.0,0.0,15.0,CMA,67.0,7.0,1544.0
+CCC,F,London Region,A Level or Equivalent,10-20,0-35,0,210,N,Fail,68.0,0.0,64.0,TMA,68.0,28.0,767.0
+CCC,M,Wales,A Level or Equivalent,30-40%,0-35,1,90,N,Fail,67.0,0.0,79.0,TMA,68.0,28.0,5830.0
+DDD,M,South West Region,A Level or Equivalent,30-40%,0-35,1,120,N,Fail,206.0,0.0,48.0,TMA,207.0,20.0,841.0
+EEE,M,East Anglian Region,A Level or Equivalent,60-70%,0-35,0,30,N,Fail,108.0,0.0,89.0,TMA,109.0,22.0,1922.0
+DDD,F,South East Region,A Level or Equivalent,20-30%,0-35,0,60,N,Fail,193.0,0.0,66.0,TMA,195.0,25.0,423.0
+DDD,F,East Anglian Region,Lower Than A Level,30-40%,0-35,0,60,N,Fail,88.0,0.0,82.0,TMA,88.0,17.5,421.0
+CCC,F,London Region,HE Qualification,0-10%,0-35,0,30,N,Pass,108.0,0.0,74.0,TMA,109.0,22.0,2887.0
+FFF,M,South West Region,A Level or Equivalent,40-50%,0-35,0,60,N,Pass,174.0,0.0,79.0,CMA,236.0,0.0,3485.0
+FFF,M,East Anglian Region,A Level or Equivalent,80-90%,35-55,0,90,N,Pass,121.0,0.0,96.0,CMA,227.0,0.0,1226.0
+FFF,M,Wales,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,199.0,0.0,23.0,TMA,199.0,25.0,1343.0
+CCC,M,Scotland,HE Qualification,60-70%,0-35,0,60,N,Pass,69.0,0.0,71.0,CMA,67.0,7.0,2521.0
+CCC,M,South Region,HE Qualification,20-30%,35-55,0,60,N,Pass,147.0,0.0,59.0,CMA,144.0,8.0,2377.0
+EEE,M,South West Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,20.0,0.0,60.0,CMA,18.0,2.0,5264.0
+FFF,M,South West Region,A Level or Equivalent,20-30%,0-35,0,60,N,Pass,51.0,0.0,82.0,TMA,52.0,12.5,4393.0
+FFF,F,East Anglian Region,A Level or Equivalent,80-90%,0-35,1,150,N,Pass,174.0,0.0,98.0,CMA,222.0,0.0,7555.0
+BBB,F,West Midlands Region,Lower Than A Level,10-20,35-55,0,120,N,Pass,210.0,0.0,40.0,CMA,208.0,1.0,897.0
+FFF,F,North Region,HE Qualification,30-40%,55<=,0,60,N,Pass,158.0,0.0,40.0,TMA,158.0,22.0,10202.0
+DDD,M,South West Region,A Level or Equivalent,60-70%,0-35,0,120,Y,Pass,146.0,0.0,53.0,TMA,146.0,25.0,296.0
+BBB,F,East Anglian Region,A Level or Equivalent,80-90%,35-55,0,60,N,Pass,84.0,0.0,80.0,CMA,82.0,1.0,1565.0
+FFF,F,East Midlands Region,A Level or Equivalent,10-20,0-35,0,120,Y,Pass,97.0,0.0,93.0,TMA,94.0,25.0,2844.0
+BBB,F,South Region,Lower Than A Level,90-100%,0-35,0,60,N,Pass,108.0,0.0,52.0,TMA,117.0,18.0,605.0
+FFF,M,South Region,HE Qualification,90-100%,35-55,0,120,N,Pass,98.0,0.0,92.0,CMA,236.0,0.0,5053.0
+DDD,F,London Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,116.0,0.0,63.0,TMA,116.0,15.0,1565.0
+FFF,M,North Western Region,HE Qualification,10-20,35-55,0,90,N,Pass,236.0,0.0,92.0,CMA,236.0,0.0,2361.0
+DDD,F,North Region,Lower Than A Level,30-40%,0-35,0,150,N,Pass,245.0,0.0,44.0,Exam,128.2432009680228,100.0,771.0
+BBB,F,South East Region,Lower Than A Level,70-80%,0-35,0,60,N,Pass,206.0,0.0,68.0,TMA,208.0,18.0,1501.0
+BBB,F,Scotland,Lower Than A Level,50-60%,35-55,0,60,N,Pass,109.0,0.0,82.0,TMA,110.0,20.0,2052.0
+BBB,F,East Anglian Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,95.0,0.0,60.0,CMA,89.0,1.0,577.0
+DDD,M,North Western Region,Lower Than A Level,0-10%,0-35,0,90,N,Pass,41.0,0.0,90.0,TMA,41.0,10.0,3482.0
+FFF,M,London Region,HE Qualification,20-30%,35-55,0,60,N,Pass,23.0,0.0,92.0,TMA,24.0,12.5,4096.0
+BBB,F,East Anglian Region,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,47.0,0.0,79.0,TMA,40.0,18.0,1315.0
+DDD,F,South West Region,A Level or Equivalent,40-50%,0-35,0,60,N,Pass,234.0,0.0,51.0,Exam,241.0,100.0,2004.0
+DDD,M,South East Region,Lower Than A Level,60-70%,0-35,0,60,N,Pass,41.0,0.0,70.0,TMA,41.0,10.0,1781.0
+BBB,M,Scotland,A Level or Equivalent,80-90%,35-55,1,60,N,Pass,27.0,0.0,1.0,TMA,19.0,0.0,976.0
+DDD,M,London Region,A Level or Equivalent,90-100%,0-35,1,120,N,Pass,25.0,0.0,87.0,CMA,23.0,2.0,668.0
+FFF,M,North Region,HE Qualification,30-40%,0-35,0,150,N,Pass,243.0,0.0,83.0,CMA,241.0,0.0,3440.0
+BBB,F,North Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,210.0,0.0,80.0,CMA,208.0,1.0,1731.0
+CCC,M,North Region,Post Graduate Qualification,30-40%,35-55,0,60,N,Pass,52.0,0.0,86.0,TMA,53.0,12.5,5052.0
+BBB,F,London Region,A Level or Equivalent,0-10%,0-35,0,120,N,Pass,210.0,0.0,100.0,CMA,208.0,1.0,475.0
+FFF,F,South East Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,226.0,0.0,63.0,CMA,227.0,0.0,2911.0
+FFF,M,North Western Region,Lower Than A Level,40-50%,0-35,0,90,N,Pass,24.0,0.0,74.0,TMA,24.0,12.5,3684.0
+BBB,F,Yorkshire Region,A Level or Equivalent,70-80%,0-35,0,120,N,Pass,186.0,0.0,93.0,TMA,187.0,18.0,2774.0
+FFF,F,South Region,HE Qualification,90-100%,0-35,0,60,N,Pass,47.0,0.0,94.0,TMA,47.0,12.5,4288.0
+EEE,M,North Western Region,A Level or Equivalent,10-20,0-35,0,60,N,Pass,131.0,0.0,65.0,TMA,131.0,28.0,1999.0
+DDD,M,West Midlands Region,A Level or Equivalent,40-50%,0-35,1,90,N,Pass,242.0,0.0,87.0,Exam,128.2432009680228,100.0,1215.0
+DDD,F,North Western Region,Lower Than A Level,20-30%,0-35,0,120,N,Pass,12.0,0.0,75.0,TMA,20.0,5.0,4053.0
+FFF,M,South Region,A Level or Equivalent,40-50%,0-35,0,90,N,Pass,23.0,0.0,80.0,TMA,24.0,12.5,1815.0
+GGG,M,West Midlands Region,A Level or Equivalent,50-60%,35-55,0,30,N,Pass,115.0,0.0,100.0,CMA,229.0,0.0,1179.0
+BBB,F,South West Region,Lower Than A Level,10-20,35-55,0,60,N,Pass,210.0,0.0,60.0,CMA,208.0,1.0,1125.0
+GGG,M,East Anglian Region,A Level or Equivalent,40-50%,35-55,0,30,Y,Pass,222.0,0.0,100.0,CMA,229.0,0.0,696.0
+CCC,M,North Western Region,Lower Than A Level,0-10%,0-35,0,90,Y,Pass,230.0,0.0,72.0,Exam,128.2432009680228,100.0,534.0
+FFF,M,London Region,A Level or Equivalent,20-30%,0-35,3,90,N,Pass,31.0,0.0,87.0,CMA,236.0,0.0,2935.0
+CCC,M,Wales,Lower Than A Level,70-80%,0-35,0,150,N,Pass,244.0,0.0,48.0,Exam,128.2432009680228,100.0,1961.0
+FFF,M,West Midlands Region,Lower Than A Level,30-40%,0-35,0,120,N,Pass,236.0,0.0,84.0,CMA,241.0,0.0,1819.0
+CCC,M,London Region,HE Qualification,90-100%,55<=,0,120,N,Pass,139.0,0.0,85.0,CMA,137.0,8.0,1075.0
+FFF,M,East Midlands Region,A Level or Equivalent,80-90%,0-35,0,60,N,Pass,224.0,0.0,83.0,CMA,227.0,0.0,1158.0
+BBB,F,South Region,Lower Than A Level,80-90%,0-35,0,60,N,Pass,154.0,0.0,100.0,CMA,152.0,1.0,360.0
+FFF,M,Ireland,Post Graduate Qualification,30-40%,0-35,1,90,N,Pass,226.0,0.0,75.0,CMA,241.0,0.0,4009.0
+GGG,M,East Midlands Region,Lower Than A Level,70-80%,0-35,0,30,N,Pass,79.0,0.0,100.0,CMA,229.0,0.0,770.0
+GGG,F,East Anglian Region,Lower Than A Level,0-10%,35-55,0,30,N,Pass,192.0,0.0,100.0,CMA,229.0,0.0,347.0
+FFF,M,Scotland,HE Qualification,30-40%,0-35,0,60,N,Pass,135.0,0.0,97.0,TMA,136.0,25.0,3315.0
+GGG,F,East Anglian Region,Lower Than A Level,30-40%,35-55,0,30,N,Pass,206.0,0.0,80.0,CMA,229.0,0.0,1888.0
+CCC,F,London Region,A Level or Equivalent,40-50%,0-35,0,90,N,Pass,20.0,0.0,100.0,CMA,18.0,2.0,5925.0
+BBB,F,Scotland,Lower Than A Level,20-30%,0-35,0,60,Y,Pass,44.0,0.0,71.0,TMA,47.0,18.0,536.0
+GGG,F,Yorkshire Region,Lower Than A Level,20-30%,0-35,0,30,N,Pass,200.0,0.0,100.0,CMA,229.0,0.0,702.0
+CCC,M,South West Region,A Level or Equivalent,30-40%,0-35,0,90,N,Pass,87.0,0.0,93.0,TMA,88.0,17.5,2443.0
+FFF,M,East Anglian Region,A Level or Equivalent,80-90%,0-35,0,60,Y,Pass,32.0,0.0,72.0,TMA,32.0,9.0,2513.0
+FFF,F,South West Region,A Level or Equivalent,40-50%,0-35,0,60,N,Pass,164.0,0.0,71.0,TMA,166.0,25.0,4366.0
+FFF,M,London Region,Lower Than A Level,30-40%,0-35,0,120,N,Pass,220.0,0.0,68.0,CMA,222.0,0.0,4999.0
+GGG,F,Yorkshire Region,A Level or Equivalent,20-30%,0-35,0,30,N,Pass,209.0,0.0,100.0,CMA,229.0,0.0,450.0
+FFF,M,Scotland,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,194.0,0.0,92.0,CMA,222.0,0.0,2421.0
+BBB,F,Wales,Lower Than A Level,0-10%,0-35,0,60,N,Pass,164.0,0.0,100.0,CMA,159.0,1.0,801.0
+CCC,F,South Region,Post Graduate Qualification,90-100%,35-55,0,60,N,Pass,230.0,0.0,88.0,Exam,128.2432009680228,100.0,2190.0
+BBB,F,Wales,A Level or Equivalent,20-30%,0-35,0,60,N,Pass,185.0,0.0,74.0,TMA,187.0,18.0,312.0
+CCC,F,Scotland,A Level or Equivalent,50-60%,0-35,0,30,Y,Pass,32.0,0.0,84.0,TMA,32.0,9.0,2039.0
+DDD,M,Scotland,Lower Than A Level,60-70%,0-35,0,60,N,Pass,117.0,0.0,72.0,CMA,114.0,4.0,1025.0
+BBB,F,Yorkshire Region,A Level or Equivalent,10-20,0-35,0,60,N,Pass,168.0,0.0,100.0,CMA,166.0,1.0,265.0
+EEE,M,Scotland,HE Qualification,90-100%,0-35,0,90,N,Pass,158.0,0.0,85.0,TMA,159.0,28.0,9077.0
+BBB,F,East Midlands Region,A Level or Equivalent,10-20,0-35,0,60,N,Pass,17.0,0.0,63.0,TMA,19.0,5.0,528.0
+GGG,F,West Midlands Region,Lower Than A Level,0-10%,0-35,0,30,N,Pass,123.0,0.0,75.0,TMA,124.0,0.0,1324.0
+DDD,M,North Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,81.0,0.0,97.0,CMA,79.0,3.0,2354.0
+FFF,M,North Western Region,A Level or Equivalent,0-10%,0-35,0,120,Y,Pass,224.0,0.0,87.0,CMA,236.0,0.0,3517.0
+DDD,M,North Region,A Level or Equivalent,70-80%,35-55,0,120,N,Pass,117.0,0.0,43.0,CMA,114.0,4.0,2607.0
+FFF,F,East Midlands Region,A Level or Equivalent,60-70%,0-35,0,120,Y,Pass,66.0,0.0,78.0,CMA,241.0,0.0,3404.0
+BBB,F,Scotland,Lower Than A Level,50-60%,35-55,0,60,N,Pass,19.0,0.0,85.0,TMA,19.0,5.0,770.0
+DDD,M,East Midlands Region,A Level or Equivalent,30-40%,0-35,0,120,N,Pass,242.0,0.0,47.0,Exam,128.2432009680228,100.0,485.0
+DDD,M,South Region,Lower Than A Level,30-40%,35-55,0,60,N,Pass,25.0,0.0,59.0,TMA,25.0,10.0,425.0
+EEE,M,South East Region,HE Qualification,70-80%,0-35,0,30,N,Pass,67.0,0.0,93.0,TMA,68.0,28.0,2135.0
+EEE,M,East Anglian Region,Post Graduate Qualification,90-100%,0-35,0,60,N,Pass,67.0,0.0,99.0,TMA,68.0,28.0,4624.0
+DDD,M,North Western Region,Lower Than A Level,0-10%,0-35,0,90,N,Pass,244.0,0.0,48.0,Exam,128.2432009680228,100.0,3482.0
+FFF,M,West Midlands Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,213.0,0.0,82.0,CMA,222.0,0.0,4630.0
+BBB,F,South West Region,Lower Than A Level,60-70%,35-55,0,60,Y,Pass,121.0,0.0,80.0,CMA,222.0,0.0,12461.0
+FFF,M,South Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,17.0,0.0,92.0,TMA,24.0,12.5,1490.0
+DDD,M,West Midlands Region,Lower Than A Level,40-50%,0-35,0,60,N,Pass,155.0,0.0,73.0,TMA,158.0,20.0,1370.0
+BBB,F,Yorkshire Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,130.0,0.0,87.0,TMA,131.0,18.0,571.0
+EEE,M,Yorkshire Region,A Level or Equivalent,10-20,0-35,0,30,N,Pass,31.0,0.0,92.0,TMA,33.0,16.0,798.0
+CCC,M,Scotland,HE Qualification,90-100%,55<=,0,30,N,Pass,147.0,0.0,100.0,CMA,144.0,8.0,7717.0
+DDD,M,South West Region,A Level or Equivalent,30-40%,0-35,0,120,N,Pass,81.0,0.0,67.0,CMA,79.0,3.0,2406.0
+EEE,M,Yorkshire Region,Lower Than A Level,20-30%,0-35,0,30,N,Pass,66.0,0.0,90.0,TMA,68.0,28.0,3746.0
+BBB,M,South Region,A Level or Equivalent,0-10%,0-35,0,120,N,Pass,201.0,0.0,95.0,TMA,201.0,35.0,1853.0
+FFF,F,East Anglian Region,HE Qualification,80-90%,35-55,0,60,N,Pass,224.0,0.0,89.0,CMA,222.0,0.0,4920.0
+FFF,M,London Region,A Level or Equivalent,10-20,0-35,0,60,N,Pass,170.0,0.0,74.0,TMA,171.0,25.0,4015.0
+BBB,F,Ireland,Lower Than A Level,0-10%,0-35,0,60,N,Pass,56.0,0.0,100.0,CMA,54.0,1.0,263.0
+CCC,M,South West Region,HE Qualification,30-40%,0-35,0,30,N,Pass,25.0,0.0,96.0,TMA,32.0,9.0,2673.0
+FFF,F,London Region,Lower Than A Level,30-40%,0-35,0,180,N,Pass,214.0,0.0,94.0,CMA,241.0,0.0,6330.0
+BBB,M,Ireland,Lower Than A Level,90-100%,0-35,0,60,N,Pass,114.0,0.0,70.0,TMA,117.0,18.0,306.0
+BBB,F,North Western Region,Lower Than A Level,10-20,0-35,0,60,N,Pass,88.0,0.0,84.0,TMA,82.0,18.0,358.0
+BBB,F,South West Region,Lower Than A Level,40-50%,0-35,0,120,N,Pass,170.0,0.0,54.0,TMA,166.0,18.0,176.0
+CCC,M,Scotland,A Level or Equivalent,80-90%,0-35,0,30,N,Pass,244.0,0.0,44.0,Exam,128.2432009680228,100.0,2479.0
+GGG,F,East Anglian Region,Lower Than A Level,70-80%,35-55,0,30,N,Pass,173.0,0.0,70.0,TMA,173.0,0.0,735.0
+EEE,M,North Western Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,166.0,0.0,93.0,TMA,166.0,28.0,1940.0
+DDD,F,Scotland,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,198.0,0.0,78.0,TMA,200.0,20.0,1707.0
+DDD,M,North Western Region,Lower Than A Level,20-30%,0-35,0,120,N,Pass,244.0,0.0,80.0,Exam,128.2432009680228,100.0,4051.0
+CCC,M,Yorkshire Region,No Formal quals,30-40%,0-35,0,90,N,Pass,69.0,0.0,100.0,CMA,67.0,7.0,10335.0
+FFF,M,Ireland,Lower Than A Level,30-40%,0-35,0,90,N,Pass,127.0,0.0,61.0,TMA,129.0,25.0,3519.0
+FFF,M,East Midlands Region,Lower Than A Level,50-60%,0-35,0,150,N,Pass,70.0,0.0,84.0,CMA,236.0,0.0,3198.0
+DDD,M,East Anglian Region,Lower Than A Level,30-40%,0-35,2,60,N,Pass,107.0,0.0,82.0,TMA,88.0,17.5,1553.0
+CCC,M,South West Region,A Level or Equivalent,50-60%,0-35,0,90,N,Pass,219.0,0.0,79.0,CMA,214.0,8.0,2621.0
+BBB,M,Ireland,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,210.0,0.0,80.0,CMA,208.0,1.0,516.0
+FFF,M,Ireland,HE Qualification,30-40%,35-55,0,150,N,Pass,150.0,0.0,82.0,CMA,222.0,0.0,3679.0
+DDD,M,South East Region,A Level or Equivalent,70-80%,35-55,0,60,N,Pass,51.0,0.0,98.0,TMA,53.0,12.5,19673.0
+CCC,M,East Anglian Region,A Level or Equivalent,0-10%,0-35,0,120,N,Pass,69.0,0.0,94.0,CMA,67.0,7.0,456.0
+AAA,F,London Region,A Level or Equivalent,80-90%,0-35,0,150,N,Pass,17.0,0.0,54.0,TMA,19.0,10.0,270.0
+GGG,F,North Western Region,A Level or Equivalent,10-20,0-35,0,90,N,Pass,83.0,0.0,80.0,CMA,222.0,0.0,299.0
+DDD,M,Yorkshire Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,206.0,0.0,90.0,TMA,207.0,20.0,1984.0
+BBB,F,North Western Region,A Level or Equivalent,10-20,35-55,0,60,N,Pass,96.0,0.0,78.0,TMA,96.0,18.0,2955.0
+FFF,F,Scotland,Lower Than A Level,10-20,0-35,0,60,Y,Pass,168.0,0.0,70.0,CMA,241.0,0.0,4607.0
+DDD,M,Scotland,A Level or Equivalent,90-100%,0-35,0,90,N,Pass,24.0,0.0,78.0,TMA,25.0,10.0,1268.0
+FFF,M,West Midlands Region,A Level or Equivalent,20-30%,0-35,0,120,N,Pass,215.0,0.0,90.0,CMA,241.0,0.0,4576.0
+BBB,F,Yorkshire Region,A Level or Equivalent,20-30%,35-55,0,60,N,Pass,169.0,0.0,99.0,TMA,187.0,18.0,5460.0
+CCC,F,Scotland,HE Qualification,20-30%,35-55,0,60,N,Pass,244.0,0.0,86.0,Exam,128.2432009680228,100.0,8552.0
+BBB,F,East Anglian Region,Lower Than A Level,80-90%,35-55,0,60,N,Pass,189.0,0.0,80.0,CMA,187.0,1.0,1175.0
+CCC,F,Ireland,HE Qualification,30-40%,0-35,0,120,N,Pass,69.0,0.0,39.0,CMA,67.0,7.0,2099.0
+DDD,M,South West Region,Lower Than A Level,70-80%,35-55,0,60,N,Pass,17.0,0.0,80.0,TMA,25.0,7.5,2191.0
+BBB,F,East Midlands Region,A Level or Equivalent,10-20,0-35,0,60,Y,Pass,210.0,0.0,100.0,CMA,208.0,1.0,768.0
+BBB,F,West Midlands Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,151.0,0.0,78.0,TMA,131.0,18.0,436.0
+DDD,F,South East Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,25.0,0.0,60.0,CMA,23.0,2.0,2803.0
+GGG,F,North Region,A Level or Equivalent,10-20,35-55,0,30,N,Pass,207.0,0.0,100.0,CMA,229.0,0.0,469.0
+FFF,M,South Region,A Level or Equivalent,20-30%,35-55,0,120,N,Pass,47.0,0.0,84.0,TMA,47.0,12.5,3015.0
+FFF,M,South West Region,A Level or Equivalent,50-60%,0-35,0,120,N,Pass,52.0,0.0,34.0,TMA,52.0,12.5,1601.0
+DDD,M,West Midlands Region,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,100.0,0.0,88.0,TMA,109.0,22.0,3106.0
+FFF,M,North Western Region,A Level or Equivalent,0-10%,0-35,0,60,N,Pass,213.0,0.0,88.0,CMA,227.0,0.0,4515.0
+BBB,F,London Region,A Level or Equivalent,30-40%,0-35,0,120,N,Pass,9.0,0.0,100.0,TMA,19.0,0.0,3088.0
+BBB,F,South Region,Lower Than A Level,70-80%,0-35,1,180,N,Pass,189.0,0.0,60.0,CMA,187.0,1.0,245.0
+FFF,M,London Region,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,174.0,0.0,92.0,CMA,222.0,0.0,2367.0
+FFF,M,South West Region,Lower Than A Level,70-80%,0-35,0,60,N,Pass,51.0,0.0,92.0,TMA,52.0,12.5,3285.0
+DDD,M,East Anglian Region,A Level or Equivalent,80-90%,0-35,5,60,N,Pass,54.0,0.0,94.0,CMA,51.0,3.0,2370.0
+BBB,F,East Midlands Region,A Level or Equivalent,40-50%,0-35,0,60,N,Pass,123.0,0.0,83.0,TMA,124.0,18.0,1424.0
+DDD,M,Scotland,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,173.0,0.0,86.0,CMA,170.0,3.0,1327.0
+FFF,M,North Region,A Level or Equivalent,10-20,0-35,0,60,N,Pass,129.0,0.0,81.0,TMA,136.0,25.0,3676.0
+FFF,M,Yorkshire Region,No Formal quals,0-10%,0-35,0,60,N,Pass,168.0,0.0,83.0,CMA,241.0,0.0,3592.0
+BBB,F,West Midlands Region,A Level or Equivalent,10-20,0-35,0,60,N,Pass,17.0,0.0,68.0,TMA,19.0,5.0,558.0
+FFF,M,Scotland,A Level or Equivalent,70-80%,0-35,0,60,N,Pass,209.0,0.0,76.0,CMA,222.0,0.0,3947.0
+BBB,F,South East Region,Lower Than A Level,70-80%,0-35,0,60,N,Pass,160.0,0.0,62.0,TMA,152.0,18.0,290.0
+DDD,M,Scotland,HE Qualification,90-100%,35-55,0,60,Y,Pass,54.0,0.0,94.0,CMA,51.0,3.0,1435.0
+DDD,M,North Region,A Level or Equivalent,10-20,0-35,1,60,N,Pass,61.0,0.0,75.0,TMA,62.0,10.0,783.0
+GGG,F,South West Region,HE Qualification,30-40%,0-35,0,30,N,Pass,207.0,0.0,100.0,CMA,229.0,0.0,1967.0
+DDD,F,South East Region,A Level or Equivalent,90-100%,0-35,0,120,N,Pass,53.0,0.0,85.0,TMA,53.0,12.5,4284.0
+BBB,F,East Midlands Region,Lower Than A Level,10-20,35-55,0,60,N,Pass,17.0,0.0,100.0,TMA,19.0,0.0,2239.0
+FFF,M,South Region,A Level or Equivalent,90-100%,35-55,0,90,N,Pass,136.0,0.0,86.0,CMA,241.0,0.0,8460.0
+GGG,M,Yorkshire Region,Lower Than A Level,10-20,35-55,0,30,N,Pass,97.0,0.0,100.0,CMA,229.0,0.0,782.0
+FFF,M,Wales,Lower Than A Level,10-20,35-55,0,60,N,Pass,18.0,0.0,85.0,CMA,227.0,0.0,2988.0
+DDD,F,Ireland,A Level or Equivalent,30-40%,0-35,1,90,N,Pass,88.0,0.0,90.0,TMA,88.0,17.5,2393.0
+BBB,F,Wales,Lower Than A Level,0-10%,0-35,0,60,N,Pass,126.0,0.0,100.0,CMA,124.0,1.0,801.0
+CCC,F,Ireland,HE Qualification,30-40%,0-35,0,120,N,Pass,238.0,0.0,65.0,CMA,236.0,0.0,2099.0
+DDD,F,West Midlands Region,A Level or Equivalent,10-20,0-35,0,120,N,Pass,237.0,0.0,69.0,Exam,261.0,100.0,2189.0
+DDD,M,East Midlands Region,Lower Than A Level,40-50%,0-35,0,60,N,Pass,40.0,0.0,80.0,TMA,41.0,10.0,1537.0
+EEE,M,South West Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,67.0,0.0,93.0,TMA,68.0,28.0,2315.0
+BBB,F,West Midlands Region,Lower Than A Level,10-20,0-35,0,60,N,Pass,94.0,0.0,75.0,TMA,96.0,18.0,434.0
+EEE,M,North Western Region,Lower Than A Level,20-30%,0-35,0,60,N,Pass,145.0,0.0,58.0,TMA,124.0,28.0,1879.0
+FFF,M,East Midlands Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,131.0,0.0,40.0,TMA,131.0,25.0,1990.0
+FFF,M,Scotland,HE Qualification,20-30%,0-35,0,60,N,Pass,5.0,0.0,92.0,CMA,227.0,0.0,3852.0
+CCC,M,East Midlands Region,HE Qualification,70-80%,35-55,0,30,N,Pass,21.0,0.0,100.0,CMA,18.0,2.0,1646.0
+FFF,M,Scotland,HE Qualification,30-40%,0-35,2,60,Y,Pass,200.0,0.0,81.0,CMA,241.0,0.0,3070.0
+BBB,F,Wales,Lower Than A Level,0-10%,0-35,0,120,N,Pass,126.0,0.0,60.0,CMA,124.0,1.0,493.0
+CCC,M,South Region,Lower Than A Level,10-20,35-55,0,60,N,Pass,82.0,0.0,91.0,TMA,87.0,25.0,5204.0
+CCC,F,East Anglian Region,HE Qualification,60-70%,35-55,0,30,N,Pass,230.0,0.0,58.0,Exam,128.2432009680228,100.0,3177.0
+DDD,M,South West Region,A Level or Equivalent,0-10%,0-35,0,60,N,Pass,179.0,0.0,12.0,TMA,165.0,20.0,425.0
+GGG,M,South East Region,A Level or Equivalent,90-100%,35-55,0,30,N,Pass,112.0,0.0,58.0,TMA,117.0,0.0,1077.0
+BBB,F,Yorkshire Region,A Level or Equivalent,20-30%,0-35,0,120,N,Pass,189.0,0.0,60.0,CMA,187.0,1.0,388.0
+DDD,M,South Region,Lower Than A Level,80-90%,35-55,0,60,Y,Pass,25.0,0.0,90.0,CMA,23.0,2.0,2792.0
+DDD,F,Wales,HE Qualification,10-20,0-35,0,120,N,Pass,115.0,0.0,60.0,TMA,116.0,20.0,1287.0
+FFF,M,London Region,Lower Than A Level,60-70%,0-35,0,90,N,Pass,171.0,0.0,84.0,TMA,171.0,25.0,2207.0
+CCC,M,Scotland,HE Qualification,60-70%,0-35,0,60,N,Pass,20.0,0.0,70.0,CMA,18.0,2.0,2521.0
+DDD,F,East Midlands Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,77.0,0.0,90.0,TMA,81.0,12.5,2152.0
+EEE,M,East Midlands Region,Lower Than A Level,30-40%,35-55,0,60,N,Pass,67.0,0.0,90.0,TMA,68.0,28.0,9549.0
+BBB,F,London Region,Lower Than A Level,80-90%,35-55,0,60,N,Pass,95.0,0.0,85.0,TMA,96.0,18.0,444.0
+FFF,M,North Region,Lower Than A Level,30-40%,0-35,1,60,N,Pass,119.0,0.0,96.0,TMA,109.0,22.0,4272.0
+BBB,F,Wales,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,151.0,0.0,74.0,TMA,152.0,35.0,1916.0
+BBB,F,North Western Region,A Level or Equivalent,30-40%,0-35,0,120,Y,Pass,200.0,0.0,65.0,TMA,201.0,35.0,1037.0
+DDD,M,South West Region,A Level or Equivalent,20-30%,0-35,0,60,N,Pass,209.0,0.0,61.0,CMA,206.0,6.0,2881.0
+BBB,F,East Anglian Region,Lower Than A Level,60-70%,0-35,0,120,N,Pass,12.0,0.0,76.0,TMA,12.0,5.0,1337.0
+FFF,M,East Anglian Region,HE Qualification,50-60%,35-55,0,60,N,Pass,206.0,0.0,66.0,TMA,207.0,22.0,7576.0
+DDD,M,Yorkshire Region,A Level or Equivalent,80-90%,0-35,0,90,N,Pass,17.0,0.0,65.0,TMA,20.0,5.0,867.0
+BBB,F,South Region,A Level or Equivalent,40-50%,35-55,0,60,N,Pass,60.0,0.0,57.0,TMA,54.0,10.0,438.0
+GGG,F,South East Region,Lower Than A Level,40-50%,35-55,0,30,Y,Pass,215.0,0.0,100.0,CMA,222.0,0.0,1697.0
+DDD,F,South East Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,237.0,0.0,82.0,Exam,261.0,100.0,1073.0
+FFF,M,London Region,A Level or Equivalent,20-30%,0-35,0,120,N,Pass,87.0,0.0,84.0,TMA,87.0,25.0,1986.0
+DDD,M,East Anglian Region,A Level or Equivalent,40-50%,0-35,0,60,N,Pass,73.0,0.0,91.0,TMA,74.0,17.5,2311.0
+FFF,M,South East Region,HE Qualification,10-20,0-35,0,60,N,Pass,135.0,0.0,82.0,TMA,136.0,25.0,4020.0
+CCC,M,South Region,Lower Than A Level,40-50%,0-35,0,180,N,Pass,20.0,0.0,100.0,CMA,18.0,2.0,4052.0
+DDD,M,East Anglian Region,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,219.0,0.0,98.0,CMA,214.0,8.0,4227.0
+CCC,M,South Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,230.0,0.0,74.0,Exam,128.2432009680228,100.0,1566.0
+AAA,M,North Region,Lower Than A Level,60-70%,0-35,1,120,N,Pass,172.0,0.0,71.0,TMA,166.0,20.0,1718.0
+BBB,F,North Western Region,A Level or Equivalent,70-80%,0-35,0,60,N,Pass,126.0,0.0,60.0,CMA,124.0,1.0,1511.0
+DDD,M,East Anglian Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,131.0,0.0,58.0,TMA,123.0,20.0,1273.0
+BBB,F,Ireland,Lower Than A Level,10-20,0-35,3,120,N,Pass,130.0,0.0,72.0,TMA,117.0,18.0,594.0
+FFF,M,London Region,A Level or Equivalent,0-10%,0-35,0,60,N,Pass,200.0,0.0,66.0,CMA,241.0,0.0,2824.0
+CCC,M,South West Region,A Level or Equivalent,70-80%,35-55,0,60,N,Pass,219.0,0.0,100.0,CMA,214.0,8.0,1483.0
+FFF,M,North Western Region,No Formal quals,30-40%,0-35,0,60,N,Pass,28.0,0.0,87.0,CMA,227.0,0.0,5302.0
+GGG,F,East Midlands Region,A Level or Equivalent,80-90%,35-55,0,30,N,Pass,220.0,0.0,40.0,CMA,229.0,0.0,817.0
+FFF,M,Scotland,HE Qualification,90-100%,35-55,0,60,N,Pass,32.0,0.0,97.0,CMA,227.0,0.0,8637.0
+FFF,M,South Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,96.0,0.0,69.0,CMA,227.0,0.0,1194.0
+FFF,M,North Western Region,A Level or Equivalent,40-50%,0-35,0,120,N,Pass,208.0,0.0,92.0,CMA,222.0,0.0,1892.0
+FFF,M,Ireland,HE Qualification,30-40%,35-55,1,60,N,Pass,37.0,0.0,83.0,CMA,222.0,0.0,3211.0
+BBB,F,East Midlands Region,HE Qualification,80-90%,35-55,0,60,N,Pass,15.0,0.0,76.0,TMA,19.0,5.0,522.0
+GGG,F,South West Region,Lower Than A Level,70-80%,0-35,0,30,N,Pass,49.0,0.0,65.0,TMA,61.0,0.0,360.0
+CCC,F,North Region,HE Qualification,30-40%,0-35,0,90,N,Pass,149.0,0.0,100.0,TMA,151.0,22.0,6059.0
+FFF,M,Scotland,A Level or Equivalent,60-70%,35-55,0,60,N,Pass,16.0,0.0,88.0,TMA,19.0,12.5,3716.0
+EEE,M,South Region,HE Qualification,20-30%,35-55,0,60,N,Pass,68.0,0.0,76.0,TMA,68.0,28.0,2377.0
+EEE,F,London Region,A Level or Equivalent,0-10%,0-35,0,120,N,Pass,130.0,0.0,64.0,TMA,131.0,28.0,2753.0
+DDD,M,South Region,A Level or Equivalent,70-80%,0-35,0,60,N,Pass,198.0,0.0,89.0,TMA,200.0,15.0,1397.0
+CCC,F,East Midlands Region,No Formal quals,0-10%,0-35,0,60,N,Pass,244.0,0.0,46.0,Exam,128.2432009680228,100.0,798.0
+FFF,M,East Anglian Region,A Level or Equivalent,90-100%,0-35,0,120,Y,Pass,131.0,0.0,84.0,TMA,131.0,25.0,4473.0
+CCC,M,Ireland,A Level or Equivalent,30-40%,35-55,0,120,N,Pass,151.0,0.0,24.0,TMA,173.0,25.0,17482.0
+EEE,M,South West Region,A Level or Equivalent,80-90%,0-35,0,60,N,Pass,124.0,0.0,88.0,TMA,124.0,28.0,2238.0
+FFF,M,East Midlands Region,Lower Than A Level,60-70%,0-35,0,60,N,Pass,210.0,0.0,68.0,CMA,241.0,0.0,1497.0
+BBB,F,South East Region,Lower Than A Level,50-60%,0-35,0,60,N,Pass,164.0,0.0,100.0,CMA,159.0,1.0,351.0
+BBB,F,South Region,Lower Than A Level,30-40%,35-55,0,60,N,Pass,60.0,0.0,100.0,CMA,54.0,1.0,14172.0
+BBB,F,West Midlands Region,Lower Than A Level,60-70%,0-35,1,120,N,Pass,60.0,0.0,80.0,CMA,54.0,1.0,396.0
+BBB,F,West Midlands Region,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,46.0,0.0,90.0,TMA,47.0,18.0,1188.0
+CCC,M,South West Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,98.0,0.0,93.0,TMA,102.0,22.0,3063.0
+FFF,M,Scotland,HE Qualification,10-20,0-35,0,60,N,Pass,86.0,0.0,78.0,TMA,87.0,25.0,2346.0
+FFF,M,London Region,A Level or Equivalent,50-60%,35-55,0,60,N,Pass,181.0,0.0,87.0,CMA,241.0,0.0,6268.0
+BBB,M,Wales,A Level or Equivalent,40-50%,0-35,1,120,N,Pass,49.0,0.0,100.0,CMA,47.0,1.0,598.0
+GGG,M,East Anglian Region,Lower Than A Level,20-30%,0-35,0,30,N,Pass,221.0,0.0,40.0,CMA,229.0,0.0,253.0
+CCC,M,East Anglian Region,Lower Than A Level,70-80%,0-35,0,30,N,Pass,231.0,0.0,82.0,Exam,240.0,100.0,7058.0
+BBB,F,South West Region,Lower Than A Level,30-40%,35-55,0,60,N,Pass,89.0,0.0,94.0,TMA,89.0,18.0,1477.0
+EEE,F,Scotland,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,158.0,0.0,65.0,TMA,159.0,28.0,2666.0
+EEE,M,North Western Region,A Level or Equivalent,20-30%,0-35,0,30,N,Pass,207.0,0.0,92.0,CMA,222.0,0.0,10168.0
+CCC,M,Yorkshire Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,151.0,0.0,60.0,TMA,151.0,22.0,2578.0
+BBB,M,Wales,Lower Than A Level,10-20,35-55,0,90,N,Pass,95.0,0.0,100.0,CMA,89.0,1.0,401.0
+BBB,F,West Midlands Region,A Level or Equivalent,0-10%,35-55,0,60,N,Pass,168.0,0.0,100.0,CMA,166.0,1.0,793.0
+DDD,M,South West Region,A Level or Equivalent,0-10%,0-35,2,90,N,Pass,61.0,0.0,39.0,TMA,53.0,10.0,854.0
+FFF,M,South East Region,Lower Than A Level,80-90%,0-35,0,60,N,Pass,142.0,0.0,93.0,CMA,236.0,0.0,3177.0
+BBB,M,Yorkshire Region,Lower Than A Level,50-60%,35-55,1,60,N,Pass,166.0,0.0,74.0,TMA,166.0,18.0,856.0
+DDD,M,South West Region,A Level or Equivalent,40-50%,35-55,0,60,N,Pass,155.0,0.0,70.0,TMA,146.0,25.0,765.0
+CCC,M,West Midlands Region,A Level or Equivalent,40-50%,0-35,0,90,N,Pass,244.0,0.0,92.0,Exam,128.2432009680228,100.0,2753.0
+AAA,M,London Region,Lower Than A Level,30-40%,35-55,0,60,N,Pass,52.0,0.0,60.0,TMA,54.0,20.0,2094.0
+EEE,M,East Anglian Region,HE Qualification,40-50%,0-35,0,60,N,Pass,149.0,0.0,87.0,TMA,151.0,22.0,2502.0
+BBB,M,East Anglian Region,Lower Than A Level,70-80%,0-35,0,60,N,Pass,194.0,0.0,65.0,TMA,194.0,18.0,401.0
+FFF,F,North Region,Lower Than A Level,40-50%,0-35,0,60,N,Pass,95.0,0.0,72.0,TMA,96.0,25.0,2861.0
+CCC,M,Yorkshire Region,A Level or Equivalent,80-90%,0-35,0,90,N,Pass,69.0,0.0,69.0,CMA,67.0,7.0,2081.0
+GGG,F,East Anglian Region,A Level or Equivalent,90-100%,0-35,0,30,N,Pass,201.0,0.0,20.0,CMA,229.0,0.0,851.0
+DDD,M,South West Region,A Level or Equivalent,60-70%,0-35,1,120,N,Pass,27.0,0.0,79.0,TMA,25.0,10.0,398.0
+EEE,F,South Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,209.0,0.0,52.0,CMA,207.0,8.0,1768.0
+FFF,M,London Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,131.0,0.0,93.0,TMA,131.0,25.0,3360.0
+CCC,M,East Anglian Region,A Level or Equivalent,60-70%,0-35,0,30,N,Pass,108.0,0.0,83.0,TMA,109.0,22.0,1471.0
+FFF,M,North Region,A Level or Equivalent,40-50%,0-35,0,120,Y,Pass,196.0,0.0,83.0,CMA,236.0,0.0,3928.0
+CCC,M,South Region,A Level or Equivalent,80-90%,35-55,0,60,N,Pass,150.0,0.0,90.0,TMA,151.0,15.0,2822.0
+CCC,F,London Region,Lower Than A Level,20-30%,0-35,0,60,N,Pass,21.0,0.0,89.0,CMA,18.0,2.0,594.0
+GGG,F,East Midlands Region,A Level or Equivalent,50-60%,0-35,0,30,Y,Pass,180.0,0.0,70.0,TMA,173.0,0.0,854.0
+BBB,F,Wales,Lower Than A Level,30-40%,35-55,1,60,N,Pass,133.0,0.0,80.0,CMA,131.0,1.0,1330.0
+EEE,M,Scotland,A Level or Equivalent,80-90%,0-35,0,60,N,Pass,67.0,0.0,95.0,TMA,68.0,28.0,2124.0
+BBB,M,South East Region,A Level or Equivalent,20-30%,0-35,0,120,N,Pass,112.0,0.0,79.0,TMA,117.0,18.0,799.0
+BBB,F,Ireland,Lower Than A Level,30-40%,0-35,0,60,N,Pass,74.0,0.0,62.0,TMA,47.0,18.0,305.0
+GGG,F,London Region,Lower Than A Level,20-30%,35-55,0,30,N,Pass,222.0,0.0,100.0,CMA,229.0,0.0,445.0
+BBB,F,South Region,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,47.0,0.0,77.0,TMA,47.0,18.0,210.0
+BBB,M,Ireland,Lower Than A Level,0-10%,0-35,0,60,N,Pass,201.0,0.0,78.0,TMA,201.0,35.0,808.0
+BBB,F,North Region,Lower Than A Level,10-20,35-55,0,60,N,Pass,82.0,0.0,85.0,TMA,82.0,18.0,8706.0
+BBB,F,South Region,A Level or Equivalent,40-50%,0-35,0,60,Y,Pass,208.0,0.0,68.0,TMA,208.0,18.0,929.0
+FFF,M,South West Region,Lower Than A Level,70-80%,0-35,0,120,N,Pass,31.0,0.0,88.0,TMA,32.0,9.0,2471.0
+BBB,F,West Midlands Region,Lower Than A Level,50-60%,0-35,0,120,N,Pass,201.0,0.0,58.0,TMA,201.0,35.0,1045.0
+BBB,F,South Region,A Level or Equivalent,90-100%,0-35,0,180,N,Pass,14.0,0.0,75.0,TMA,19.0,5.0,1060.0
+DDD,F,North Western Region,Lower Than A Level,80-90%,0-35,0,120,N,Pass,237.0,0.0,89.0,Exam,261.0,100.0,3455.0
+CCC,M,South West Region,A Level or Equivalent,10-20,0-35,0,60,Y,Pass,151.0,0.0,93.0,TMA,151.0,22.0,1729.0
+CCC,M,London Region,A Level or Equivalent,60-70%,0-35,0,30,N,Pass,67.0,0.0,77.0,TMA,68.0,28.0,4294.0
+BBB,F,Wales,Lower Than A Level,50-60%,35-55,0,120,N,Pass,39.0,0.0,67.0,TMA,40.0,18.0,317.0
+BBB,F,Wales,HE Qualification,20-30%,35-55,0,180,N,Pass,92.0,0.0,95.0,TMA,96.0,18.0,1355.0
+FFF,F,Yorkshire Region,Lower Than A Level,80-90%,0-35,0,60,N,Pass,172.0,0.0,94.0,TMA,173.0,25.0,3857.0
+FFF,M,East Anglian Region,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,158.0,0.0,97.0,CMA,241.0,0.0,4018.0
+BBB,F,South West Region,Lower Than A Level,50-60%,35-55,0,60,N,Pass,56.0,0.0,80.0,CMA,54.0,1.0,562.0
+BBB,F,London Region,Lower Than A Level,50-60%,35-55,0,60,N,Pass,81.0,0.0,85.0,TMA,89.0,18.0,8925.0
+BBB,M,South West Region,A Level or Equivalent,70-80%,0-35,0,120,Y,Pass,208.0,0.0,70.0,TMA,208.0,18.0,118.0
+DDD,M,London Region,A Level or Equivalent,40-50%,0-35,0,60,N,Pass,53.0,0.0,78.0,TMA,53.0,12.5,436.0
+DDD,F,London Region,HE Qualification,10-20,35-55,1,120,N,Pass,169.0,0.0,35.0,TMA,151.0,15.0,1446.0
+GGG,F,South East Region,HE Qualification,10-20,0-35,0,30,N,Pass,117.0,0.0,84.0,TMA,124.0,0.0,1001.0
+BBB,F,Scotland,HE Qualification,90-100%,0-35,0,60,N,Pass,165.0,0.0,60.0,TMA,166.0,18.0,158.0
+BBB,F,East Midlands Region,A Level or Equivalent,10-20,0-35,0,60,N,Pass,126.0,0.0,100.0,CMA,124.0,1.0,226.0
+EEE,M,South West Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,151.0,0.0,49.0,TMA,151.0,22.0,2748.0
+BBB,F,East Anglian Region,Lower Than A Level,40-50%,0-35,0,90,N,Pass,15.0,0.0,91.0,TMA,19.0,5.0,1256.0
+DDD,M,Yorkshire Region,A Level or Equivalent,40-50%,0-35,0,120,N,Pass,40.0,0.0,80.0,TMA,41.0,10.0,910.0
+FFF,M,South Region,HE Qualification,90-100%,0-35,0,120,N,Pass,223.0,0.0,71.0,CMA,227.0,0.0,1950.0
+FFF,M,East Anglian Region,A Level or Equivalent,90-100%,0-35,0,120,N,Pass,187.0,0.0,76.0,CMA,241.0,0.0,3679.0
+GGG,F,London Region,A Level or Equivalent,30-40%,0-35,0,30,N,Pass,223.0,0.0,100.0,CMA,222.0,0.0,239.0
+DDD,F,London Region,Lower Than A Level,10-20,0-35,0,120,N,Pass,236.0,0.0,69.0,Exam,241.0,100.0,423.0
+BBB,F,North Region,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,168.0,0.0,100.0,CMA,166.0,1.0,1122.0
+CCC,M,London Region,HE Qualification,40-50%,0-35,0,60,N,Pass,123.0,0.0,90.0,TMA,117.0,28.0,2358.0
+GGG,F,East Anglian Region,Lower Than A Level,70-80%,0-35,0,30,N,Pass,220.0,0.0,80.0,CMA,229.0,0.0,1194.0
+EEE,M,Ireland,HE Qualification,30-40%,0-35,0,30,N,Pass,152.0,0.0,79.0,TMA,152.0,28.0,3844.0
+DDD,M,South Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,165.0,0.0,30.0,TMA,165.0,20.0,758.0
+GGG,F,South West Region,A Level or Equivalent,30-40%,0-35,0,30,N,Pass,52.0,0.0,77.0,TMA,61.0,0.0,802.0
+FFF,M,East Anglian Region,HE Qualification,30-40%,0-35,0,60,N,Pass,237.0,0.0,87.0,CMA,236.0,0.0,4037.0
+FFF,M,Yorkshire Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,126.0,0.0,96.0,TMA,131.0,25.0,6846.0
+CCC,M,Ireland,HE Qualification,80-90%,35-55,0,30,N,Pass,199.0,0.0,100.0,TMA,200.0,22.0,3365.0
+FFF,M,East Anglian Region,A Level or Equivalent,60-70%,0-35,1,120,Y,Pass,19.0,0.0,74.0,TMA,19.0,12.5,1207.0
+DDD,M,South West Region,Lower Than A Level,30-40%,0-35,0,60,Y,Pass,53.0,0.0,88.0,TMA,53.0,10.0,4744.0
+FFF,M,East Anglian Region,A Level or Equivalent,70-80%,0-35,0,60,N,Pass,205.0,0.0,79.0,CMA,241.0,0.0,1535.0
+DDD,F,South West Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,173.0,0.0,81.0,TMA,165.0,20.0,1013.0
+FFF,M,North Region,HE Qualification,30-40%,0-35,0,60,N,Pass,184.0,0.0,81.0,CMA,241.0,0.0,2234.0
+BBB,F,South East Region,HE Qualification,80-90%,0-35,0,120,N,Pass,60.0,0.0,80.0,CMA,54.0,1.0,1009.0
+AAA,M,East Anglian Region,A Level or Equivalent,70-80%,35-55,0,120,N,Pass,215.0,0.0,60.0,TMA,215.0,30.0,4218.0
+DDD,M,Wales,Lower Than A Level,10-20,0-35,0,90,N,Pass,60.0,0.0,74.0,TMA,53.0,12.5,967.0
+DDD,M,West Midlands Region,A Level or Equivalent,40-50%,0-35,0,60,N,Pass,122.0,0.0,93.0,TMA,123.0,20.0,2753.0
+CCC,M,East Anglian Region,A Level or Equivalent,60-70%,0-35,0,90,N,Pass,69.0,0.0,78.0,CMA,67.0,7.0,4785.0
+FFF,F,Scotland,HE Qualification,20-30%,0-35,0,90,N,Pass,151.0,0.0,94.0,CMA,241.0,0.0,4593.0
+EEE,M,Scotland,Lower Than A Level,40-50%,0-35,0,60,N,Pass,129.0,0.0,88.0,CMA,236.0,0.0,3943.0
+FFF,M,East Midlands Region,HE Qualification,90-100%,0-35,0,60,N,Pass,171.0,0.0,91.0,TMA,171.0,25.0,4449.0
+EEE,F,Scotland,HE Qualification,90-100%,0-35,0,60,Y,Pass,200.0,0.0,74.0,TMA,200.0,22.0,3004.0
+FFF,M,East Anglian Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,94.0,0.0,79.0,TMA,96.0,25.0,2622.0
+DDD,F,North Region,HE Qualification,30-40%,55<=,0,60,N,Pass,52.0,0.0,95.0,TMA,53.0,12.5,1994.0
+DDD,M,Ireland,HE Qualification,30-40%,0-35,0,60,N,Pass,74.0,0.0,85.0,TMA,74.0,17.5,911.0
+GGG,F,North Western Region,A Level or Equivalent,0-10%,0-35,0,30,N,Pass,219.0,0.0,100.0,CMA,229.0,0.0,280.0
+CCC,M,South East Region,A Level or Equivalent,70-80%,0-35,0,30,Y,Pass,199.0,0.0,96.0,TMA,200.0,22.0,6375.0
+BBB,F,East Anglian Region,A Level or Equivalent,70-80%,0-35,0,60,N,Pass,187.0,0.0,86.0,TMA,187.0,18.0,2205.0
+CCC,M,London Region,A Level or Equivalent,10-20,0-35,0,30,N,Pass,23.0,0.0,82.0,TMA,24.0,12.5,9555.0
+DDD,F,Scotland,HE Qualification,50-60%,35-55,0,60,N,Pass,111.0,0.0,79.0,TMA,111.0,25.0,1025.0
+CCC,M,Wales,A Level or Equivalent,0-10%,0-35,0,60,N,Pass,171.0,0.0,93.0,TMA,165.0,20.0,5101.0
+BBB,F,Scotland,A Level or Equivalent,20-30%,35-55,0,60,N,Pass,119.0,0.0,100.0,CMA,117.0,1.0,2873.0
+DDD,M,South East Region,HE Qualification,90-100%,35-55,0,60,N,Pass,242.0,0.0,96.0,Exam,128.2432009680228,100.0,380.0
+BBB,F,Yorkshire Region,A Level or Equivalent,0-10%,0-35,0,120,N,Pass,193.0,0.0,82.0,TMA,187.0,18.0,227.0
+CCC,M,East Midlands Region,HE Qualification,30-40%,0-35,0,60,N,Pass,139.0,0.0,73.0,CMA,137.0,8.0,4052.0
+DDD,M,Yorkshire Region,A Level or Equivalent,80-90%,0-35,0,60,N,Pass,146.0,0.0,86.0,TMA,146.0,25.0,512.0
+DDD,F,Scotland,HE Qualification,30-40%,0-35,0,60,Y,Pass,200.0,0.0,28.0,TMA,200.0,20.0,984.0
+DDD,M,Scotland,A Level or Equivalent,90-100%,0-35,0,90,N,Pass,51.0,0.0,80.0,TMA,53.0,12.5,1268.0
+DDD,M,Yorkshire Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,36.0,0.0,90.0,TMA,41.0,10.0,1655.0
+CCC,M,Ireland,A Level or Equivalent,70-80%,35-55,0,90,N,Pass,69.0,0.0,96.0,CMA,67.0,7.0,2229.0
+FFF,M,East Midlands Region,A Level or Equivalent,40-50%,0-35,0,90,N,Pass,172.0,0.0,91.0,CMA,227.0,0.0,4341.0
+DDD,M,East Anglian Region,A Level or Equivalent,0-10%,0-35,0,90,N,Pass,21.0,0.0,78.0,CMA,18.0,2.0,1524.0
+FFF,M,North Region,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,53.0,0.0,100.0,CMA,236.0,0.0,4899.0
+DDD,F,North Region,A Level or Equivalent,40-50%,0-35,1,280,N,Pass,200.0,0.0,38.0,TMA,200.0,15.0,2482.0
+BBB,F,Scotland,HE Qualification,50-60%,0-35,0,60,N,Pass,18.0,0.0,75.0,TMA,19.0,5.0,440.0
+FFF,M,London Region,A Level or Equivalent,30-40%,35-55,0,120,N,Pass,44.0,0.0,68.0,CMA,241.0,0.0,4340.0
+FFF,F,Wales,HE Qualification,80-90%,0-35,0,120,N,Pass,231.0,0.0,85.0,CMA,241.0,0.0,1956.0
+EEE,M,Ireland,Lower Than A Level,70-80%,0-35,0,60,N,Pass,43.0,0.0,80.0,TMA,33.0,16.0,1762.0
+CCC,M,South West Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,216.0,0.0,83.0,CMA,236.0,0.0,3888.0
+FFF,M,East Midlands Region,Lower Than A Level,50-60%,0-35,0,150,N,Pass,95.0,0.0,90.0,TMA,96.0,25.0,3198.0
+BBB,F,East Anglian Region,A Level or Equivalent,80-90%,0-35,0,90,N,Pass,18.0,0.0,63.0,TMA,19.0,5.0,665.0
+FFF,M,South Region,Lower Than A Level,90-100%,0-35,0,60,N,Pass,18.0,0.0,88.0,TMA,19.0,12.5,2314.0
+FFF,M,East Midlands Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,173.0,0.0,75.0,CMA,236.0,0.0,1281.0
+FFF,M,North Western Region,Lower Than A Level,80-90%,35-55,0,90,N,Pass,59.0,0.0,100.0,CMA,227.0,0.0,6207.0
+FFF,M,South Region,Lower Than A Level,50-60%,0-35,0,90,N,Pass,46.0,0.0,88.0,TMA,47.0,12.5,4645.0
+CCC,M,Ireland,Post Graduate Qualification,30-40%,0-35,0,90,N,Pass,31.0,0.0,96.0,TMA,32.0,9.0,1452.0
+FFF,F,Wales,Lower Than A Level,0-10%,0-35,0,90,N,Pass,228.0,0.0,55.0,CMA,227.0,0.0,2498.0
+CCC,M,South East Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,158.0,0.0,75.0,TMA,159.0,28.0,3383.0
+BBB,F,Ireland,A Level or Equivalent,60-70%,35-55,0,60,N,Pass,102.0,0.0,100.0,CMA,96.0,1.0,196.0
+BBB,F,Wales,A Level or Equivalent,80-90%,0-35,0,120,N,Pass,18.0,0.0,62.0,TMA,19.0,5.0,540.0
+DDD,M,South West Region,Lower Than A Level,50-60%,0-35,0,90,N,Pass,109.0,0.0,27.0,TMA,109.0,22.0,796.0
+FFF,M,South Region,Lower Than A Level,70-80%,0-35,0,60,N,Pass,50.0,0.0,70.0,TMA,52.0,12.5,855.0
+BBB,F,Wales,A Level or Equivalent,0-10%,0-35,0,60,Y,Pass,81.0,0.0,86.0,TMA,82.0,18.0,1338.0
+GGG,F,East Anglian Region,A Level or Equivalent,80-90%,0-35,0,30,N,Pass,200.0,0.0,100.0,CMA,229.0,0.0,453.0
+CCC,M,Scotland,A Level or Equivalent,80-90%,35-55,0,30,N,Pass,20.0,0.0,50.0,CMA,18.0,2.0,1445.0
+FFF,M,London Region,HE Qualification,20-30%,0-35,0,90,N,Pass,200.0,0.0,69.0,TMA,200.0,22.0,12676.0
+FFF,M,East Anglian Region,A Level or Equivalent,90-100%,35-55,0,180,N,Pass,94.0,0.0,87.0,TMA,96.0,25.0,2911.0
+DDD,F,South Region,A Level or Equivalent,50-60%,0-35,0,120,N,Pass,234.0,0.0,96.0,Exam,128.2432009680228,100.0,1810.0
+FFF,M,London Region,Lower Than A Level,30-40%,0-35,0,150,N,Pass,224.0,0.0,91.0,CMA,227.0,0.0,3689.0
+GGG,F,East Midlands Region,A Level or Equivalent,80-90%,35-55,0,30,N,Pass,117.0,0.0,100.0,CMA,222.0,0.0,986.0
+DDD,M,London Region,HE Qualification,40-50%,0-35,0,120,N,Pass,173.0,0.0,89.0,CMA,170.0,3.0,1048.0
+FFF,M,South West Region,A Level or Equivalent,70-80%,35-55,0,120,N,Pass,219.0,0.0,88.0,CMA,241.0,0.0,6182.0
+CCC,M,South West Region,A Level or Equivalent,80-90%,0-35,0,120,N,Pass,72.0,0.0,86.0,CMA,241.0,0.0,3930.0
+GGG,F,East Anglian Region,Lower Than A Level,80-90%,0-35,0,30,N,Pass,171.0,0.0,80.0,CMA,229.0,0.0,1081.0
+GGG,F,Wales,Lower Than A Level,20-30%,0-35,0,30,Y,Pass,200.0,0.0,100.0,CMA,229.0,0.0,707.0
+FFF,M,Scotland,A Level or Equivalent,60-70%,0-35,0,120,N,Pass,137.0,0.0,62.0,TMA,131.0,25.0,1823.0
+GGG,F,East Midlands Region,Lower Than A Level,30-40%,0-35,0,30,N,Pass,203.0,0.0,80.0,CMA,229.0,0.0,834.0
+FFF,M,Scotland,A Level or Equivalent,40-50%,0-35,0,60,N,Pass,165.0,0.0,85.0,CMA,222.0,0.0,2710.0
+FFF,M,Ireland,HE Qualification,70-80%,0-35,0,90,N,Pass,96.0,0.0,69.0,TMA,94.0,25.0,3138.0
+BBB,F,South West Region,A Level or Equivalent,50-60%,0-35,0,60,Y,Pass,152.0,0.0,60.0,TMA,152.0,35.0,597.0
+DDD,M,South West Region,A Level or Equivalent,20-30%,0-35,0,60,N,Pass,54.0,0.0,91.0,TMA,53.0,12.5,1987.0
+FFF,F,South Region,HE Qualification,40-50%,0-35,0,60,N,Pass,189.0,0.0,89.0,CMA,241.0,0.0,6206.0
+BBB,F,Ireland,A Level or Equivalent,10-20,0-35,0,60,N,Pass,47.0,0.0,72.0,TMA,47.0,18.0,734.0
+CCC,F,Scotland,HE Qualification,40-50%,35-55,0,90,N,Pass,20.0,0.0,70.0,CMA,18.0,2.0,11468.0
+AAA,M,North Western Region,A Level or Equivalent,40-50%,0-35,0,120,N,Pass,214.0,0.0,88.0,TMA,215.0,30.0,950.0
+CCC,M,North Western Region,HE Qualification,0-10%,35-55,0,40,N,Pass,149.0,0.0,97.0,TMA,151.0,22.0,2039.0
+CCC,M,East Anglian Region,A Level or Equivalent,50-60%,0-35,0,30,N,Pass,64.0,0.0,88.0,TMA,68.0,28.0,3665.0
+FFF,M,South West Region,A Level or Equivalent,50-60%,0-35,1,60,N,Pass,214.0,0.0,83.0,CMA,236.0,0.0,2530.0
+FFF,M,North Region,A Level or Equivalent,30-40%,0-35,0,120,N,Pass,131.0,0.0,39.0,TMA,131.0,25.0,1991.0
+BBB,F,East Midlands Region,A Level or Equivalent,10-20,0-35,0,60,Y,Pass,18.0,0.0,94.0,TMA,19.0,5.0,768.0
+BBB,F,London Region,HE Qualification,10-20,0-35,0,60,N,Pass,177.0,0.0,85.0,TMA,166.0,18.0,1380.0
+CCC,M,Wales,A Level or Equivalent,0-10%,0-35,0,60,N,Pass,241.0,0.0,82.0,Exam,261.0,100.0,5101.0
+CCC,M,North Region,A Level or Equivalent,70-80%,0-35,0,60,N,Pass,165.0,0.0,82.0,TMA,165.0,20.0,1692.0
+BBB,M,London Region,A Level or Equivalent,40-50%,0-35,0,120,N,Pass,46.0,0.0,91.0,TMA,47.0,18.0,1079.0
+EEE,M,Scotland,Lower Than A Level,30-40%,0-35,0,60,N,Pass,141.0,0.0,84.0,TMA,166.0,28.0,2759.0
+FFF,M,North Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,235.0,0.0,67.0,CMA,241.0,0.0,3208.0
+FFF,M,South Region,Lower Than A Level,10-20,0-35,0,60,N,Pass,237.0,0.0,84.0,CMA,241.0,0.0,3555.0
+EEE,M,East Midlands Region,Lower Than A Level,80-90%,0-35,0,60,N,Pass,139.0,0.0,63.0,TMA,131.0,28.0,524.0
+BBB,F,East Anglian Region,Lower Than A Level,50-60%,35-55,1,60,Y,Pass,168.0,0.0,100.0,CMA,166.0,1.0,462.0
+FFF,M,West Midlands Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,215.0,0.0,85.0,CMA,236.0,0.0,2073.0
+DDD,M,Scotland,HE Qualification,80-90%,0-35,0,60,N,Pass,53.0,0.0,87.0,TMA,53.0,12.5,1892.0
+EEE,M,Scotland,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,117.0,0.0,85.0,TMA,117.0,28.0,2300.0
+BBB,F,East Midlands Region,Lower Than A Level,90-100%,0-35,0,120,N,Pass,154.0,0.0,40.0,CMA,152.0,1.0,339.0
+DDD,M,North Western Region,HE Qualification,90-100%,0-35,0,90,N,Pass,121.0,0.0,92.0,TMA,123.0,20.0,3711.0
+DDD,M,North Western Region,A Level or Equivalent,30-40%,0-35,0,90,N,Pass,158.0,0.0,91.0,TMA,158.0,22.0,2226.0
+FFF,M,East Anglian Region,A Level or Equivalent,80-90%,0-35,0,120,Y,Pass,51.0,0.0,84.0,TMA,52.0,12.5,1772.0
+GGG,M,East Midlands Region,Lower Than A Level,70-80%,0-35,0,30,N,Pass,119.0,0.0,64.0,TMA,124.0,0.0,770.0
+CCC,F,Yorkshire Region,A Level or Equivalent,10-20,0-35,0,90,N,Pass,207.0,0.0,63.0,TMA,207.0,22.0,2829.0
+BBB,F,South West Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,47.0,0.0,75.0,TMA,47.0,18.0,1450.0
+CCC,M,North Region,Post Graduate Qualification,30-40%,55<=,0,30,N,Pass,97.0,0.0,91.0,TMA,102.0,22.0,2841.0
+FFF,M,South East Region,HE Qualification,90-100%,0-35,0,60,N,Pass,233.0,0.0,82.0,CMA,241.0,0.0,2932.0
+GGG,F,South West Region,A Level or Equivalent,80-90%,35-55,0,30,Y,Pass,208.0,0.0,100.0,CMA,229.0,0.0,797.0
+FFF,M,Ireland,Lower Than A Level,30-40%,35-55,2,90,N,Pass,-1.0,1.0,93.0,CMA,227.0,0.0,1305.0
+DDD,M,South East Region,Lower Than A Level,80-90%,0-35,1,60,N,Pass,81.0,0.0,97.0,CMA,79.0,3.0,3842.0
+DDD,F,East Midlands Region,Lower Than A Level,50-60%,0-35,2,120,N,Pass,53.0,0.0,85.0,TMA,53.0,12.5,1121.0
+FFF,M,North Western Region,A Level or Equivalent,80-90%,0-35,0,60,N,Pass,201.0,0.0,80.0,CMA,222.0,0.0,6151.0
+GGG,M,East Anglian Region,Lower Than A Level,40-50%,0-35,0,30,N,Pass,124.0,0.0,50.0,TMA,124.0,0.0,351.0
+GGG,F,South East Region,Lower Than A Level,60-70%,35-55,0,30,N,Pass,213.0,0.0,100.0,CMA,222.0,0.0,1462.0
+BBB,F,Scotland,HE Qualification,30-40%,35-55,0,60,N,Pass,208.0,0.0,82.0,TMA,208.0,18.0,300.0
+FFF,M,South East Region,Lower Than A Level,20-30%,0-35,0,90,N,Pass,193.0,0.0,92.0,CMA,227.0,0.0,3856.0
+FFF,M,South Region,No Formal quals,50-60%,0-35,0,120,N,Pass,144.0,0.0,83.0,CMA,227.0,0.0,3260.0
+GGG,F,South Region,Lower Than A Level,10-20,0-35,0,30,N,Pass,172.0,0.0,75.0,TMA,173.0,0.0,458.0
+EEE,M,North Western Region,HE Qualification,60-70%,0-35,0,30,N,Pass,192.0,0.0,89.0,CMA,227.0,0.0,3788.0
+CCC,M,South East Region,Post Graduate Qualification,40-50%,35-55,0,90,N,Pass,21.0,0.0,100.0,CMA,18.0,2.0,1642.0
+GGG,F,Yorkshire Region,Lower Than A Level,20-30%,35-55,0,30,N,Pass,51.0,0.0,98.0,TMA,52.0,12.5,8746.0
+CCC,M,Ireland,HE Qualification,30-40%,35-55,0,60,N,Pass,188.0,0.0,72.0,TMA,200.0,22.0,2628.0
+FFF,M,London Region,Lower Than A Level,10-20,0-35,0,135,N,Pass,13.0,0.0,91.0,CMA,236.0,0.0,4022.0
+DDD,M,Yorkshire Region,A Level or Equivalent,0-10%,0-35,1,180,N,Pass,117.0,0.0,83.0,CMA,114.0,4.0,1023.0
+FFF,M,Scotland,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,198.0,0.0,79.0,TMA,199.0,25.0,4820.0
+CCC,M,Yorkshire Region,A Level or Equivalent,50-60%,0-35,0,30,N,Pass,69.0,0.0,100.0,CMA,67.0,7.0,4630.0
+FFF,F,Scotland,Lower Than A Level,60-70%,35-55,1,120,N,Pass,48.0,0.0,76.0,CMA,222.0,0.0,8335.0
+BBB,F,South Region,A Level or Equivalent,70-80%,0-35,0,60,Y,Pass,19.0,0.0,83.0,TMA,19.0,5.0,140.0
+GGG,F,West Midlands Region,Lower Than A Level,0-10%,35-55,0,30,N,Pass,135.0,0.0,100.0,CMA,229.0,0.0,1795.0
+FFF,M,Yorkshire Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,81.0,0.0,69.0,TMA,74.0,17.5,4679.0
+BBB,F,South West Region,HE Qualification,70-80%,0-35,0,120,N,Pass,95.0,0.0,100.0,CMA,89.0,1.0,592.0
+FFF,M,South Region,Lower Than A Level,80-90%,35-55,0,180,N,Pass,35.0,0.0,96.0,CMA,241.0,0.0,7386.0
+FFF,M,North Region,A Level or Equivalent,30-40%,35-55,0,90,N,Pass,98.0,0.0,96.0,CMA,222.0,0.0,1671.0
+BBB,F,North Western Region,Lower Than A Level,10-20,0-35,0,60,N,Pass,168.0,0.0,100.0,CMA,166.0,1.0,198.0
+CCC,M,West Midlands Region,A Level or Equivalent,20-30%,0-35,0,60,Y,Pass,124.0,0.0,85.0,TMA,124.0,28.0,7219.0
+FFF,M,Wales,Lower Than A Level,20-30%,0-35,0,120,N,Pass,52.0,0.0,90.0,TMA,52.0,12.5,4653.0
+FFF,F,Yorkshire Region,Lower Than A Level,10-20,35-55,2,60,N,Pass,130.0,0.0,58.0,TMA,131.0,25.0,1423.0
+BBB,M,Yorkshire Region,Lower Than A Level,10-20,0-35,0,60,N,Pass,38.0,0.0,85.0,TMA,40.0,18.0,738.0
+BBB,F,South East Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,194.0,0.0,15.0,TMA,194.0,18.0,2245.0
+GGG,F,South Region,Lower Than A Level,20-30%,0-35,0,30,N,Pass,58.0,0.0,65.0,TMA,61.0,0.0,1030.0
+BBB,M,South Region,A Level or Equivalent,80-90%,0-35,0,60,N,Pass,102.0,0.0,100.0,CMA,96.0,1.0,1127.0
+DDD,M,Wales,HE Qualification,50-60%,0-35,0,60,N,Pass,116.0,0.0,81.0,TMA,116.0,20.0,502.0
+CCC,M,East Anglian Region,HE Qualification,30-40%,0-35,0,60,N,Pass,131.0,0.0,74.0,TMA,131.0,25.0,4037.0
+BBB,F,South Region,A Level or Equivalent,90-100%,0-35,0,120,N,Pass,130.0,0.0,72.0,TMA,131.0,18.0,429.0
+EEE,M,South Region,Lower Than A Level,90-100%,35-55,0,60,Y,Pass,139.0,0.0,77.0,CMA,137.0,8.0,3150.0
+FFF,F,South Region,HE Qualification,90-100%,35-55,0,60,N,Pass,51.0,0.0,94.0,TMA,52.0,12.5,5266.0
+BBB,F,East Anglian Region,Lower Than A Level,60-70%,0-35,0,60,N,Pass,47.0,0.0,74.0,TMA,47.0,18.0,775.0
+GGG,F,North Western Region,Lower Than A Level,20-30%,35-55,0,30,N,Pass,122.0,0.0,75.0,TMA,124.0,0.0,647.0
+DDD,M,North Western Region,Lower Than A Level,20-30%,0-35,0,120,N,Pass,173.0,0.0,72.0,CMA,170.0,3.0,1088.0
+GGG,F,South West Region,A Level or Equivalent,50-60%,0-35,0,30,N,Pass,128.0,0.0,85.0,TMA,124.0,0.0,557.0
+GGG,M,South West Region,Lower Than A Level,60-70%,35-55,0,30,N,Pass,108.0,0.0,65.0,TMA,117.0,0.0,776.0
+FFF,M,Ireland,HE Qualification,80-90%,0-35,0,60,N,Pass,50.0,0.0,84.0,TMA,52.0,12.5,5664.0
+BBB,F,Scotland,A Level or Equivalent,20-30%,0-35,0,60,N,Pass,18.0,0.0,78.0,TMA,19.0,5.0,558.0
+BBB,F,Wales,HE Qualification,20-30%,35-55,0,60,N,Pass,84.0,0.0,80.0,CMA,82.0,1.0,183.0
+FFF,M,Scotland,Lower Than A Level,50-60%,0-35,0,120,N,Pass,221.0,0.0,68.0,CMA,222.0,0.0,2653.0
+CCC,M,East Midlands Region,Lower Than A Level,90-100%,0-35,0,30,N,Pass,72.0,0.0,85.0,TMA,68.0,28.0,4176.0
+CCC,M,Scotland,Lower Than A Level,60-70%,35-55,0,60,N,Pass,244.0,0.0,52.0,Exam,128.2432009680228,100.0,1370.0
+CCC,M,South East Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,24.0,0.0,83.0,TMA,25.0,10.0,1295.0
+FFF,M,North Region,Lower Than A Level,30-40%,0-35,0,90,N,Pass,238.0,0.0,93.0,CMA,241.0,0.0,3346.0
+BBB,F,North Region,A Level or Equivalent,10-20,0-35,0,60,N,Pass,20.0,0.0,60.0,TMA,19.0,5.0,756.0
+FFF,M,East Midlands Region,Lower Than A Level,10-20,35-55,1,90,N,Pass,46.0,0.0,78.0,TMA,47.0,12.5,3989.0
+FFF,F,West Midlands Region,A Level or Equivalent,30-40%,0-35,0,180,N,Pass,70.0,0.0,65.0,CMA,222.0,0.0,3758.0
+EEE,M,East Anglian Region,Lower Than A Level,70-80%,0-35,0,30,Y,Pass,33.0,0.0,90.0,TMA,32.0,9.0,2960.0
+FFF,M,Ireland,HE Qualification,30-40%,35-55,0,60,N,Pass,156.0,0.0,84.0,CMA,241.0,0.0,4348.0
+BBB,F,Yorkshire Region,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,187.0,0.0,77.0,TMA,187.0,18.0,571.0
+GGG,F,Scotland,Lower Than A Level,60-70%,0-35,0,30,N,Pass,170.0,0.0,65.0,TMA,173.0,0.0,654.0
+BBB,F,South East Region,A Level or Equivalent,40-50%,35-55,1,60,N,Pass,56.0,0.0,100.0,CMA,54.0,1.0,5155.0
+CCC,F,East Midlands Region,A Level or Equivalent,90-100%,0-35,0,90,N,Pass,147.0,0.0,94.0,CMA,144.0,8.0,1645.0
+CCC,M,Ireland,Lower Than A Level,10-20,35-55,0,60,N,Pass,230.0,0.0,70.0,Exam,128.2432009680228,100.0,6592.0
+GGG,F,London Region,Lower Than A Level,10-20,0-35,0,90,N,Pass,116.0,0.0,80.0,TMA,117.0,0.0,1313.0
+BBB,F,North Western Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,166.0,0.0,67.0,TMA,166.0,18.0,113.0
+CCC,M,North Region,Post Graduate Qualification,30-40%,0-35,0,60,N,Pass,32.0,0.0,100.0,TMA,33.0,16.0,4411.0
+BBB,F,South East Region,A Level or Equivalent,40-50%,35-55,0,60,N,Pass,46.0,0.0,80.0,TMA,47.0,18.0,994.0
+BBB,M,North Western Region,Lower Than A Level,0-10%,35-55,0,60,Y,Pass,0.0,0.0,100.0,TMA,19.0,0.0,5645.0
+DDD,F,Scotland,Lower Than A Level,0-10%,0-35,0,60,N,Pass,52.0,0.0,89.0,TMA,53.0,12.5,2103.0
+FFF,M,South West Region,A Level or Equivalent,10-20,0-35,0,60,N,Pass,37.0,0.0,92.0,CMA,222.0,0.0,2975.0
+CCC,M,London Region,HE Qualification,40-50%,0-35,0,120,N,Pass,244.0,0.0,100.0,Exam,128.2432009680228,100.0,4407.0
+FFF,M,South Region,HE Qualification,80-90%,0-35,0,90,N,Pass,45.0,0.0,80.0,TMA,52.0,12.5,2693.0
+BBB,F,West Midlands Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,95.0,0.0,100.0,CMA,89.0,1.0,5618.0
+FFF,M,North Region,Lower Than A Level,30-40%,0-35,0,120,N,Pass,105.0,0.0,44.0,TMA,96.0,25.0,2643.0
+DDD,M,North Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,165.0,0.0,8.0,TMA,165.0,20.0,2293.0
+DDD,M,East Anglian Region,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,61.0,0.0,85.0,TMA,62.0,10.0,1325.0
+DDD,F,Ireland,HE Qualification,90-100%,0-35,0,60,N,Pass,81.0,0.0,72.0,CMA,79.0,3.0,514.0
+DDD,M,North Western Region,Lower Than A Level,0-10%,0-35,0,60,N,Pass,236.0,0.0,82.0,Exam,241.0,100.0,2803.0
+FFF,M,East Anglian Region,Lower Than A Level,70-80%,0-35,0,60,N,Pass,52.0,0.0,54.0,TMA,52.0,12.5,2773.0
+EEE,M,Yorkshire Region,A Level or Equivalent,20-30%,0-35,0,30,N,Pass,69.0,0.0,34.0,CMA,67.0,7.0,1465.0
+DDD,M,Scotland,HE Qualification,90-100%,0-35,0,60,N,Pass,109.0,0.0,45.0,TMA,109.0,22.0,2491.0
+CCC,F,South East Region,A Level or Equivalent,10-20,0-35,0,90,N,Pass,207.0,0.0,75.0,TMA,207.0,22.0,1687.0
+CCC,M,North Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,209.0,0.0,100.0,CMA,207.0,8.0,2000.0
+CCC,F,Scotland,HE Qualification,40-50%,35-55,0,90,N,Pass,115.0,0.0,74.0,TMA,116.0,15.0,11468.0
+DDD,M,Yorkshire Region,A Level or Equivalent,40-50%,0-35,0,60,N,Pass,25.0,0.0,57.0,TMA,25.0,10.0,764.0
+FFF,M,West Midlands Region,HE Qualification,70-80%,35-55,0,60,N,Pass,174.0,0.0,77.0,CMA,236.0,0.0,3080.0
+FFF,M,South Region,Lower Than A Level,40-50%,0-35,0,60,N,Pass,198.0,0.0,88.0,TMA,199.0,25.0,5538.0
+GGG,F,North Western Region,Lower Than A Level,0-10%,0-35,0,30,N,Pass,209.0,0.0,80.0,CMA,222.0,0.0,428.0
+GGG,F,West Midlands Region,Lower Than A Level,40-50%,35-55,0,30,Y,Pass,110.0,0.0,44.0,TMA,117.0,0.0,598.0
+EEE,M,Scotland,HE Qualification,80-90%,0-35,0,60,N,Pass,60.0,0.0,92.0,TMA,68.0,28.0,2031.0
+BBB,F,East Midlands Region,Lower Than A Level,0-10%,0-35,0,60,N,Pass,194.0,0.0,85.0,TMA,194.0,18.0,742.0
+BBB,F,Scotland,HE Qualification,60-70%,35-55,0,75,Y,Pass,49.0,0.0,100.0,CMA,47.0,1.0,13023.0
+BBB,M,North Western Region,A Level or Equivalent,30-40%,0-35,0,120,N,Pass,46.0,0.0,85.0,TMA,47.0,18.0,429.0
+FFF,M,South Region,Lower Than A Level,50-60%,0-35,0,90,N,Pass,104.0,0.0,75.0,CMA,236.0,0.0,4645.0
+FFF,F,South West Region,No Formal quals,30-40%,0-35,1,180,N,Pass,131.0,0.0,40.0,TMA,131.0,25.0,1858.0
+BBB,F,London Region,HE Qualification,40-50%,0-35,0,120,N,Pass,149.0,0.0,56.0,TMA,131.0,18.0,266.0
+GGG,F,South West Region,Lower Than A Level,40-50%,35-55,0,30,Y,Pass,33.0,0.0,70.0,TMA,61.0,0.0,1325.0
+FFF,M,South Region,Lower Than A Level,0-10%,0-35,0,120,N,Pass,127.0,0.0,91.0,TMA,131.0,25.0,13746.0
+BBB,F,Scotland,HE Qualification,10-20,0-35,0,120,N,Pass,95.0,0.0,80.0,CMA,89.0,1.0,911.0
+DDD,F,Scotland,Lower Than A Level,80-90%,0-35,0,60,N,Pass,200.0,0.0,35.0,TMA,200.0,20.0,838.0
+EEE,M,London Region,A Level or Equivalent,20-30%,0-35,0,30,N,Pass,31.0,0.0,93.0,TMA,33.0,16.0,567.0
+BBB,F,Wales,Lower Than A Level,0-10%,0-35,0,60,Y,Pass,189.0,0.0,60.0,CMA,187.0,1.0,721.0
+FFF,M,North Region,Lower Than A Level,0-10%,0-35,0,60,N,Pass,116.0,0.0,84.0,CMA,241.0,0.0,4980.0
+FFF,M,Wales,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,40.0,0.0,97.0,CMA,241.0,0.0,5423.0
+CCC,F,London Region,A Level or Equivalent,60-70%,0-35,0,90,N,Pass,244.0,0.0,86.0,Exam,128.2432009680228,100.0,1407.0
+EEE,M,South Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,116.0,0.0,94.0,TMA,117.0,28.0,1566.0
+GGG,F,South Region,A Level or Equivalent,40-50%,0-35,0,30,Y,Pass,183.0,0.0,55.0,TMA,173.0,0.0,1218.0
+DDD,M,North Western Region,Lower Than A Level,40-50%,35-55,1,60,Y,Pass,117.0,0.0,38.0,CMA,114.0,4.0,4069.0
+FFF,F,South Region,A Level or Equivalent,60-70%,0-35,0,120,N,Pass,230.0,0.0,79.0,CMA,236.0,0.0,5165.0
+FFF,M,North Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,157.0,0.0,94.0,CMA,227.0,0.0,2210.0
+FFF,M,West Midlands Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,49.0,0.0,94.0,TMA,52.0,12.5,6088.0
+FFF,M,West Midlands Region,A Level or Equivalent,60-70%,0-35,1,90,N,Pass,69.0,0.0,68.0,CMA,236.0,0.0,2572.0
+BBB,F,Wales,Lower Than A Level,20-30%,0-35,1,60,N,Pass,16.0,0.0,78.0,TMA,19.0,5.0,1558.0
+FFF,M,Ireland,A Level or Equivalent,90-100%,0-35,0,120,N,Pass,166.0,0.0,86.0,TMA,166.0,25.0,2609.0
+DDD,M,West Midlands Region,A Level or Equivalent,90-100%,0-35,0,120,N,Pass,153.0,0.0,60.0,TMA,146.0,25.0,688.0
+EEE,M,North Western Region,HE Qualification,60-70%,0-35,0,30,N,Pass,159.0,0.0,94.0,TMA,152.0,28.0,637.0
+BBB,F,South Region,HE Qualification,80-90%,0-35,0,90,N,Pass,80.0,0.0,79.0,TMA,82.0,18.0,1867.0
+FFF,M,South Region,A Level or Equivalent,90-100%,35-55,0,90,N,Pass,196.0,0.0,63.0,TMA,199.0,25.0,8460.0
+EEE,M,East Midlands Region,HE Qualification,30-40%,35-55,0,30,N,Pass,158.0,0.0,83.0,TMA,159.0,28.0,3544.0
+GGG,F,South East Region,Lower Than A Level,30-40%,0-35,0,30,N,Pass,172.0,0.0,78.0,TMA,173.0,0.0,530.0
+FFF,M,London Region,HE Qualification,10-20,0-35,0,60,N,Pass,128.0,0.0,91.0,CMA,241.0,0.0,3235.0
+FFF,M,Scotland,Lower Than A Level,60-70%,0-35,0,120,N,Pass,178.0,0.0,68.0,CMA,227.0,0.0,5635.0
+CCC,M,North Region,A Level or Equivalent,70-80%,0-35,0,60,N,Pass,219.0,0.0,88.0,CMA,214.0,8.0,1692.0
+CCC,M,South Region,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,234.0,0.0,76.0,Exam,128.2432009680228,100.0,5424.0
+FFF,M,East Midlands Region,Lower Than A Level,40-50%,35-55,0,60,N,Pass,35.0,0.0,83.0,CMA,241.0,0.0,2693.0
+FFF,M,South West Region,Lower Than A Level,10-20,0-35,0,90,N,Pass,95.0,0.0,84.0,TMA,96.0,25.0,5115.0
+FFF,F,South Region,Lower Than A Level,40-50%,35-55,1,90,N,Pass,227.0,0.0,82.0,CMA,236.0,0.0,5089.0
+BBB,F,East Anglian Region,Lower Than A Level,60-70%,35-55,0,60,N,Pass,49.0,0.0,65.0,TMA,61.0,0.0,1022.0
+FFF,M,North Region,A Level or Equivalent,30-40%,0-35,0,120,N,Pass,51.0,0.0,98.0,TMA,52.0,12.5,1961.0
+FFF,M,East Anglian Region,A Level or Equivalent,80-90%,0-35,0,60,N,Pass,61.0,0.0,100.0,CMA,222.0,0.0,9394.0
+FFF,M,Scotland,HE Qualification,30-40%,35-55,0,60,N,Pass,0.0,0.0,80.0,CMA,241.0,0.0,16227.0
+FFF,M,East Anglian Region,Lower Than A Level,80-90%,0-35,0,60,N,Pass,164.0,0.0,88.0,TMA,166.0,25.0,7366.0
+BBB,F,West Midlands Region,Lower Than A Level,20-30%,0-35,0,60,N,Pass,210.0,0.0,60.0,CMA,208.0,1.0,623.0
+GGG,F,North Western Region,Lower Than A Level,20-30%,35-55,0,30,N,Pass,198.0,0.0,100.0,CMA,229.0,0.0,1813.0
+DDD,F,London Region,HE Qualification,20-30%,35-55,1,60,N,Pass,50.0,0.0,78.0,TMA,53.0,12.5,2500.0
+FFF,M,North Region,HE Qualification,30-40%,35-55,0,60,N,Pass,237.0,0.0,95.0,CMA,236.0,0.0,1617.0
+EEE,F,South Region,A Level or Equivalent,70-80%,0-35,0,60,N,Pass,69.0,0.0,73.0,CMA,67.0,7.0,3184.0
+BBB,F,Yorkshire Region,Lower Than A Level,30-40%,35-55,0,60,N,Pass,102.0,0.0,100.0,CMA,96.0,1.0,1083.0
+DDD,F,North Region,Post Graduate Qualification,30-40%,35-55,0,70,N,Pass,151.0,0.0,96.0,TMA,151.0,15.0,3468.0
+FFF,M,Wales,Lower Than A Level,90-100%,0-35,0,120,N,Pass,235.0,0.0,83.0,CMA,241.0,0.0,1852.0
+BBB,F,Ireland,Lower Than A Level,20-30%,0-35,0,60,N,Pass,12.0,0.0,100.0,TMA,19.0,0.0,919.0
+BBB,F,East Anglian Region,Lower Than A Level,60-70%,0-35,0,60,N,Pass,166.0,0.0,48.0,TMA,166.0,18.0,1381.0
+FFF,M,London Region,A Level or Equivalent,10-20,0-35,0,120,N,Pass,101.0,0.0,78.0,TMA,94.0,25.0,2293.0
+CCC,F,Scotland,A Level or Equivalent,20-30%,0-35,0,60,N,Pass,69.0,0.0,98.0,CMA,67.0,7.0,2534.0
+BBB,F,Scotland,A Level or Equivalent,80-90%,35-55,0,120,N,Pass,4.0,0.0,1.0,TMA,19.0,0.0,2297.0
+FFF,F,North Western Region,A Level or Equivalent,10-20,0-35,0,90,N,Pass,150.0,0.0,94.0,TMA,151.0,22.0,2906.0
+BBB,F,North Western Region,Lower Than A Level,10-20,35-55,0,60,N,Pass,124.0,0.0,65.0,TMA,124.0,18.0,299.0
+FFF,F,South East Region,A Level or Equivalent,90-100%,35-55,0,120,N,Pass,164.0,0.0,85.0,CMA,241.0,0.0,5111.0
+EEE,M,London Region,Lower Than A Level,40-50%,35-55,0,30,N,Pass,32.0,0.0,95.0,TMA,33.0,16.0,3168.0
+BBB,F,South Region,A Level or Equivalent,40-50%,35-55,0,60,Y,Pass,165.0,0.0,74.0,TMA,166.0,18.0,514.0
+DDD,M,South West Region,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,52.0,0.0,81.0,TMA,53.0,12.5,744.0
+BBB,F,Yorkshire Region,A Level or Equivalent,50-60%,0-35,0,120,N,Pass,200.0,0.0,80.0,CMA,194.0,1.0,769.0
+DDD,F,North Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,115.0,0.0,86.0,TMA,116.0,15.0,2580.0
+CCC,M,North Region,A Level or Equivalent,30-40%,0-35,0,30,Y,Pass,178.0,0.0,98.0,TMA,200.0,22.0,971.0
+GGG,F,North Western Region,Lower Than A Level,40-50%,0-35,0,30,Y,Pass,154.0,0.0,60.0,CMA,229.0,0.0,1653.0
+CCC,M,London Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,220.0,0.0,71.0,CMA,236.0,0.0,7044.0
+FFF,F,East Anglian Region,A Level or Equivalent,80-90%,35-55,0,90,N,Pass,220.0,0.0,72.0,CMA,222.0,0.0,2568.0
+BBB,F,London Region,Lower Than A Level,80-90%,0-35,0,60,N,Pass,210.0,0.0,100.0,CMA,208.0,1.0,314.0
+CCC,M,North Western Region,Lower Than A Level,0-10%,0-35,0,60,N,Pass,40.0,0.0,68.0,TMA,32.0,9.0,2062.0
+FFF,F,London Region,Lower Than A Level,10-20,35-55,0,60,N,Pass,135.0,0.0,86.0,TMA,136.0,25.0,5509.0
+BBB,F,East Anglian Region,Lower Than A Level,50-60%,0-35,0,120,N,Pass,209.0,0.0,32.0,TMA,208.0,18.0,389.0
+CCC,M,South Region,HE Qualification,50-60%,0-35,0,60,N,Pass,139.0,0.0,69.0,CMA,137.0,8.0,1317.0
+FFF,M,East Anglian Region,A Level or Equivalent,20-30%,0-35,0,60,N,Pass,53.0,0.0,88.0,TMA,52.0,12.5,2766.0
+DDD,M,London Region,HE Qualification,20-30%,0-35,0,120,N,Pass,117.0,0.0,72.0,TMA,116.0,15.0,1775.0
+DDD,M,South East Region,Lower Than A Level,50-60%,0-35,0,90,N,Pass,122.0,0.0,68.0,TMA,123.0,20.0,1348.0
+EEE,F,London Region,HE Qualification,20-30%,0-35,0,30,Y,Pass,219.0,0.0,33.0,CMA,214.0,8.0,2578.0
+FFF,M,East Anglian Region,Lower Than A Level,90-100%,0-35,0,120,N,Pass,164.0,0.0,95.0,CMA,241.0,0.0,3797.0
+FFF,M,South Region,No Formal quals,50-60%,0-35,0,120,N,Pass,229.0,0.0,57.0,CMA,227.0,0.0,3260.0
+FFF,M,North Western Region,A Level or Equivalent,20-30%,0-35,1,60,N,Pass,14.0,0.0,96.0,CMA,222.0,0.0,4912.0
+BBB,F,South West Region,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,191.0,0.0,56.0,TMA,201.0,35.0,927.0
+BBB,F,East Anglian Region,A Level or Equivalent,0-10%,0-35,0,60,N,Pass,96.0,0.0,83.0,TMA,96.0,18.0,1055.0
+FFF,M,London Region,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,37.0,0.0,98.0,CMA,241.0,0.0,5140.0
+CCC,M,North Western Region,A Level or Equivalent,0-10%,0-35,0,60,N,Pass,69.0,0.0,84.0,CMA,67.0,7.0,1276.0
+BBB,F,North Western Region,Lower Than A Level,0-10%,0-35,0,60,N,Pass,9.0,0.0,100.0,TMA,19.0,0.0,610.0
+BBB,F,East Midlands Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,154.0,0.0,80.0,CMA,152.0,1.0,336.0
+FFF,M,South Region,A Level or Equivalent,50-60%,35-55,0,90,N,Pass,172.0,0.0,90.0,TMA,173.0,25.0,5081.0
+BBB,F,North Region,Lower Than A Level,0-10%,0-35,0,60,N,Pass,95.0,0.0,100.0,CMA,89.0,1.0,1335.0
+BBB,F,Wales,A Level or Equivalent,30-40%,0-35,0,120,N,Pass,189.0,0.0,60.0,CMA,187.0,1.0,381.0
+CCC,M,East Midlands Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,32.0,0.0,90.0,TMA,32.0,9.0,4694.0
+AAA,M,London Region,Lower Than A Level,40-50%,35-55,0,60,N,Pass,114.0,0.0,78.0,TMA,117.0,20.0,2867.0
+BBB,F,Ireland,Lower Than A Level,20-30%,35-55,0,60,N,Pass,95.0,0.0,51.0,TMA,96.0,18.0,1578.0
+BBB,F,North Western Region,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,84.0,0.0,100.0,CMA,82.0,1.0,267.0
+FFF,M,North Western Region,Lower Than A Level,0-10%,0-35,0,60,N,Pass,96.0,0.0,37.0,TMA,96.0,25.0,4818.0
+BBB,F,North Western Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,116.0,0.0,88.0,TMA,117.0,18.0,658.0
+DDD,M,North Western Region,A Level or Equivalent,30-40%,0-35,0,80,N,Pass,44.0,0.0,94.0,TMA,53.0,10.0,4826.0
+FFF,M,Yorkshire Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,124.0,0.0,92.0,CMA,227.0,0.0,2630.0
+GGG,F,South West Region,A Level or Equivalent,60-70%,35-55,0,30,N,Pass,165.0,0.0,60.0,CMA,222.0,0.0,508.0
+FFF,F,Yorkshire Region,Lower Than A Level,10-20,35-55,0,60,N,Pass,54.0,0.0,85.0,CMA,222.0,0.0,7744.0
+FFF,M,South East Region,Lower Than A Level,80-90%,0-35,0,60,N,Pass,202.0,0.0,85.0,CMA,227.0,0.0,14890.0
+FFF,M,Yorkshire Region,A Level or Equivalent,40-50%,0-35,0,120,Y,Pass,70.0,0.0,80.0,CMA,236.0,0.0,4938.0
+CCC,M,North Western Region,HE Qualification,0-10%,0-35,1,30,N,Pass,219.0,0.0,50.0,CMA,214.0,8.0,1077.0
+DDD,M,London Region,A Level or Equivalent,90-100%,35-55,1,60,N,Pass,-1.0,1.0,94.0,TMA,74.0,17.5,1531.0
+GGG,F,Scotland,Lower Than A Level,0-10%,0-35,0,30,Y,Pass,153.0,0.0,100.0,CMA,229.0,0.0,737.0
+FFF,F,West Midlands Region,A Level or Equivalent,0-10%,35-55,0,60,N,Pass,185.0,0.0,82.0,CMA,236.0,0.0,6514.0
+BBB,F,South Region,A Level or Equivalent,40-50%,0-35,0,60,N,Pass,150.0,0.0,85.0,TMA,152.0,18.0,318.0
+EEE,M,Scotland,HE Qualification,60-70%,0-35,0,215,N,Pass,33.0,0.0,86.0,TMA,33.0,16.0,827.0
+BBB,F,North Region,A Level or Equivalent,50-60%,35-55,0,60,N,Pass,150.0,0.0,93.0,TMA,152.0,18.0,329.0
+CCC,M,Wales,HE Qualification,90-100%,0-35,0,90,N,Pass,207.0,0.0,34.0,TMA,207.0,22.0,1583.0
+AAA,M,Yorkshire Region,HE Qualification,20-30%,0-35,0,120,N,Pass,54.0,0.0,56.0,TMA,54.0,20.0,174.0
+CCC,M,East Anglian Region,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,20.0,0.0,90.0,CMA,18.0,2.0,2474.0
+BBB,F,South Region,Lower Than A Level,50-60%,0-35,0,60,N,Pass,16.0,0.0,1.0,TMA,19.0,0.0,1136.0
+FFF,M,Yorkshire Region,Lower Than A Level,50-60%,35-55,2,60,N,Pass,66.0,0.0,87.0,CMA,241.0,0.0,4750.0
+CCC,M,South Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,147.0,0.0,83.0,CMA,144.0,8.0,6826.0
+FFF,M,South Region,A Level or Equivalent,30-40%,35-55,0,120,N,Pass,185.0,0.0,76.0,CMA,227.0,0.0,2585.0
+CCC,F,South East Region,A Level or Equivalent,30-40%,0-35,0,60,Y,Pass,123.0,0.0,97.0,TMA,123.0,20.0,2457.0
+CCC,M,Scotland,Lower Than A Level,50-60%,0-35,0,90,N,Pass,230.0,0.0,50.0,Exam,128.2432009680228,100.0,2667.0
+FFF,M,South Region,HE Qualification,80-90%,0-35,0,60,N,Pass,23.0,0.0,78.0,TMA,24.0,12.5,3582.0
+DDD,M,South West Region,HE Qualification,50-60%,35-55,0,60,N,Pass,116.0,0.0,82.0,TMA,116.0,20.0,938.0
+FFF,M,South West Region,Lower Than A Level,0-10%,35-55,0,90,Y,Pass,74.0,0.0,87.0,CMA,236.0,0.0,1629.0
+DDD,F,Yorkshire Region,Lower Than A Level,0-10%,0-35,0,60,N,Pass,113.0,0.0,77.0,TMA,111.0,25.0,330.0
+GGG,M,South West Region,A Level or Equivalent,10-20,0-35,0,30,N,Pass,216.0,0.0,100.0,CMA,229.0,0.0,169.0
+BBB,F,South East Region,Lower Than A Level,60-70%,35-55,0,60,N,Pass,200.0,0.0,79.0,TMA,201.0,35.0,1562.0
+CCC,F,London Region,A Level or Equivalent,40-50%,0-35,0,90,N,Pass,151.0,0.0,83.0,TMA,151.0,22.0,5925.0
+BBB,F,North Western Region,Lower Than A Level,80-90%,35-55,0,60,N,Pass,48.0,0.0,93.0,TMA,54.0,10.0,2326.0
+CCC,M,East Midlands Region,A Level or Equivalent,30-40%,35-55,0,70,N,Pass,21.0,0.0,100.0,CMA,18.0,2.0,504.0
+BBB,F,East Midlands Region,Lower Than A Level,20-30%,0-35,1,180,Y,Pass,126.0,0.0,80.0,CMA,124.0,1.0,348.0
+FFF,M,Yorkshire Region,HE Qualification,40-50%,35-55,0,90,N,Pass,228.0,0.0,88.0,CMA,236.0,0.0,3354.0
+FFF,M,South Region,Lower Than A Level,80-90%,0-35,0,60,N,Pass,23.0,0.0,76.0,TMA,24.0,12.5,2619.0
+FFF,F,North Western Region,A Level or Equivalent,40-50%,0-35,0,120,N,Pass,172.0,0.0,65.0,CMA,236.0,0.0,1746.0
+GGG,F,South West Region,A Level or Equivalent,40-50%,35-55,0,30,N,Pass,155.0,0.0,51.0,TMA,173.0,0.0,623.0
+EEE,M,South Region,Lower Than A Level,80-90%,0-35,0,90,N,Pass,207.0,0.0,91.0,TMA,207.0,22.0,3512.0
+FFF,M,Ireland,Lower Than A Level,30-40%,0-35,0,120,N,Pass,215.0,0.0,91.0,CMA,227.0,0.0,6774.0
+BBB,F,South West Region,Lower Than A Level,10-20,0-35,0,60,N,Pass,18.0,0.0,48.0,TMA,19.0,5.0,320.0
+CCC,M,South West Region,No Formal quals,20-30%,0-35,0,60,N,Pass,209.0,0.0,54.0,CMA,207.0,8.0,2882.0
+BBB,F,North Region,A Level or Equivalent,20-30%,0-35,0,60,N,Pass,88.0,0.0,77.0,TMA,89.0,18.0,984.0
+FFF,M,West Midlands Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,23.0,0.0,94.0,TMA,24.0,12.5,2434.0
+FFF,M,East Midlands Region,A Level or Equivalent,70-80%,0-35,0,60,N,Pass,220.0,0.0,74.0,CMA,241.0,0.0,2163.0
+BBB,F,West Midlands Region,A Level or Equivalent,0-10%,0-35,0,120,N,Pass,168.0,0.0,80.0,CMA,166.0,1.0,2848.0
+FFF,M,South West Region,Lower Than A Level,70-80%,35-55,0,120,N,Pass,135.0,0.0,90.0,TMA,136.0,25.0,9464.0
+DDD,F,London Region,Lower Than A Level,20-30%,0-35,0,60,N,Pass,158.0,0.0,76.0,TMA,151.0,15.0,939.0
+BBB,F,South East Region,Lower Than A Level,20-30%,0-35,1,60,N,Pass,44.0,0.0,62.0,TMA,54.0,10.0,1227.0
+BBB,F,East Anglian Region,A Level or Equivalent,50-60%,35-55,0,60,N,Pass,129.0,0.0,74.0,TMA,131.0,18.0,1104.0
+DDD,M,South East Region,Lower Than A Level,60-70%,0-35,0,60,N,Pass,123.0,0.0,76.0,TMA,123.0,20.0,1564.0
+CCC,M,North Western Region,Lower Than A Level,0-10%,0-35,0,30,N,Pass,69.0,0.0,92.0,CMA,67.0,7.0,4193.0
+FFF,F,South East Region,A Level or Equivalent,90-100%,35-55,0,120,N,Pass,35.0,0.0,97.0,CMA,241.0,0.0,5111.0
+CCC,M,East Anglian Region,HE Qualification,30-40%,0-35,0,60,N,Pass,46.0,0.0,82.0,TMA,47.0,12.5,4037.0
+FFF,F,North Region,No Formal quals,30-40%,0-35,0,60,N,Pass,51.0,0.0,74.0,TMA,52.0,12.5,9534.0
+FFF,M,East Anglian Region,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,95.0,0.0,91.0,CMA,227.0,0.0,4401.0
+AAA,F,Yorkshire Region,A Level or Equivalent,30-40%,0-35,0,120,N,Pass,121.0,0.0,78.0,TMA,117.0,20.0,1368.0
+CCC,M,South East Region,No Formal quals,20-30%,0-35,0,60,N,Pass,245.0,0.0,98.0,Exam,128.2432009680228,100.0,1808.0
+DDD,F,East Anglian Region,Lower Than A Level,20-30%,0-35,0,60,N,Pass,116.0,0.0,34.0,TMA,116.0,20.0,998.0
+BBB,F,North Region,Lower Than A Level,30-40%,0-35,1,60,N,Pass,133.0,0.0,80.0,CMA,131.0,1.0,3874.0
+EEE,M,South Region,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,156.0,0.0,75.0,TMA,158.0,22.0,2887.0
+BBB,F,Wales,HE Qualification,20-30%,35-55,0,60,N,Pass,82.0,0.0,71.0,TMA,82.0,18.0,183.0
+FFF,M,East Midlands Region,Lower Than A Level,50-60%,0-35,0,90,Y,Pass,54.0,0.0,92.0,CMA,241.0,0.0,5440.0
+CCC,F,Scotland,Lower Than A Level,30-40%,0-35,0,30,Y,Pass,209.0,0.0,54.0,CMA,207.0,8.0,659.0
+CCC,M,Scotland,A Level or Equivalent,90-100%,35-55,0,60,N,Pass,123.0,0.0,94.0,TMA,124.0,28.0,10214.0
+FFF,M,Wales,Lower Than A Level,60-70%,35-55,1,120,N,Pass,195.0,0.0,95.0,CMA,222.0,0.0,5790.0
+FFF,F,North Region,Post Graduate Qualification,30-40%,35-55,0,60,N,Pass,198.0,0.0,88.0,CMA,222.0,0.0,4306.0
+FFF,M,South East Region,Lower Than A Level,30-40%,0-35,1,180,N,Pass,25.0,0.0,65.0,CMA,227.0,0.0,1986.0
+FFF,M,Ireland,Lower Than A Level,30-40%,35-55,0,90,N,Pass,77.0,0.0,91.0,CMA,227.0,0.0,3191.0
+FFF,F,West Midlands Region,Lower Than A Level,80-90%,0-35,0,120,N,Pass,33.0,0.0,93.0,CMA,236.0,0.0,8101.0
+AAA,M,Scotland,HE Qualification,80-90%,35-55,0,60,N,Pass,54.0,0.0,75.0,TMA,54.0,20.0,6965.0
+DDD,F,South West Region,Lower Than A Level,40-50%,0-35,0,60,N,Pass,173.0,0.0,61.0,CMA,170.0,3.0,1079.0
+FFF,F,East Anglian Region,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,199.0,0.0,89.0,CMA,222.0,0.0,6513.0
+FFF,M,Ireland,HE Qualification,50-60%,0-35,1,90,N,Pass,236.0,0.0,38.0,CMA,236.0,0.0,1639.0
+FFF,M,East Anglian Region,Lower Than A Level,90-100%,0-35,2,60,N,Pass,23.0,0.0,84.0,TMA,19.0,12.5,928.0
+GGG,F,London Region,A Level or Equivalent,60-70%,35-55,0,30,N,Pass,94.0,0.0,80.0,CMA,229.0,0.0,776.0
+DDD,M,South East Region,Lower Than A Level,50-60%,0-35,0,90,N,Pass,31.0,0.0,60.0,TMA,32.0,9.0,1348.0
+FFF,M,West Midlands Region,Lower Than A Level,70-80%,35-55,1,60,N,Pass,143.0,0.0,59.0,TMA,136.0,25.0,7400.0
+FFF,F,Scotland,HE Qualification,20-30%,0-35,0,60,N,Pass,51.0,0.0,70.0,TMA,52.0,12.5,4300.0
+GGG,F,South East Region,Lower Than A Level,40-50%,35-55,0,30,Y,Pass,124.0,0.0,100.0,CMA,222.0,0.0,1697.0
+FFF,M,South West Region,A Level or Equivalent,20-30%,0-35,0,150,N,Pass,26.0,0.0,72.0,TMA,47.0,12.5,1328.0
+FFF,M,East Midlands Region,A Level or Equivalent,90-100%,35-55,0,120,N,Pass,110.0,0.0,93.0,CMA,241.0,0.0,3886.0
+CCC,M,South Region,Lower Than A Level,80-90%,0-35,1,90,N,Pass,219.0,0.0,96.0,CMA,214.0,8.0,4608.0
+FFF,F,North Region,HE Qualification,30-40%,0-35,0,60,N,Pass,182.0,0.0,68.0,CMA,236.0,0.0,4328.0
+CCC,M,East Midlands Region,A Level or Equivalent,80-90%,35-55,0,60,N,Pass,100.0,0.0,93.0,TMA,109.0,22.0,2801.0
+FFF,M,South Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,220.0,0.0,80.0,CMA,236.0,0.0,1981.0
+CCC,M,London Region,HE Qualification,30-40%,0-35,0,120,N,Pass,52.0,0.0,96.0,TMA,52.0,12.5,4259.0
+CCC,M,West Midlands Region,Lower Than A Level,20-30%,0-35,0,60,N,Pass,69.0,0.0,94.0,CMA,67.0,7.0,5508.0
+DDD,F,Wales,Lower Than A Level,70-80%,0-35,0,60,Y,Pass,73.0,0.0,88.0,TMA,62.0,10.0,1418.0
+FFF,M,South East Region,A Level or Equivalent,40-50%,0-35,0,120,N,Pass,169.0,0.0,96.0,TMA,173.0,25.0,3017.0
+FFF,M,North Western Region,A Level or Equivalent,0-10%,0-35,0,60,N,Pass,96.0,0.0,84.0,CMA,227.0,0.0,4515.0
+FFF,M,East Midlands Region,A Level or Equivalent,10-20,0-35,0,90,N,Pass,229.0,0.0,80.0,CMA,236.0,0.0,3035.0
+FFF,M,London Region,A Level or Equivalent,60-70%,0-35,1,150,N,Pass,101.0,0.0,82.0,CMA,236.0,0.0,2774.0
+BBB,F,Wales,No Formal quals,30-40%,35-55,0,120,N,Pass,19.0,0.0,1.0,TMA,19.0,0.0,3717.0
+DDD,F,London Region,HE Qualification,20-30%,35-55,0,60,N,Pass,152.0,0.0,94.0,CMA,149.0,4.0,1332.0
+BBB,F,Ireland,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,200.0,0.0,60.0,CMA,194.0,1.0,144.0
+BBB,F,North Western Region,A Level or Equivalent,80-90%,35-55,0,60,N,Pass,119.0,0.0,100.0,CMA,117.0,1.0,3132.0
+DDD,M,Scotland,A Level or Equivalent,0-10%,35-55,1,180,N,Pass,115.0,0.0,67.0,TMA,116.0,15.0,1687.0
+GGG,F,South Region,Lower Than A Level,90-100%,35-55,0,30,N,Pass,149.0,0.0,100.0,CMA,229.0,0.0,621.0
+DDD,M,South East Region,A Level or Equivalent,60-70%,35-55,1,90,N,Pass,25.0,0.0,93.0,CMA,23.0,2.0,1764.0
+BBB,F,East Anglian Region,Lower Than A Level,90-100%,0-35,0,90,N,Pass,102.0,0.0,80.0,CMA,96.0,1.0,190.0
+BBB,F,Ireland,Lower Than A Level,80-90%,35-55,0,60,N,Pass,29.0,0.0,100.0,TMA,19.0,0.0,544.0
+FFF,M,Ireland,A Level or Equivalent,40-50%,0-35,0,120,N,Pass,245.0,0.0,54.0,Exam,128.2432009680228,100.0,2724.0
+DDD,M,South Region,A Level or Equivalent,50-60%,35-55,0,60,N,Pass,194.0,0.0,60.0,TMA,195.0,25.0,1355.0
+FFF,M,Ireland,A Level or Equivalent,70-80%,35-55,0,120,N,Pass,238.0,0.0,73.0,CMA,236.0,0.0,3692.0
+FFF,M,North Western Region,A Level or Equivalent,70-80%,0-35,0,90,N,Pass,10.0,0.0,93.0,CMA,241.0,0.0,2127.0
+FFF,M,East Midlands Region,Lower Than A Level,60-70%,0-35,0,60,Y,Pass,13.0,0.0,77.0,CMA,227.0,0.0,3735.0
+DDD,M,Scotland,A Level or Equivalent,60-70%,35-55,0,60,N,Pass,117.0,0.0,95.0,CMA,114.0,4.0,4553.0
+BBB,F,Ireland,A Level or Equivalent,30-40%,0-35,0,60,N,Pass,17.0,0.0,76.0,TMA,19.0,5.0,6229.0
+FFF,F,South West Region,A Level or Equivalent,0-10%,0-35,0,120,Y,Pass,233.0,0.0,93.0,CMA,241.0,0.0,3039.0
+FFF,M,London Region,Lower Than A Level,10-20,0-35,0,120,Y,Pass,32.0,0.0,80.0,TMA,32.0,9.0,4168.0
+BBB,M,Wales,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,15.0,0.0,1.0,TMA,19.0,0.0,621.0
+DDD,M,Wales,A Level or Equivalent,90-100%,0-35,0,120,N,Pass,208.0,0.0,69.0,TMA,200.0,22.0,3782.0
+DDD,F,East Midlands Region,Lower Than A Level,10-20,35-55,1,120,N,Pass,81.0,0.0,89.0,CMA,79.0,3.0,2234.0
+FFF,M,South West Region,HE Qualification,40-50%,35-55,0,60,N,Pass,130.0,0.0,87.0,CMA,222.0,0.0,4237.0
+FFF,M,Scotland,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,238.0,0.0,81.0,CMA,241.0,0.0,4465.0
+BBB,F,North Western Region,A Level or Equivalent,10-20,0-35,0,60,Y,Pass,84.0,0.0,80.0,CMA,82.0,1.0,739.0
+DDD,M,East Midlands Region,A Level or Equivalent,20-30%,35-55,0,60,N,Pass,49.0,0.0,90.0,TMA,53.0,12.5,1902.0
+CCC,M,London Region,Lower Than A Level,10-20,0-35,0,60,N,Pass,21.0,0.0,89.0,CMA,18.0,2.0,4588.0
+GGG,F,East Midlands Region,Lower Than A Level,10-20,35-55,0,30,Y,Pass,94.0,0.0,100.0,CMA,229.0,0.0,1740.0
+FFF,M,South Region,Lower Than A Level,10-20,0-35,0,60,N,Pass,229.0,0.0,77.0,CMA,236.0,0.0,900.0
+GGG,F,Yorkshire Region,Lower Than A Level,80-90%,35-55,0,30,N,Pass,171.0,0.0,78.0,TMA,173.0,0.0,885.0
+CCC,F,South East Region,A Level or Equivalent,50-60%,35-55,0,60,N,Pass,147.0,0.0,100.0,CMA,144.0,8.0,3731.0
+DDD,F,South East Region,A Level or Equivalent,60-70%,0-35,0,60,Y,Pass,53.0,0.0,66.0,TMA,53.0,12.5,999.0
+BBB,F,South East Region,A Level or Equivalent,60-70%,0-35,1,60,N,Pass,210.0,0.0,100.0,CMA,208.0,1.0,495.0
+FFF,F,Scotland,A Level or Equivalent,20-30%,35-55,0,60,N,Pass,212.0,0.0,72.0,CMA,227.0,0.0,6392.0
+DDD,M,North Western Region,HE Qualification,0-10%,35-55,1,60,N,Pass,20.0,0.0,95.0,TMA,20.0,5.0,1244.0
+FFF,M,North Western Region,A Level or Equivalent,80-90%,0-35,0,60,N,Pass,123.0,0.0,87.0,CMA,241.0,0.0,4898.0
+BBB,F,North Western Region,Lower Than A Level,90-100%,0-35,0,60,N,Pass,160.0,0.0,93.0,TMA,152.0,35.0,2582.0
+FFF,M,East Midlands Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,23.0,0.0,88.0,TMA,24.0,12.5,3080.0
+FFF,M,Wales,A Level or Equivalent,90-100%,35-55,0,90,N,Pass,160.0,0.0,94.0,TMA,166.0,25.0,2613.0
+BBB,M,East Anglian Region,A Level or Equivalent,60-70%,0-35,0,60,N,Pass,19.0,0.0,1.0,TMA,19.0,0.0,1409.0
+CCC,F,Scotland,A Level or Equivalent,0-10%,0-35,0,120,Y,Pass,24.0,0.0,86.0,TMA,24.0,12.5,4062.0
+BBB,F,East Anglian Region,A Level or Equivalent,10-20,0-35,0,120,N,Pass,102.0,0.0,100.0,CMA,96.0,1.0,442.0
+EEE,M,North Western Region,A Level or Equivalent,40-50%,35-55,0,60,N,Pass,166.0,0.0,72.0,TMA,166.0,28.0,4586.0
+DDD,M,North Region,HE Qualification,30-40%,35-55,0,60,N,Pass,54.0,0.0,100.0,CMA,51.0,3.0,816.0
+BBB,F,South East Region,Lower Than A Level,70-80%,35-55,0,60,N,Pass,15.0,0.0,1.0,TMA,19.0,0.0,906.0
+BBB,F,Wales,Lower Than A Level,90-100%,35-55,0,60,N,Pass,150.0,0.0,72.0,TMA,152.0,35.0,1312.0
+FFF,M,North Region,A Level or Equivalent,30-40%,35-55,0,60,Y,Pass,91.0,0.0,93.0,CMA,241.0,0.0,3663.0
+DDD,M,Scotland,A Level or Equivalent,10-20,0-35,1,150,Y,Pass,117.0,0.0,55.0,CMA,114.0,4.0,2785.0
+FFF,M,Wales,HE Qualification,70-80%,0-35,0,60,N,Pass,220.0,0.0,69.0,CMA,236.0,0.0,1368.0
+FFF,M,Yorkshire Region,A Level or Equivalent,40-50%,0-35,0,90,N,Pass,161.0,0.0,83.0,CMA,222.0,0.0,4662.0
+CCC,F,Scotland,A Level or Equivalent,70-80%,0-35,0,60,N,Pass,68.0,0.0,83.0,TMA,68.0,28.0,2978.0
+EEE,M,Scotland,HE Qualification,10-20,0-35,1,60,N,Pass,66.0,0.0,96.0,TMA,68.0,28.0,2906.0
+FFF,M,Wales,A Level or Equivalent,80-90%,0-35,0,180,N,Pass,236.0,0.0,71.0,CMA,236.0,0.0,2515.0
+AAA,F,North Region,A Level or Equivalent,50-60%,35-55,0,60,N,Pass,17.0,0.0,65.0,TMA,19.0,10.0,2121.0
+GGG,F,West Midlands Region,Lower Than A Level,80-90%,0-35,0,30,N,Pass,114.0,0.0,84.0,TMA,117.0,0.0,549.0
+BBB,F,Scotland,A Level or Equivalent,80-90%,35-55,0,60,N,Pass,168.0,0.0,60.0,CMA,166.0,1.0,1004.0
+GGG,F,Scotland,A Level or Equivalent,50-60%,0-35,0,30,N,Pass,151.0,0.0,100.0,CMA,229.0,0.0,728.0
+FFF,M,East Midlands Region,A Level or Equivalent,10-20,0-35,0,90,N,Pass,234.0,0.0,93.0,CMA,236.0,0.0,3925.0
+CCC,M,South East Region,A Level or Equivalent,80-90%,35-55,0,60,N,Pass,157.0,0.0,47.0,TMA,158.0,20.0,2694.0
+CCC,M,London Region,Post Graduate Qualification,10-20,35-55,0,120,N,Pass,202.0,0.0,94.0,TMA,200.0,22.0,3038.0
+DDD,M,East Anglian Region,Lower Than A Level,50-60%,35-55,2,60,N,Pass,34.0,0.0,71.0,TMA,25.0,10.0,1015.0
+BBB,F,West Midlands Region,Lower Than A Level,90-100%,0-35,0,60,N,Pass,168.0,0.0,80.0,CMA,166.0,1.0,757.0
+DDD,M,Wales,HE Qualification,10-20,35-55,0,120,N,Pass,173.0,0.0,67.0,CMA,170.0,3.0,3796.0
+BBB,F,South East Region,A Level or Equivalent,50-60%,0-35,0,120,N,Pass,92.0,0.0,87.0,TMA,96.0,18.0,1320.0
+DDD,M,London Region,A Level or Equivalent,40-50%,0-35,0,60,N,Pass,111.0,0.0,100.0,TMA,111.0,25.0,459.0
+BBB,F,Wales,HE Qualification,70-80%,35-55,0,60,N,Pass,97.0,0.0,84.0,TMA,96.0,18.0,822.0
+CCC,M,Yorkshire Region,HE Qualification,30-40%,0-35,0,60,N,Pass,20.0,0.0,60.0,CMA,18.0,2.0,1148.0
+FFF,M,South Region,A Level or Equivalent,80-90%,0-35,0,60,N,Pass,164.0,0.0,83.0,TMA,166.0,25.0,3247.0
+CCC,M,Scotland,A Level or Equivalent,0-10%,0-35,0,30,N,Pass,69.0,0.0,56.0,CMA,67.0,7.0,765.0
+CCC,M,South West Region,A Level or Equivalent,50-60%,0-35,0,120,N,Pass,189.0,0.0,78.0,CMA,227.0,0.0,10919.0
+DDD,F,North Western Region,Lower Than A Level,0-10%,0-35,0,150,N,Pass,165.0,0.0,72.0,TMA,165.0,20.0,954.0
+BBB,F,South West Region,A Level or Equivalent,80-90%,0-35,0,60,N,Pass,49.0,0.0,80.0,CMA,47.0,1.0,620.0
+BBB,F,East Anglian Region,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,43.0,0.0,65.0,TMA,47.0,18.0,287.0
+DDD,M,North Region,Lower Than A Level,30-40%,0-35,0,60,N,Pass,207.0,0.0,87.0,TMA,207.0,20.0,3295.0
+DDD,M,North Region,Lower Than A Level,30-40%,0-35,0,120,N,Pass,81.0,0.0,87.0,TMA,81.0,12.5,1464.0
+BBB,M,South Region,A Level or Equivalent,80-90%,0-35,0,60,N,Pass,208.0,0.0,80.0,TMA,208.0,18.0,1127.0
+CCC,M,Scotland,HE Qualification,80-90%,0-35,0,60,N,Pass,147.0,0.0,69.0,CMA,144.0,8.0,2549.0
+FFF,M,North Region,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,135.0,0.0,85.0,TMA,136.0,25.0,3397.0
+GGG,F,North Region,A Level or Equivalent,10-20,0-35,0,30,N,Pass,213.0,0.0,100.0,CMA,229.0,0.0,610.0
+BBB,M,South Region,HE Qualification,80-90%,0-35,0,120,N,Pass,126.0,0.0,100.0,CMA,124.0,1.0,501.0
+FFF,M,South West Region,A Level or Equivalent,90-100%,0-35,0,120,N,Pass,16.0,0.0,92.0,TMA,19.0,12.5,8229.0
+BBB,F,Ireland,Lower Than A Level,30-40%,0-35,1,120,N,Pass,19.0,0.0,56.0,TMA,19.0,5.0,157.0
+FFF,M,South Region,A Level or Equivalent,80-90%,0-35,0,60,N,Pass,184.0,0.0,85.0,CMA,241.0,0.0,2751.0
+CCC,M,South East Region,Lower Than A Level,80-90%,0-35,0,60,N,Pass,95.0,0.0,78.0,CMA,227.0,0.0,14890.0
+GGG,F,East Midlands Region,Lower Than A Level,40-50%,35-55,0,30,N,Pass,130.0,0.0,80.0,CMA,222.0,0.0,546.0
+DDD,F,South West Region,HE Qualification,30-40%,35-55,0,130,N,Pass,25.0,0.0,91.0,TMA,25.0,10.0,1559.0
+EEE,M,South Region,Lower Than A Level,90-100%,0-35,0,60,N,Pass,89.0,0.0,73.0,TMA,68.0,28.0,684.0
+DDD,M,London Region,A Level or Equivalent,20-30%,35-55,0,120,N,Pass,162.0,0.0,83.0,TMA,146.0,25.0,529.0
+FFF,F,South East Region,Lower Than A Level,80-90%,35-55,0,60,N,Pass,216.0,0.0,75.0,CMA,222.0,0.0,3286.0
+BBB,F,South West Region,A Level or Equivalent,70-80%,0-35,0,120,N,Pass,131.0,0.0,85.0,TMA,131.0,18.0,336.0
+FFF,M,London Region,No Formal quals,10-20,35-55,0,90,N,Pass,216.0,0.0,83.0,CMA,227.0,0.0,6915.0
+FFF,M,Wales,A Level or Equivalent,80-90%,0-35,1,120,N,Pass,215.0,0.0,82.0,CMA,222.0,0.0,3617.0
+DDD,M,East Midlands Region,A Level or Equivalent,50-60%,0-35,1,90,N,Pass,23.0,0.0,39.0,TMA,25.0,10.0,4591.0
+BBB,M,Ireland,Lower Than A Level,60-70%,0-35,0,60,N,Pass,180.0,0.0,75.0,TMA,159.0,18.0,734.0
+GGG,F,North Western Region,A Level or Equivalent,10-20,0-35,0,30,N,Pass,217.0,0.0,80.0,CMA,229.0,0.0,255.0
+FFF,M,Yorkshire Region,Lower Than A Level,40-50%,0-35,0,60,N,Pass,178.0,0.0,77.0,CMA,227.0,0.0,3631.0
+DDD,M,East Anglian Region,Lower Than A Level,70-80%,0-35,0,60,N,Pass,104.0,0.0,92.0,TMA,116.0,15.0,7058.0
+CCC,M,South Region,A Level or Equivalent,90-100%,35-55,0,60,N,Pass,21.0,0.0,78.0,TMA,25.0,10.0,3902.0
+FFF,F,Scotland,A Level or Equivalent,30-40%,0-35,0,120,N,Pass,194.0,0.0,74.0,CMA,227.0,0.0,3821.0
+BBB,F,West Midlands Region,Lower Than A Level,90-100%,0-35,0,60,N,Pass,109.0,0.0,69.0,TMA,110.0,20.0,3874.0
+BBB,F,Wales,HE Qualification,90-100%,0-35,0,60,N,Pass,82.0,0.0,75.0,TMA,82.0,18.0,611.0
+FFF,M,South West Region,A Level or Equivalent,80-90%,0-35,0,120,N,Pass,72.0,0.0,86.0,CMA,241.0,0.0,3930.0
+FFF,F,East Anglian Region,HE Qualification,40-50%,35-55,0,60,N,Pass,140.0,0.0,81.0,CMA,227.0,0.0,6307.0
+DDD,F,Scotland,HE Qualification,40-50%,0-35,0,60,N,Pass,236.0,0.0,100.0,Exam,241.0,100.0,1649.0
+BBB,F,Wales,Lower Than A Level,40-50%,0-35,0,60,N,Pass,47.0,0.0,75.0,TMA,47.0,18.0,3793.0
+CCC,M,North Western Region,A Level or Equivalent,80-90%,0-35,0,60,N,Pass,147.0,0.0,85.0,CMA,144.0,8.0,6940.0
+FFF,F,London Region,A Level or Equivalent,70-80%,35-55,0,90,N,Pass,165.0,0.0,87.0,TMA,166.0,25.0,6777.0
+BBB,F,London Region,Lower Than A Level,20-30%,0-35,2,60,N,Pass,149.0,0.0,73.0,TMA,152.0,35.0,830.0
+FFF,M,London Region,Lower Than A Level,60-70%,0-35,0,60,N,Pass,217.0,0.0,75.0,CMA,222.0,0.0,2804.0
+FFF,M,North Western Region,A Level or Equivalent,30-40%,0-35,4,120,N,Pass,52.0,0.0,90.0,TMA,52.0,12.5,4016.0
+CCC,M,North Region,A Level or Equivalent,90-100%,0-35,0,60,N,Pass,46.0,0.0,92.0,TMA,47.0,12.5,9565.0
+CCC,M,Yorkshire Region,A Level or Equivalent,70-80%,0-35,0,60,N,Pass,139.0,0.0,88.0,CMA,137.0,8.0,2312.0
+FFF,M,Scotland,A Level or Equivalent,20-30%,0-35,0,150,N,Pass,195.0,0.0,76.0,CMA,227.0,0.0,1726.0
+EEE,M,London Region,A Level or Equivalent,20-30%,0-35,0,60,N,Pass,36.0,0.0,88.0,TMA,32.0,9.0,2634.0
+BBB,F,South Region,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,186.0,0.0,72.0,TMA,187.0,18.0,549.0
+FFF,M,South East Region,A Level or Equivalent,70-80%,35-55,0,90,N,Pass,207.0,0.0,86.0,CMA,236.0,0.0,3885.0
+BBB,F,South West Region,HE Qualification,30-40%,35-55,0,120,N,Pass,126.0,0.0,100.0,CMA,124.0,1.0,1143.0
+BBB,M,West Midlands Region,HE Qualification,10-20,0-35,0,60,N,Pass,151.0,0.0,69.0,TMA,152.0,35.0,1030.0
+BBB,F,South East Region,HE Qualification,80-90%,35-55,0,60,N,Pass,45.0,0.0,78.0,TMA,54.0,10.0,1315.0
+CCC,M,London Region,A Level or Equivalent,50-60%,35-55,0,60,N,Pass,27.0,0.0,100.0,TMA,32.0,9.0,5723.0
+CCC,M,Wales,HE Qualification,40-50%,0-35,0,60,N,Pass,32.0,0.0,91.0,TMA,33.0,16.0,2722.0
+CCC,M,South Region,HE Qualification,90-100%,35-55,0,90,Y,Pass,237.0,0.0,89.0,CMA,241.0,0.0,2964.0
+DDD,M,South East Region,A Level or Equivalent,30-40%,0-35,0,150,N,Pass,147.0,0.0,31.0,TMA,146.0,25.0,993.0
+EEE,M,North Western Region,A Level or Equivalent,20-30%,0-35,0,30,N,Pass,210.0,0.0,75.0,CMA,222.0,0.0,10168.0
+BBB,F,East Anglian Region,A Level or Equivalent,50-60%,0-35,0,60,N,Pass,170.0,0.0,86.0,TMA,166.0,18.0,814.0
+BBB,F,Yorkshire Region,A Level or Equivalent,10-20,0-35,0,60,N,Pass,210.0,0.0,100.0,CMA,208.0,1.0,1115.0
+FFF,M,South West Region,Lower Than A Level,80-90%,0-35,0,60,N,Pass,199.0,0.0,74.0,TMA,199.0,25.0,3546.0
+DDD,F,Scotland,HE Qualification,50-60%,55<=,0,60,N,Pass,81.0,0.0,89.0,CMA,79.0,3.0,743.0
+DDD,M,East Anglian Region,Lower Than A Level,50-60%,0-35,0,60,N,Pass,23.0,0.0,94.0,TMA,25.0,10.0,1154.0
+FFF,M,Wales,Lower Than A Level,50-60%,0-35,1,180,N,Pass,236.0,0.0,87.0,CMA,241.0,0.0,2138.0
+CCC,M,London Region,A Level or Equivalent,30-40%,35-55,0,60,N,Pass,147.0,0.0,81.0,CMA,144.0,8.0,2275.0
+BBB,F,West Midlands Region,Lower Than A Level,20-30%,35-55,0,60,N,Pass,15.0,0.0,69.0,TMA,19.0,5.0,715.0
+FFF,F,East Anglian Region,Lower Than A Level,70-80%,0-35,1,120,N,Pass,207.0,0.0,79.0,CMA,222.0,0.0,3869.0
+BBB,F,East Anglian Region,A Level or Equivalent,10-20,0-35,0,120,N,Pass,25.0,0.0,85.0,TMA,19.0,5.0,442.0
+EEE,M,West Midlands Region,Lower Than A Level,80-90%,35-55,0,120,N,Pass,27.0,0.0,79.0,TMA,33.0,16.0,6917.0
+FFF,M,West Midlands Region,Lower Than A Level,50-60%,0-35,1,180,N,Pass,139.0,0.0,46.0,TMA,131.0,25.0,6127.0
+FFF,M,London Region,A Level or Equivalent,20-30%,0-35,0,90,N,Pass,230.0,0.0,80.0,CMA,236.0,0.0,1105.0
+BBB,F,Ireland,Lower Than A Level,30-40%,0-35,0,60,N,Pass,131.0,0.0,76.0,TMA,131.0,18.0,862.0

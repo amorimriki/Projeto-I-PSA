@@ -1,32 +1,37 @@
 import axios from "axios";
 
-// Para enviar JSON para a rota FastAPI
+// Base URL da API
+const API_URL = "http://localhost:8000";
+
+// Enviar JSON para a rota FastAPI
 export const predictJson = async (data) => {
-  const response = await axios.post(
-    "http://localhost:8000/predict-json",
-    data,
-    {
+  try {
+    const response = await axios.post(`${API_URL}/predict-json`, data, {
       headers: {
         "Content-Type": "application/json",
       },
-    }
-  );
-  return response.data;
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Erro na requisição JSON:", error);
+    throw error; // Repassa o erro para ser tratado na interface
+  }
 };
 
-// Para enviar ficheiro CSV para FastAPI
+// Enviar ficheiro CSV para FastAPI
 export const predictFile = async (file) => {
-  const formData = new FormData();
-  formData.append("file", file);
+  try {
+    const formData = new FormData();
+    formData.append("file", file);
 
-  const response = await axios.post(
-    "http://localhost:8000/predict-file",
-    formData,
-    {
+    const response = await axios.post(`${API_URL}/predict-file`, formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
-    }
-  );
-  return response.data;
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Erro na requisição de ficheiro:", error);
+    throw error;
+  }
 };
