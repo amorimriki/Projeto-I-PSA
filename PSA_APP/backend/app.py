@@ -2,7 +2,7 @@ import os
 import sys
 import pandas as pd
 import joblib
-from fastapi import FastAPI, File, UploadFile, HTTPException
+from fastapi import FastAPI, File, UploadFile, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
@@ -34,7 +34,7 @@ model_path_mlp = os.path.join(base_path, "ML_MODEL/mlp_pipeline.pkl")
 model_path_rf = os.path.join(base_path, "ML_MODEL/rf_pipeline.pkl")
 model = joblib.load(model_path_mlp)
 
-encoder = joblib.load(os.path.join(base_path, "PSA_APP/backend/predict_model_encoders/encoder.pkl"))
+encoders = joblib.load(os.path.join(base_path, "PSA_APP/backend/predict_model_encoders/encoders.pkl"))
 scaler = joblib.load(os.path.join(base_path, "PSA_APP/backend/predict_model_encoders/scaler.pkl"))
 
 # Features do modelo
@@ -48,32 +48,20 @@ coluna_ordem_segura = [
     'code_module', 'gender', 'region', 'highest_education', 'imd_band', 'age_band',
     'num_of_prev_attempts', 'studied_credits', 'disability',
     'date_submitted', 'is_banked', 'score', 'assessment_type',
-    'date', 'weight', 'sum_click'
+    'date', 'weight', 'sum_click', 
 ]
 
 def substituir_resultados(lista):
     return ['Pass' if item == 1 else 'Fail' if item == 0 else item for item in lista]
 
-def preprocess_data(df):
-    # Remover a coluna 'final_result' se existir
-    if 'final_result' in df.columns:
-        df = df.drop(columns=['final_result'])
+def preprocess_data_file(df,isRaw):
 
-    # Adicionar colunas em falta
-    for feature in categorical_features + numerical_features:
-        if feature not in df.columns:
-            df[feature] = 0
-
-    # Corrigir tipos das colunas numéricas
-    for col in numerical_features:
-        df[col] = pd.to_numeric(df[col], errors='coerce').fillna(222.0)
-
-    for col in categorical_features:
-        df[col] = encoder.fit_transform(df[col])
-
-    df[numerical_features] = scaler.fit_transform(df[numerical_features])
-
-
+     # Codificar features
+    if isRaw == True:
+        for col in categorical_features:
+            encoder = encoders[col]  # Acessa o encoder correspondente para a coluna
+            df[col] = encoder.fit_transform(df[col])
+        df[numerical_features] = scaler.transform(df[numerical_features])
 
     # Adicionar 'n_student' se estiver presente
     if 'n_student' in df.columns:
@@ -81,30 +69,75 @@ def preprocess_data(df):
 
     # Reordenar se possível
     df = df[[col for col in coluna_ordem_segura if col in df.columns]]
-
+    
     return df
 
 
+def preprocess_data(df):
+    # Verificar colunas em falta
+    missing_cols = [col for col in coluna_ordem_segura if col not in df.columns]
+
+    if missing_cols:
+        print("⚠️ Colunas em falta:", missing_cols)
+        # Adicionar colunas em falta com pd.NA
+        for col in missing_cols:
+            df[col] = pd.NA
+
+    # Reordenar colunas de forma segura
+    df = df[[col for col in coluna_ordem_segura if col in df.columns]]
+
+    # Tratamento de valores faltantes específicos
+    for col in coluna_ordem_segura:
+        if col == 'date' and df[col].isna().all():  # Verifica se todos os valores são NaN
+            df[col] = 222.0  # Substitui por 222.0
+        if col == 'code_module' and df[col].isna().all():  # Verifica se todos os valores são NaN
+            df[col] = "AAA"  # Substitui por "AAA"
+
+   # Transformação das colunas categóricas
+    for col in categorical_features:
+        encoder = encoders[col]  # Acessa o encoder correspondente para a coluna
+        print(encoders[col].classes_)
+        df.loc[:, col] = encoder.transform(df[col])  # Modifica diretamente a coluna
+
+
+    # Transformação das colunas numéricas
+    df[numerical_features] = scaler.transform(df[numerical_features])
+
+    return df
 
 # --- ROTA PARA UPLOAD CSV ---
 @app.post("/predict-file")
-async def predict_file(file: UploadFile = File(...)):
+
+
+async def predict_file(file: UploadFile = File(...), encoded: bool = Query(False) ):
+    
     if not file.filename.endswith('.csv'):
         raise HTTPException(status_code=400, detail="O ficheiro deve ser um CSV.")
     try:
         content = await file.read()
         df = pd.read_csv(io.StringIO(content.decode('utf-8')))
+        print("✅ encoded =", encoded)
+
+        '''
+
+        Se sendRaw === false, o CSV é pré-codificado.
+
+        Se sendRaw === true , o CSV é composto por dados raw.
+
+        '''
+
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Erro ao ler o CSV: {str(e)}")
-    if 'final_result' in df.columns:
-        df = df.drop(columns=['final_result'])
-    df_novos_dados = preprocess_data(df.copy())
+    
+    # Remover a coluna 'final_result' se existir
+    if 'final_result' in df.columns: df = df.drop(columns=['final_result'])
+
+    df_novos_dados = preprocess_data_file(df.copy(),encoded)
 
     if 'n_student' not in df_novos_dados.columns:
         raise HTTPException(status_code=400, detail="'n_student' é obrigatório.")
     
-    # Reordenar colunas (com n_student no fim se estiver presente)
-    ids = df_novos_dados['n_student']
+    
     X_novos = df_novos_dados.drop(columns=['n_student'])
     predicoes = model.predict(X_novos)
     resultados_convertidos = substituir_resultados(predicoes)
@@ -140,26 +173,29 @@ class StudentInput(BaseModel):
 def predict_json(data: List[StudentInput]):
     df_novos_dados = pd.DataFrame([d.dict() for d in data])
     
+    # Lista com a ordem correta das colunas
+    coluna_ordem_segura = [
+        "code_module", "gender", "region", "highest_education",
+        "imd_band", "age_band", "num_of_prev_attempts", "studied_credits",
+        "disability", "date_submitted", "is_banked", "score",
+        "assessment_type", "date", "weight", "sum_click", "n_student"
+    ]
+    df_novos_dados = df_novos_dados[coluna_ordem_segura]
 
-    # Se "n_student" estiver presente, adiciona no final
-    if 'n_student' in df_novos_dados.columns:
-        coluna_ordem_segura.append('n_student')
-
-    # Reordenar apenas as colunas existentes
-    df_novos_dados = df_novos_dados[[col for col in coluna_ordem_segura if col in df_novos_dados.columns]]
-
-    for col in df_novos_dados:
-        print(col)
-
+    print("Colunas recebidas:", df_novos_dados.columns.tolist())
+    print("Primeira linha:\n", df_novos_dados.head())
+    id = df_novos_dados['n_student']
     # Aplicar pré-processamento
     df_novos_dados = preprocess_data(df_novos_dados)
+    print("Colunas processadas:", df_novos_dados.columns.tolist())
+    print("Primeira linha:\n", df_novos_dados.head())
 
-    ids = df_novos_dados['n_student']
-    X_novos = df_novos_dados.drop(columns=['n_student'])
-    predicoes = model.predict(X_novos).ravel()
-
-    resultado = pd.DataFrame({'n_student': ids, 'previsao': predicoes})
+    predicao = model.predict(df_novos_dados)
+    labels = substituir_resultados(predicao)
+    print("Predicao:\n", predicao)
+    resultado = pd.DataFrame({'n_student': id, 'previsao': labels})
     return JSONResponse(content=resultado.to_dict(orient='records'))
+
 
 @app.get("/")
 def home():

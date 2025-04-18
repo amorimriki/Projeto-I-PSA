@@ -250,3 +250,117 @@ input[type=range] {
   box-shadow: none;
 }
 
+/* ===== SOBRE: Estilização específica ===== */
+.sobre-section {
+  padding: 80px 20px;
+  background-color: var(--cor-fundo-claro);
+}
+
+.sobre-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--cor-texto-claro);
+}
+
+.sobre-section .lead {
+  font-size: 1.3rem;
+  color: #e0f7f4;
+  margin-top: 10px;
+}
+
+.sobre-card {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sobre-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 191, 166, 0.1);
+}
+
+.sobre-card .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--cor-primaria);
+  margin-bottom: 15px;
+}
+
+.sobre-card .card-text,
+.sobre-card ul {
+  font-size: 1.05rem;
+  color: var(--cor-texto-escuro);
+  line-height: 1.6;
+}
+
+.sobre-card ul li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .sobre-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .sobre-section .lead {
+    font-size: 1.1rem;
+  }
+
+  .sobre-card .card-title {
+    font-size: 1.3rem;
+  }
+
+  .sobre-card .card-text,
+  .sobre-card ul {
+    font-size: 1rem;
+  }
+}
+/* Página Sobre - Estilização Avançada */
+.sobre-section h1,
+.sobre-section h2 {
+  color: var(--cor-primaria);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.sobre-section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(to right, var(--cor-primaria), var(--cor-acento));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sobre-section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.sobre-section p,
+.sobre-section li {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--cor-secundaria);
+}
+
+.sobre-section ul {
+  padding-left: 1.2rem;
+}
+
+.sobre-section li {
+  margin-bottom: 0.5rem;
+}
+
+.sobre-section .card {
+  background-color: #fff;
+  border-left: 5px solid var(--cor-acento);
+}
+
+.sobre-section .card-body {
+  padding: 25px;
+}
+
+.sobre-section .card-body strong {
+  color: var(--cor-primaria);
+}

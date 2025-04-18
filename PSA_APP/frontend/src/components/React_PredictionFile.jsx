@@ -28,6 +28,7 @@ export default function CsvPredictionPage() {
     "n_student",
     "previsao",
   ]);
+  const [sendRaw, setsendRaw] = useState(true);
 
   const handleFileUpload = (e) => {
     const uploadedFile = e.target.files[0];
@@ -58,7 +59,7 @@ export default function CsvPredictionPage() {
       formData.append("file", file);
 
       const res = await axios.post(
-        "http://localhost:8000/predict-file",
+        `http://localhost:8000/predict-file?encoded=${sendRaw.toString().toLowerCase()}`,
         formData,
         {
           headers: {
@@ -106,7 +107,6 @@ export default function CsvPredictionPage() {
                       style={{ borderColor: "var(--cor-acento)" }}
                     />
                   </Form.Group>
-
                   {csvData.length > 0 && (
                     <Button
                       variant="success"
@@ -128,6 +128,19 @@ export default function CsvPredictionPage() {
                       )}
                     </Button>
                   )}
+                  <Form.Group className="d-flex align-items-center gap-2 mt-3">
+                    <Form.Label
+                      className="mb-0"
+                      style={{ color: "var(--cor-primaria)" }}
+                    >
+                      Dados Raw
+                    </Form.Label>
+                    <Form.Switch
+                      checked={sendRaw}
+                      onChange={() => setsendRaw(!sendRaw)}
+                      id="custom-switch-encoded-toggle"
+                    />
+                  </Form.Group>
 
                   {error && (
                     <Alert variant="danger" className="mt-3">
