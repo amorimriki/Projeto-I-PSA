@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Button, Row, Col, Card, Carousel } from "react-bootstrap";
+import { Container, Button, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../App.css";
 
