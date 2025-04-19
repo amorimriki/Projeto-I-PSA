@@ -29,10 +29,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 base_path = "/Users/amorimriki/Documents/GitHub/Projeto-I-PSA"
+
 # Carregar o modelo
 model_path_mlp = os.path.join(base_path, "ML_MODEL/mlp_pipeline.pkl")
 model_path_rf = os.path.join(base_path, "ML_MODEL/rf_pipeline.pkl")
-model_path_ensamble = os.path.join(base_path, "ML_MODEL/PSA_ensemble_model_80-20.pkl")
+model_path_ensamble = os.path.join(base_path, "ML_MODEL/ensemble_model_80-20.pkl")
 
 
 def setModel(model_name):

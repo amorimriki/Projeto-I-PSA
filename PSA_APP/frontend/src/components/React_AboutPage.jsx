@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Table } from "react-bootstrap";
 import "../App.css";
 
 import CustomNavbar from "./CustomNavBar";
@@ -8,18 +8,19 @@ import CustomFooter from "./CustomFooter";
 export default function Sobre() {
   return (
     <div className="bg-light min-vh-100 d-flex flex-column justify-content-between">
-    <Container fluid className="p-0">
-      {/* NavBar */}
-      <CustomNavbar />
+      <Container fluid className="p-0">
+        {/* NavBar */}
+        <CustomNavbar />
 
-      {/* Seção Hero */}
-      <section className="hero bg-primary text-white text-center py-5">
-        <h1>Sobre o Projeto PSA</h1>
-        <p className="lead">
-          Uma abordagem inteligente para melhorar o sucesso académico através da análise de dados.
-        </p>
-      </section>
+        {/* Seção Hero */}
+        <section className="hero bg-primary text-white text-center py-5">
+          <h1>Sobre o Projeto PSA</h1>
+          <p className="lead">
+            Uma abordagem inteligente para melhorar o sucesso académico através da análise de dados.
+          </p>
+        </section>
       </Container>
+
       {/* Conteúdo principal */}
       <Container className="py-5">
         <Row className="justify-content-center">
@@ -48,12 +49,90 @@ export default function Sobre() {
               </Card.Body>
             </Card>
 
+            {/* Modelos Desenvolvidos */}
+            <Card className="mb-4 shadow-sm">
+              <Card.Body>
+                <Card.Title className="titulo-card fw-bold">Modelos Desenvolvidos e Avaliação</Card.Title>
+                <Card.Text className="text-muted mb-3">
+                  Abaixo estão os principais modelos de Machine Learning utilizados no projeto, juntamente com suas características e aplicações:
+                </Card.Text>
+
+                <Table striped bordered hover responsive className="text-muted">
+                  <thead className="table-primary text-center">
+                    <tr>
+                      <th>Data</th>
+                      <th>Modelo</th>
+                      <th>Tipo</th>
+                      <th>Características</th>
+                      <th>Hyperparameter tuning</th>
+                      <th>F1-Score</th>
+                      <th>Recall</th>
+                      <th>Precision</th>
+                      <th>Acuracy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                  <td>03/04/2025</td>
+                      <td><strong>ensemble_model_80-20.pkl</strong></td>
+                      <td>Ensemble (Majority Voting)</td>
+                      <td>MLP, RF, SVM</td>
+                      <td>N/A, N/A, N/A</td>
+                      <td>92%</td>
+                      <td>99%</td>
+                      <td>87%</td>
+                      <td>87%</td>
+                    </tr>
+
+                    <tr>
+                      <td>07/04/2025</td>
+                      <td><strong>rf_pipeline.pkl</strong></td>
+                      <td>RF - Random Forest</td>
+                      <td>Pipeline</td>
+                      <td>GridSearchCV</td>
+                      <td>96%</td>
+                      <td>99%</td>
+                      <td>94%</td>
+                      <td>94%</td>
+                    </tr>
+                    <tr>
+                    <td>08/04/2025</td>
+                      <td><strong>mlp_pipeline.pkl</strong></td>
+                      <td>MLP - Redes Neuronais</td>
+                      <td>Pipeline</td>
+                      <td>GridSearchCV</td>
+                      <td>99%</td>
+                      <td>99%</td>
+                      <td>98%</td>
+                      <td>98%</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><strong></strong></td>
+                      <td>SVM - Support Vector Machine </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </Table>
+
+                <Card.Text className="text-muted mt-3">
+                  A avaliação foi feita com base em métricas como <strong>F1-Score</strong>, <strong>Accuracy</strong>, <strong>Precision</strong> e <strong>Recall</strong>, com foco no F1-Score para lidar com classes desbalanceadas.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+
             {/* Entidades Parceiras */}
             <Card className="shadow-sm">
               <Card.Body>
                 <Card.Title className="titulo-card fw-bold">Entidades Parceiras</Card.Title>
                 <ul className="mb-0 text-muted">
                   <li>Universidade Lusófona do Porto (ULP)</li>
+                  <li>Open University – Learning Analytics dataset</li>
                 </ul>
               </Card.Body>
             </Card>
