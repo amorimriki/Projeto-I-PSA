@@ -4,6 +4,7 @@ import { Container, Button, Row, Col, Form, Card } from "react-bootstrap";
 import "../App.css";
 import CustomNavbar from "./CustomNavBar";
 import CustomFooter from "./CustomFooter";
+import ModelSelector from "./React_ModelSelector";
 
 const initialFormState = {
   n_student: "",
@@ -69,6 +70,7 @@ const options = {
 };
 
 export default function PredictionForm() {
+  const [modeloSelecionado, setModeloSelecionado] = useState();
   const [form, setForm] = useState(initialFormState);
   const [result, setResult] = useState(null);
 
@@ -95,8 +97,11 @@ export default function PredictionForm() {
   const handlePredict = async (e) => {
     e.preventDefault();
     setResult(null);
-  
+
     try {
+      const formData = new FormData();
+      formData.append("modelo", modeloSelecionado);
+
       const response = await axios.post(
         "http://localhost:8000/predict-json",
         [form],
@@ -106,10 +111,12 @@ export default function PredictionForm() {
           },
         }
       );
-  
+
       const resultado = response.data?.[0];
       if (resultado && "previsao" in resultado) {
-        setResult(`Estudante ${resultado.n_student} - Previsão: ${resultado.previsao}`);
+        setResult(
+          `Estudante ${resultado.n_student} - Previsão: ${resultado.previsao}`
+        );
       } else {
         setResult("Resposta inesperada do servidor.");
       }
@@ -118,20 +125,24 @@ export default function PredictionForm() {
       setResult("Erro ao prever resultado.");
     }
   };
-  
 
   return (
     <>
       <CustomNavbar />
       <Container className="mt-4 mb-4">
         <Card className="p-4 shadow rounded-4">
-          <h2 style={{ color: "var(--cor-primaria)" }} className="mb-4 text-center">Prever Resultado Final</h2>
+          <h2
+            style={{ color: "var(--cor-primaria)" }}
+            className="mb-4 text-center"
+          >
+            Prever Resultado Final
+          </h2>
           <Form onSubmit={handlePredict}>
             <Row>
               {/* Campos especiais: data */}
               <Col md={6} className="mb-3">
                 <Form.Group controlId="delivery_date">
-                  <Form.Label >Data de Entrega </Form.Label>
+                  <Form.Label>Data de Entrega </Form.Label>
                   <Form.Control
                     type="date"
                     name="delivery_date"
@@ -214,6 +225,17 @@ export default function PredictionForm() {
                 );
               })}
             </Row>
+            <div className="d-flex flex-column align-items-center">
+              <p className="fw-bold">Seleciona o modelo de previsão:</p>
+              <ModelSelector
+                modeloSelecionado={modeloSelecionado}
+                setModeloSelecionado={setModeloSelecionado}
+              />
+              <p className="text-muted">
+                Modelo atual: <strong>{modeloSelecionado}</strong>
+              </p>
+            </div>
+
             <div className="text-center">
               <Button
                 variant="primary"

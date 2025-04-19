@@ -1,6 +1,6 @@
 /* Paleta de Cores Refinada */
 :root {
-  --cor-primaria: #0056b3;       /* Azul escuro */
+  --cor-primaria: #0056b3;    /* Azul escuro */
   --cor-secundaria: #6c757d;     /* Cinza médio */
   --cor-acento: #00bfa6;         /* Verde água (destaque) */
   --cor-fundo-claro: #f4f6f9;    /* Fundo claro mais suave */
@@ -251,6 +251,28 @@ input[type=range] {
 }
 
 /* ===== SOBRE: Estilização específica ===== */
+
+.input-cinza {
+  border: 1px solid #adb5bd !important; /* cinza médio do Bootstrap */
+  border-radius: 0.375rem !important;
+  background-color: #fff !important;
+  color: #212529 !important;
+}
+
+.input-cinza:focus {
+  border-color: var(--cor-secundaria) !important; /* cinza mais escuro ao focar */
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25) !important;
+}
+
+
+
+/* Quando o switch estiver ativado, aplica a cor personalizada */
+.form-switch .form-check-input:checked {
+  background-color: var(--cor-primaria) !important;
+  border-color: var(--cor-primaria) !important;
+}
+
+
 .sobre-section {
   padding: 80px 20px;
   background-color: var(--cor-fundo-claro);
@@ -328,7 +350,6 @@ input[type=range] {
   font-size: 2.8rem;
   font-weight: 700;
   background: linear-gradient(to right, var(--cor-primaria), var(--cor-acento));
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -363,4 +384,21 @@ input[type=range] {
 
 .sobre-section .card-body strong {
   color: var(--cor-primaria);
+}
+
+.titulo-card {
+  color:  var(--cor-primaria) !important;
+}
+
+.radio-estilo .form-check-input:checked {
+  background-color: var(--cor-acento);
+  border-color: var(--cor-acento);
+}
+.radio-estilo .form-check-label {
+  font-weight: 500;
+  color: #333;
+}
+
+.text-muted {
+  font-size: 0.85rem;
 }

@@ -27,7 +27,7 @@ export default function Sobre() {
             {/* Objetivo do Projeto */}
             <Card className="mb-4 shadow-sm">
               <Card.Body>
-                <Card.Title className="text-primary fs-4 fw-bold">Objetivo do Projeto</Card.Title>
+                <Card.Title className="titulo-card fw-bold">Objetivo do Projeto</Card.Title>
                 <Card.Text className="text-muted">
                   O <strong>Projeto PSA (Previsão de Sucesso Acadêmico)</strong> visa apoiar instituições de ensino na identificação precoce de estudantes em risco, usando <strong>Machine Learning</strong> para análise de dados acadêmicos, comportamentais e demográficos. Assim, são fornecidos insights para decisões pedagógicas mais eficazes e personalizadas.
                 </Card.Text>
@@ -40,7 +40,7 @@ export default function Sobre() {
             {/* Pessoas Envolvidas */}
             <Card className="mb-4 shadow-sm">
               <Card.Body>
-                <Card.Title className="text-primary fs-4 fw-bold">Pessoas Envolvidas</Card.Title>
+                <Card.Title className="titulo-card fw-bold">Pessoas Envolvidas</Card.Title>
                 <ul className="mb-0 text-muted">
                   <li><strong>Ricardo Amorim</strong> – Desenvolvimento do modelo, backend e integração</li>
                   <li><strong>Docentes da unidade curricular de Projeto I</strong> – Orientação técnica</li>
@@ -51,7 +51,7 @@ export default function Sobre() {
             {/* Entidades Parceiras */}
             <Card className="shadow-sm">
               <Card.Body>
-                <Card.Title className="text-primary fs-4 fw-bold">Entidades Parceiras</Card.Title>
+                <Card.Title className="titulo-card fw-bold">Entidades Parceiras</Card.Title>
                 <ul className="mb-0 text-muted">
                   <li>Universidade Lusófona do Porto (ULP)</li>
                 </ul>

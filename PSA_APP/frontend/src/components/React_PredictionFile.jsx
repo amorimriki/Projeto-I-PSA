@@ -17,8 +17,10 @@ import {
 import Papa from "papaparse";
 import CustomNavbar from "./CustomNavBar";
 import CustomFooter from "./CustomFooter";
+import ModelSelector from "./React_ModelSelector";
 
 export default function CsvPredictionPage() {
+  const [modeloSelecionado, setModeloSelecionado] = useState();
   const [csvData, setCsvData] = useState([]);
   const [predictions, setPredictions] = useState([]);
   const [error, setError] = useState("");
@@ -57,9 +59,12 @@ export default function CsvPredictionPage() {
     try {
       const formData = new FormData();
       formData.append("file", file);
+      formData.append("modelo", modeloSelecionado);
 
       const res = await axios.post(
-        `http://localhost:8000/predict-file?encoded=${sendRaw.toString().toLowerCase()}`,
+        `http://localhost:8000/predict-file?encoded=${sendRaw
+          .toString()
+          .toLowerCase()}`,
         formData,
         {
           headers: {
@@ -103,10 +108,40 @@ export default function CsvPredictionPage() {
                       type="file"
                       accept=".csv"
                       onChange={handleFileUpload}
-                      className="border-primary"
-                      style={{ borderColor: "var(--cor-acento)" }}
+                      className="input-cinza"
                     />
                   </Form.Group>
+
+                  <Form.Group className="d-flex align-items-center gap-2 mt-3">
+                    <Form.Label
+                      className="mb-0"
+                      style={{ color: "var(--cor-primaria)" }}
+                    >
+                      Dados Raw
+                    </Form.Label>
+                    <Form.Switch
+                      checked={sendRaw}
+                      onChange={() => setsendRaw(!sendRaw)}
+                      id="custom-switch-encoded-toggle"
+                    />
+                  </Form.Group>
+                  <div className="mt-3">
+                    <p className="fw-bold">Seleciona o modelo de previsão:</p>
+                    <ModelSelector
+                      modeloSelecionado={modeloSelecionado}
+                      setModeloSelecionado={setModeloSelecionado}
+                    />
+                    <p className="text-muted">
+                      Modelo atual: <strong>{modeloSelecionado}</strong>
+                    </p>
+                  </div>
+
+                  {error && (
+                    <Alert variant="danger" className="mt-3">
+                      {error}
+                    </Alert>
+                  )}
+
                   {csvData.length > 0 && (
                     <Button
                       variant="success"
@@ -128,25 +163,6 @@ export default function CsvPredictionPage() {
                       )}
                     </Button>
                   )}
-                  <Form.Group className="d-flex align-items-center gap-2 mt-3">
-                    <Form.Label
-                      className="mb-0"
-                      style={{ color: "var(--cor-primaria)" }}
-                    >
-                      Dados Raw
-                    </Form.Label>
-                    <Form.Switch
-                      checked={sendRaw}
-                      onChange={() => setsendRaw(!sendRaw)}
-                      id="custom-switch-encoded-toggle"
-                    />
-                  </Form.Group>
-
-                  {error && (
-                    <Alert variant="danger" className="mt-3">
-                      {error}
-                    </Alert>
-                  )}
                 </Col>
               </Row>
 
@@ -155,7 +171,7 @@ export default function CsvPredictionPage() {
                   <DropdownButton
                     id="dropdown-column-filter"
                     title="Selecionar Colunas"
-                    className="mb-3 custom-dropdown-button"
+                    className="mt-3 custom-dropdown-button"
                   >
                     {Object.keys(predictions[0]).map((key) => (
                       <Dropdown.Item
@@ -191,7 +207,7 @@ export default function CsvPredictionPage() {
                       style={{
                         backgroundColor: "var(--cor-fundo-claro)",
                         minWidth: "100%",
-                        borderColor: "var(--cor-primaria)",
+                        borderColor: "var(--cor-secundaria)",
                       }}
                     >
                       <thead

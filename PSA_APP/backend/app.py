@@ -2,7 +2,7 @@ import os
 import sys
 import pandas as pd
 import joblib
-from fastapi import FastAPI, File, UploadFile, HTTPException, Query
+from fastapi import FastAPI, File, UploadFile, HTTPException, Query, Form
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
@@ -32,7 +32,23 @@ base_path = "/Users/amorimriki/Documents/GitHub/Projeto-I-PSA"
 # Carregar o modelo
 model_path_mlp = os.path.join(base_path, "ML_MODEL/mlp_pipeline.pkl")
 model_path_rf = os.path.join(base_path, "ML_MODEL/rf_pipeline.pkl")
-model = joblib.load(model_path_mlp)
+model_path_ensamble = os.path.join(base_path, "ML_MODEL/PSA_ensemble_model_80-20.pkl")
+
+
+def setModel(model_name):
+    if model_name == 'mlp_model':
+        path = model_path_mlp
+    elif model_name == 'ensamble_model':
+        path = model_path_ensamble
+    elif model_name == 'rf_model':
+        path = model_path_rf
+    else:
+        raise ValueError(f"Modelo desconhecido: {model_name}")
+    
+    return joblib.load(path)
+
+
+
 
 encoders = joblib.load(os.path.join(base_path, "PSA_APP/backend/predict_model_encoders/encoders.pkl"))
 scaler = joblib.load(os.path.join(base_path, "PSA_APP/backend/predict_model_encoders/scaler.pkl"))
@@ -109,14 +125,18 @@ def preprocess_data(df):
 @app.post("/predict-file")
 
 
-async def predict_file(file: UploadFile = File(...), encoded: bool = Query(False) ):
-    
+async def predict_file(file: UploadFile = File(...), encoded: bool = Query(False), modelo: str = Form(), ):
+
     if not file.filename.endswith('.csv'):
         raise HTTPException(status_code=400, detail="O ficheiro deve ser um CSV.")
     try:
         content = await file.read()
         df = pd.read_csv(io.StringIO(content.decode('utf-8')))
+         # Carrega dinamicamente o modelo escolhido
+        model = setModel(modelo)
+        print("✅ modelo =", modelo)
         print("✅ encoded =", encoded)
+        
 
         '''
 
@@ -173,6 +193,8 @@ class StudentInput(BaseModel):
 def predict_json(data: List[StudentInput]):
     df_novos_dados = pd.DataFrame([d.dict() for d in data])
     
+    model = setModel(modelo)
+    print("✅ modelo =", modelo)
     # Lista com a ordem correta das colunas
     coluna_ordem_segura = [
         "code_module", "gender", "region", "highest_education",
