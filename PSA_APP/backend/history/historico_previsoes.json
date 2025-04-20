@@ -1,0 +1,30 @@
+[
+  {
+    "dataHora": "2025-04-20T23:14:02.138674",
+    "tipo": "ficheiro",
+    "modelo": "mlp_model",
+    "total": 1000,
+    "resultado": "820 Pass / 180 Fail"
+  },
+  {
+    "dataHora": "2025-04-20T23:16:34.606825",
+    "tipo": "ficheiro",
+    "modelo": "mlp_model",
+    "total": 1000,
+    "resultado": "820 Pass / 180 Fail"
+  },
+  {
+    "dataHora": "2025-04-20T23:17:53.430631",
+    "tipo": "formulario",
+    "modelo": "mlp_model",
+    "total": 1,
+    "resultado": "1 Pass / 0 Fail"
+  },
+  {
+    "dataHora": "2025-04-20T23:26:53.645634",
+    "tipo": "ficheiro",
+    "modelo": "mlp_model",
+    "total": 1000,
+    "resultado": "820 Pass / 180 Fail"
+  }
+]

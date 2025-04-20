@@ -10,7 +10,7 @@ const CustomNavbar = () => {
         <Navbar.Collapse id="navbarNav">
           <Nav className="ms-auto">
             <Nav.Link href="/func-page">Funcionalidades</Nav.Link>
-            <Nav.Link href="#">Resultados</Nav.Link>
+            <Nav.Link href="/history-page">Resultados</Nav.Link>
             <Nav.Link href="/about-page">Sobre</Nav.Link>
           </Nav>
         </Navbar.Collapse>

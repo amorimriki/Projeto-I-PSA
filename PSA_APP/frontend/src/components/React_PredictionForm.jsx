@@ -7,7 +7,7 @@ import {
   Col,
   Form,
   Spinner,
-  Card,
+  Card
 } from "react-bootstrap";
 import "../App.css";
 import CustomNavbar from "./CustomNavBar";

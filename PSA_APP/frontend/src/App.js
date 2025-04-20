@@ -5,7 +5,7 @@ import PredictionForm from './components/React_PredictionForm';
 import PredictionFile from './components/React_PredictionFile';
 import FuncPage from'./components/React_FuncPage';
 import AboutPage from './components/React_AboutPage';
-
+import HistoryPage from './components/React_HistoryPage';
 function App() {
   return (
     <Router>
@@ -15,6 +15,7 @@ function App() {
         <Route path="/prediction-file" element={<PredictionFile />} />
         <Route path="/func-page" element={<FuncPage />} />
         <Route path="/about-page" element={<AboutPage />} />
+        <Route path="/history-page" element={<HistoryPage />} />
       </Routes>
     </Router>
   );
