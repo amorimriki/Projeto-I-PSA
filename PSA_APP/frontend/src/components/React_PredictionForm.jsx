@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Container, Button, Row, Col, Form, Card } from "react-bootstrap";
+import {
+  Container,
+  Button,
+  Row,
+  Col,
+  Form,
+  Spinner,
+  Card,
+} from "react-bootstrap";
 import "../App.css";
 import CustomNavbar from "./CustomNavBar";
 import CustomFooter from "./CustomFooter";
@@ -70,9 +78,10 @@ const options = {
 };
 
 export default function PredictionForm() {
-  const [modeloSelecionado, setModeloSelecionado] = useState();
+  const [modeloSelecionado, setModeloSelecionado] = useState("");
   const [form, setForm] = useState(initialFormState);
   const [result, setResult] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -97,13 +106,11 @@ export default function PredictionForm() {
   const handlePredict = async (e) => {
     e.preventDefault();
     setResult(null);
+    setLoading(true);
 
     try {
-      const formData = new FormData();
-      formData.append("modelo", modeloSelecionado);
-
       const response = await axios.post(
-        "http://localhost:8000/predict-json",
+        `http://localhost:8000/predict-json?modelo=${modeloSelecionado}`,
         [form],
         {
           headers: {
@@ -123,6 +130,8 @@ export default function PredictionForm() {
     } catch (error) {
       console.error("Erro ao obter previsão:", error);
       setResult("Erro ao prever resultado.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -139,10 +148,10 @@ export default function PredictionForm() {
           </h2>
           <Form onSubmit={handlePredict}>
             <Row>
-              {/* Campos especiais: data */}
+              {/* Campos de data */}
               <Col md={6} className="mb-3">
                 <Form.Group controlId="delivery_date">
-                  <Form.Label>Data de Entrega </Form.Label>
+                  <Form.Label>Data de Entrega</Form.Label>
                   <Form.Control
                     type="date"
                     name="delivery_date"
@@ -150,12 +159,10 @@ export default function PredictionForm() {
                     onChange={handleDateChange}
                     required
                   />
-                </Form.Group>
-                <>
                   <Form.Text className="text-muted">
                     Diferença de dias: {form.date_submitted}
                   </Form.Text>
-                </>
+                </Form.Group>
               </Col>
               <Col md={6} className="mb-3">
                 <Form.Group controlId="due_date">
@@ -170,8 +177,8 @@ export default function PredictionForm() {
                 </Form.Group>
               </Col>
 
-              {/* Os restantes campos */}
-              {Object.entries(initialFormState).map(([key, val]) => {
+              {/* Demais campos */}
+              {Object.entries(initialFormState).map(([key]) => {
                 if (
                   ["delivery_date", "due_date", "date_submitted"].includes(key)
                 )
@@ -225,7 +232,8 @@ export default function PredictionForm() {
                 );
               })}
             </Row>
-            <div className="d-flex flex-column align-items-center">
+
+            <div className="d-flex flex-column align-items-center mt-3">
               <p className="fw-bold">Seleciona o modelo de previsão:</p>
               <ModelSelector
                 modeloSelecionado={modeloSelecionado}
@@ -236,20 +244,27 @@ export default function PredictionForm() {
               </p>
             </div>
 
-            <div className="text-center">
+            <div className="text-center mt-3">
               <Button
-                variant="primary"
                 type="submit"
-                className="mt-2 px-4"
+                variant="success"
                 style={{
                   backgroundColor: "var(--cor-acento)",
                   borderColor: "var(--cor-acento)",
                 }}
+                disabled={loading || !modeloSelecionado}
               >
-                Prever
+                {loading ? (
+                  <>
+                    <Spinner animation="border" size="sm" /> A processar...
+                  </>
+                ) : (
+                  "Fazer Previsão"
+                )}
               </Button>
             </div>
           </Form>
+
           {result && (
             <div className="alert alert-info mt-4 text-center">
               <strong>Resultado Previsto:</strong> {result}

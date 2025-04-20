@@ -191,7 +191,10 @@ class StudentInput(BaseModel):
     score: float = None
 
 @app.post("/predict-json")
-def predict_json(data: List[StudentInput]):
+def predict_json(
+    data: List[StudentInput], 
+    modelo: str = Query()
+):
     df_novos_dados = pd.DataFrame([d.dict() for d in data])
     
     model = setModel(modelo)

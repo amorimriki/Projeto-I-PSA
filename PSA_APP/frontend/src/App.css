@@ -402,3 +402,13 @@ input[type=range] {
 .text-muted {
   font-size: 0.85rem;
 }
+
+.github-link{
+  color: var(--cor-primaria);
+
+}
+
+.github-link:hover {
+  color: var(--cor-acento);
+  transition: color 0.3s ease;
+}
