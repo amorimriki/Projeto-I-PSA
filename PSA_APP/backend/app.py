@@ -105,14 +105,21 @@ def salvar_no_historico(resultados, modelo, tipo):
     else:
         resultados_json = resultados
 
-    resumo = f"{sum(r['previsao'] == 'Pass' for r in resultados_json)} Pass / {sum(r['previsao'] == 'Fail' for r in resultados_json)} Fail"
+    total = len(resultados_json)
+    pass_count = sum(r['previsao'] == 'Pass' for r in resultados_json)
+    fail_count = sum(r['previsao'] == 'Fail' for r in resultados_json)
 
+    pass_percentage = (pass_count / total) * 100
+    fail_percentage = (fail_count / total) * 100
+
+    resumo = f"{pass_percentage:.1f}% Pass __ {fail_percentage:.1f}% Fail"
     item = {
         "dataHora": datetime.now().isoformat(),
         "tipo": tipo,
         "modelo": modelo,
-        "total": len(resultados_json),
-        "resultado": resumo
+        "total": total,
+        "resultado": resumo,
+        "dados": resultados_json  
     }
 
     historico = carregar_historico()
@@ -120,7 +127,8 @@ def salvar_no_historico(resultados, modelo, tipo):
 
     with open(HISTORICO_PATH, "w", encoding="utf-8") as f:
         json.dump(historico, f, indent=2, ensure_ascii=False)
-    print("historico guardado com sucesso")
+
+    print("Histórico guardado com os dados completos.")
 
 
 def preprocess_data_file(df,isRaw):
@@ -138,7 +146,7 @@ def preprocess_data_file(df,isRaw):
 
     # Reordenar se possível
     df = df[[col for col in coluna_ordem_segura if col in df.columns]]
-    
+
     return df
 
 
@@ -154,13 +162,6 @@ def preprocess_data(df):
 
     # Reordenar colunas de forma segura
     df = df[[col for col in coluna_ordem_segura if col in df.columns]]
-
-    # Tratamento de valores faltantes específicos
-    for col in coluna_ordem_segura:
-        if col == 'date' and df[col].isna().all():  # Verifica se todos os valores são NaN
-            df[col] = 222.0  # Substitui por 222.0
-        if col == 'code_module' and df[col].isna().all():  # Verifica se todos os valores são NaN
-            df[col] = "AAA"  # Substitui por "AAA"
 
    # Transformação das colunas categóricas
     for col in categorical_features:
@@ -213,11 +214,16 @@ async def predict_file(file: UploadFile = File(...), encoded: bool = Query(False
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Erro ao ler o CSV: {str(e)}")
     
+
+
     # Remover a coluna 'final_result' se existir
     if 'final_result' in df.columns: df = df.drop(columns=['final_result'])
 
+    
+
     df_novos_dados = preprocess_data_file(df.copy(),encoded)
 
+    # Verificação do n_student
     if 'n_student' not in df_novos_dados.columns:
         raise HTTPException(status_code=400, detail="'n_student' é obrigatório.")
     
@@ -226,6 +232,13 @@ async def predict_file(file: UploadFile = File(...), encoded: bool = Query(False
     predicoes = model.predict(X_novos)
     resultados_convertidos = substituir_resultados(predicoes)
     df['previsao'] = resultados_convertidos
+
+    # Corrigindo os valores decimais para 2 casas nas colunas numéricas
+    df[numerical_features] = df[numerical_features].round(2)
+    # Arredondando as colunas para inteiros
+    df['date'] = df['date'].round().astype(int)
+    df['date_submitted'] = df['date_submitted'].round().astype(int)
+    df['sum_click'] = df['sum_click'].round().astype(int)
     resultados = df
     salvar_no_historico(resultados, modelo, tipo="ficheiro")
 
@@ -262,29 +275,53 @@ def predict_json(
     data: List[StudentInput], 
     modelo: str = Query()
 ):
-    df_novos_dados = pd.DataFrame([d.dict() for d in data])
+    # Criando DataFrame com os dados recebidos
+    df = pd.DataFrame([d.dict() for d in data])
+    print("Colunas recebidas:", df.columns.tolist())
+    print("Primeira linha:\n", df.head())
     
+    for col in coluna_ordem_segura:
+        if col == 'date' and df[col].isnull().any():  
+            df[col].fillna(222.0, inplace=True)  
+        if col == 'code_module' and df[col].isnull().any():  
+            df[col].fillna("AAA", inplace=True)
+
+    # Obtendo o identificador dos alunos (presumo que 'n_student' seja a coluna de identificação)
+    id = df['n_student']
+
+    # Selecionando e configurando o modelo
     model = setModel(modelo)
     print("✅ modelo =", modelo)
 
-    df_novos_dados = df_novos_dados[coluna_ordem_segura]
+    # Fazendo uma cópia dos dados para não alterar o original
+    df_novos_dados = df.copy()
 
-    print("Colunas recebidas:", df_novos_dados.columns.tolist())
+    # Ordenando as colunas de acordo com a segurança e verificando
+    print("Colunas ordenadas:", df_novos_dados.columns.tolist())
     print("Primeira linha:\n", df_novos_dados.head())
-    id = df_novos_dados['n_student']
-    # Aplicar pré-processamento
-    df_novos_dados = preprocess_data(df_novos_dados)
+
+    # Aplicando o pré-processamento (verifique se 'coluna_ordem_segura' é uma lista de colunas válida)
+    df_novos_dados = preprocess_data(df_novos_dados[coluna_ordem_segura])
+
     print("Colunas processadas:", df_novos_dados.columns.tolist())
     print("Primeira linha:\n", df_novos_dados.head())
 
-    
-
+    # Realizando a previsão
     predicao = model.predict(df_novos_dados)
+
+    # Substituindo os resultados conforme necessário
     labels = substituir_resultados(predicao)
-    print("Predicao:\n", predicao)
+
+    # Adicionando a coluna de previsões ao DataFrame original
+    df['previsao'] = labels
+
+    # Criando o DataFrame de resultados
     resultados = pd.DataFrame({'n_student': id, 'previsao': labels})
 
-    salvar_no_historico(resultados, modelo, tipo="formulario")
+    print("Predição:\n", predicao)
+
+    # Salvar os resultados no histórico
+    salvar_no_historico(df, modelo, tipo="formulario")
     return JSONResponse(content=resultados.to_dict(orient='records'))
 
 
@@ -300,3 +337,49 @@ def predict_json(
 @app.get("/historico", response_model=List[HistoricoItem])
 def get_historico():
     return carregar_historico()
+
+@app.get("/historico/{index}")
+def get_detalhes_historico(index: int):
+    historico = carregar_historico()
+    if index < 0 or index >= len(historico):
+        raise HTTPException(status_code=404, detail="Item de histórico não encontrado.")
+    return historico[index]["dados"]
+
+
+
+@app.delete("/historico")
+async def clear_all_history():
+    """
+    Endpoint para limpar todo o histórico de previsões.
+    Exclui todos os registros no arquivo JSON de histórico.
+    """
+    try:
+        # Limpa o histórico
+        with open(HISTORICO_PATH, "w", encoding="utf-8") as f:
+            json.dump([], f, indent=2, ensure_ascii=False)  # Esvazia o arquivo JSON
+        return JSONResponse(content={"message": "Histórico limpo com sucesso!"}, status_code=200)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Erro ao limpar o histórico: {str(e)}")
+
+
+@app.delete("/historico/{index}")
+async def clear_item(index: int):
+    """
+    Endpoint para excluir um item específico do histórico baseado no índice.
+    """
+    try:
+        historico = carregar_historico()  # Carrega o histórico atual do arquivo JSON
+        
+        if 0 <= index < len(historico):
+            # Remove o item do histórico
+            historico.pop(index)
+            
+            # Salva o histórico atualizado no arquivo
+            with open(HISTORICO_PATH, "w", encoding="utf-8") as f:
+                json.dump(historico, f, indent=2, ensure_ascii=False)
+                
+            return JSONResponse(content={"message": f"Item {index} excluído com sucesso!"}, status_code=200)
+        else:
+            raise HTTPException(status_code=404, detail="Índice inválido ou item não encontrado.")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Erro ao excluir o item: {str(e)}")

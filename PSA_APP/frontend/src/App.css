@@ -422,3 +422,53 @@ input[type=range] {
 footer {
   margin-top: auto;
 }
+
+.custom-modal .modal-dialog {
+  max-width: 90%;
+  height: 90vh; /* Altura fixa proporcional à tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-modal .modal-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-modal .modal-header,
+.custom-modal .modal-footer {
+  flex-shrink: 0;
+}
+
+.custom-modal .modal-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.small-table-text {
+  font-size: 0.7rem; 
+}
+
+.scrollable-table {
+  width: 100%;
+  table-layout: auto; /* Faz as colunas se ajustarem automaticamente ao conteúdo */
+}
+
+.scrollable-table th, 
+.scrollable-table td {
+  white-space: nowrap; /* Impede que o texto quebre dentro da célula */
+  padding: 8px 12px; /* Adiciona algum padding para dar espaçamento interno */
+}
+
+.scrollable-table-container {
+  max-height: 80vh;  /* Para limitar o tamanho da tabela dentro do modal */
+  overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+  overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+  width: 100%;
+}

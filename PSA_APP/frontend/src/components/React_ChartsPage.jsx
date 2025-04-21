@@ -1,30 +1,31 @@
 import React, { useEffect, useState } from "react";
-import {
-  Container,
-  Table,
-  Card,
-  Spinner,
-  Modal,
-  Button,
-} from "react-bootstrap";
-import { FaTrash } from "react-icons/fa"; // Importando o ícone da lata de lixo
+import { Container, Table, Card, Spinner, Modal, Button } from "react-bootstrap";
+import { FaTrash } from "react-icons/fa";
 import CustomNavbar from "./CustomNavBar";
 import CustomFooter from "./CustomFooter";
 import axios from "axios";
+import { Bar, Pie } from "react-chartjs-2";
+import { Chart as ChartJS } from "chart.js/auto";
 
 export default function PredictionHistoryPage() {
   const [historico, setHistorico] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [modalData, setModalData] = useState([]);
-  const [modalIndex, setModalIndex] = useState(null); // Para armazenar o índice do histórico no modal
+  const [modalIndex, setModalIndex] = useState(null);
 
-  // Função para buscar o histórico
+  const [predictionData, setPredictionData] = useState({
+    passCount: 0,
+    failCount: 0,
+    scoreData: [],
+  });
+
   useEffect(() => {
     async function fetchHistorico() {
       try {
         const response = await axios.get("http://localhost:8000/historico");
         setHistorico(response.data);
+        processPredictionData(response.data);
       } catch (error) {
         console.error("Erro ao buscar histórico:", error);
       } finally {
@@ -35,44 +36,89 @@ export default function PredictionHistoryPage() {
     fetchHistorico();
   }, []);
 
-  // Exibir detalhes do item
+  // Função para processar os dados do histórico
+  const processPredictionData = (data) => {
+    const passCount = data.filter((item) => item.resultado === "Pass").length;
+    const failCount = data.filter((item) => item.resultado === "Fail").length;
+
+    const scoreData = data.map((item) => item.score); // Extrair scores dos dados
+
+    setPredictionData({
+      passCount,
+      failCount,
+      scoreData,
+    });
+  };
+
   const handleShowDetails = async (index) => {
     try {
       const response = await axios.get(
         `http://localhost:8000/historico/${index}`
       );
       setModalData(response.data);
-      setModalIndex(index); // Armazenar o índice do item
+      setModalIndex(index);
       setShowModal(true);
     } catch (error) {
       console.error("Erro ao buscar detalhes:", error);
     }
   };
 
-  // Fechar o modal
   const handleClose = () => setShowModal(false);
 
-  // Função para excluir todo o histórico
   const handleClearHistory = async () => {
     try {
-      await axios.delete("http://localhost:8000/historico"); // Endpoint para limpar todo o histórico
+      await axios.delete("http://localhost:8000/historico");
       setHistorico([]);
     } catch (error) {
       console.error("Erro ao limpar o histórico:", error);
     }
   };
 
-  // Função para excluir o item específico do histórico
   const handleClearItem = async () => {
     try {
       if (modalIndex !== null) {
-        await axios.delete(`http://localhost:8000/historico/${modalIndex}`); // Endpoint para excluir o item específico
-        setHistorico(historico.filter((_, index) => index !== modalIndex)); // Remover o item da lista
-        setShowModal(false); // Fechar o modal após excluir
+        await axios.delete(`http://localhost:8000/historico/${modalIndex}`);
+        setHistorico(historico.filter((_, index) => index !== modalIndex));
+        setShowModal(false);
       }
     } catch (error) {
       console.error("Erro ao excluir o pedido:", error);
     }
+  };
+
+  // Gráficos para EDA
+  const barChartData = {
+    labels: ["Pass", "Fail"],
+    datasets: [
+      {
+        label: "Número de Previsões",
+        data: [predictionData.passCount, predictionData.failCount],
+        backgroundColor: ["#4caf50", "#f44336"],
+      },
+    ],
+  };
+
+  const pieChartData = {
+    labels: ["Pass", "Fail"],
+    datasets: [
+      {
+        data: [predictionData.passCount, predictionData.failCount],
+        backgroundColor: ["#4caf50", "#f44336"],
+      },
+    ],
+  };
+
+  const scoreChartData = {
+    labels: predictionData.scoreData.map((_, idx) => `Registro ${idx + 1}`),
+    datasets: [
+      {
+        label: "Score",
+        data: predictionData.scoreData,
+        borderColor: "#2196f3",
+        backgroundColor: "rgba(33, 150, 243, 0.2)",
+        fill: true,
+      },
+    ],
   };
 
   return (
@@ -81,10 +127,7 @@ export default function PredictionHistoryPage() {
 
       <Container className="mt-4 mb-4 flex-grow-1">
         <Card className="p-4 shadow rounded-4">
-          <h2
-            className="mb-4 text-center"
-            style={{ color: "var(--cor-primaria)" }}
-          >
+          <h2 className="mb-4 text-center" style={{ color: "var(--cor-primaria)" }}>
             Histórico de Previsões
           </h2>
 
@@ -94,22 +137,6 @@ export default function PredictionHistoryPage() {
             </div>
           ) : (
             <>
-              <Button
-                variant="danger"
-                onClick={handleClearHistory}
-                className="mb-3 "
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  padding: "4px 8px", 
-                  fontSize: "14px", 
-                  height: "30px", 
-                  marginLeft: "auto", 
-                }}
-              >
-                <FaTrash style={{ marginRight: "4px", fontSize: "14px" }} />
-                Limpar Todo o Histórico
-              </Button>
               <Table striped bordered hover responsive>
                 <thead>
                   <tr>
@@ -147,6 +174,25 @@ export default function PredictionHistoryPage() {
             </>
           )}
         </Card>
+
+        <Card className="mt-4 shadow rounded-4 p-4">
+          <h3 className="text-center" style={{ color: "var(--cor-primaria)" }}>
+            Análise de Dados
+          </h3>
+
+          <div className="mt-4">
+            <Bar data={barChartData} options={{ responsive: true }} />
+          </div>
+
+          <div className="mt-4">
+            <Pie data={pieChartData} options={{ responsive: true }} />
+          </div>
+
+          <div className="mt-4">
+            <h4>Distribuição dos Scores</h4>
+            <Bar data={scoreChartData} options={{ responsive: true }} />
+          </div>
+        </Card>
       </Container>
 
       <Modal
@@ -165,12 +211,12 @@ export default function PredictionHistoryPage() {
             onClick={handleClearItem}
             className="mb-3"
             style={{
-                display: "flex",
-                alignItems: "center",
-                padding: "4px 8px", 
-                fontSize: "14px", 
-                height: "30px", 
-                marginLeft: "auto", 
+              display: "flex",
+              alignItems: "center",
+              padding: "4px 8px",
+              fontSize: "14px",
+              height: "30px",
+              marginLeft: "auto",
             }}
           >
             <FaTrash style={{ marginRight: "4px", fontSize: "14px" }} />

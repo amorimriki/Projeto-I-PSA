@@ -143,25 +143,24 @@ export default function CsvPredictionPage() {
                   )}
 
                   {csvData.length > 0 && (
-                    <Button
-                      variant="success"
-                      block="true"
-                      onClick={handlePredict}
-                      disabled={loading}
-                      style={{
-                        backgroundColor: "var(--cor-acento)",
-                        borderColor: "var(--cor-acento)",
-                      }}
-                    >
-                      {loading ? (
-                        <>
-                          <Spinner animation="border" size="sm" /> A
-                          processar...
-                        </>
-                      ) : (
-                        "Fazer Previsões"
-                      )}
-                    </Button>
+                   <Button
+                   variant="success"
+                   block="true"
+                   onClick={handlePredict}
+                   disabled={loading || !modeloSelecionado} // Desabilita se não houver modelo selecionado
+                   style={{
+                     backgroundColor: "var(--cor-acento)",
+                     borderColor: "var(--cor-acento)",
+                   }}
+                 >
+                   {loading ? (
+                     <>
+                       <Spinner animation="border" size="sm" /> A processar...
+                     </>
+                   ) : (
+                     "Fazer Previsões"
+                   )}
+                 </Button>
                   )}
                 </Col>
               </Row>
