@@ -8,8 +8,8 @@ import {
   Button,
 } from "react-bootstrap";
 import { FaTrash } from "react-icons/fa"; // Importando o ícone da lata de lixo
-import CustomNavbar from "./CustomNavBar";
-import CustomFooter from "./CustomFooter";
+import CustomNavbar from "../components/CustomNavBar";
+import CustomFooter from "../components/CustomFooter";
 import axios from "axios";
 
 export default function PredictionHistoryPage() {
@@ -78,7 +78,13 @@ export default function PredictionHistoryPage() {
   return (
     <div className="page-wrapper d-flex flex-column min-vh-100">
       <CustomNavbar />
-
+ {/* Hero Section */}
+ <section className="hero bg-primary text-white text-center py-5">
+          <h1>Resultados</h1>
+          <p className="lead">
+            Visualização do registo dos resultados das previsões feitas anteriormente.
+          </p>
+        </section>
       <Container className="mt-4 mb-4 flex-grow-1">
         <Card className="p-4 shadow rounded-4">
           <h2

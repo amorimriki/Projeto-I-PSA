@@ -1,13 +1,13 @@
-// IMPORTS NO TOPO
+
 import React, { useEffect, useState } from "react";
 import { Container, Table, Card, Spinner, Row, Col } from "react-bootstrap";
-
-import CustomNavbar from "./CustomNavBar";
-import CustomFooter from "./CustomFooter";
+import CustomNavbar from "../components/CustomNavBar";
+import CustomFooter from "../components/CustomFooter";
 import "../App.css";
 import axios from "axios";
 import { Bar, Pie } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
+ChartJS.register();
 
 export default function PredictionHistoryPage() {
   const [historico, setHistorico] = useState([]);
@@ -46,11 +46,21 @@ export default function PredictionHistoryPage() {
 
     const scoreData = data.map((item) => item.score);
     const meanScores = {
-      Pass: +(passData.reduce((acc, cur) => acc + cur.score, 0) / passCount || 0).toFixed(2),
-      Fail: +(failData.reduce((acc, cur) => acc + cur.score, 0) / failCount || 0).toFixed(2),
+      Pass: +(
+        passData.reduce((acc, cur) => acc + cur.score, 0) / passCount || 0
+      ).toFixed(2),
+      Fail: +(
+        failData.reduce((acc, cur) => acc + cur.score, 0) / failCount || 0
+      ).toFixed(2),
     };
 
-    const categoricalFields = ["gender", "age_band", "disability", "highest_education", "region"];
+    const categoricalFields = [
+      "gender",
+      "age_band",
+      "disability",
+      "highest_education",
+      "region",
+    ];
     const distributions = {};
 
     categoricalFields.forEach((field) => {
@@ -65,7 +75,9 @@ export default function PredictionHistoryPage() {
         failGroups[item[field]] = (failGroups[item[field]] || 0) + 1;
       });
 
-      const allKeys = Array.from(new Set([...Object.keys(passGroups), ...Object.keys(failGroups)]));
+      const allKeys = Array.from(
+        new Set([...Object.keys(passGroups), ...Object.keys(failGroups)])
+      );
       distributions[field] = {
         labels: allKeys,
         passCounts: allKeys.map((k) => passGroups[k] || 0),
@@ -82,20 +94,24 @@ export default function PredictionHistoryPage() {
     });
   };
 
-  const handleShowDetails = async (index) => {
+  const handleShowDetails = async (identificador) => {
     try {
-      const response = await axios.get(`http://localhost:8000/historico/${index}`);
-      setDetalhes(response.data);
-      processPredictionData(response.data);
+        
+        const response = await axios.get(
+            `http://localhost:8000/historico/timestamp/${identificador}`
+          );
+              
+        setDetalhes(response.data);
+        processPredictionData(response.data);
     } catch (error) {
       console.error("Erro ao buscar detalhes:", error);
     }
   };
 
-  // Pegando as cores do CSS
+  // Cores do CSS
   const estilo = getComputedStyle(document.documentElement);
-  const corPrimaria = estilo.getPropertyValue('--cor-primaria').trim();
-  const corAcento = estilo.getPropertyValue('--cor-acento').trim();
+  const corPrimaria = estilo.getPropertyValue("--cor-primaria").trim();
+  const corAcento = estilo.getPropertyValue("--cor-acento").trim();
 
   const pieChartData = {
     labels: ["Pass", "Fail"],
@@ -119,42 +135,57 @@ export default function PredictionHistoryPage() {
   };
 
   const renderCategoryCharts = () => {
-    return Object.entries(predictionData.categoricalDistributions).map(([key, dist]) => {
-      const chartData = {
-        labels: dist.labels,
-        datasets: [
-          {
-            label: "Pass",
-            data: dist.passCounts,
-            backgroundColor: corAcento,
-          },
-          {
-            label: "Fail",
-            data: dist.failCounts,
-            backgroundColor: corPrimaria,
-          },
-        ],
-      };
+    return Object.entries(predictionData.categoricalDistributions).map(
+      ([key, dist]) => {
+        const chartData = {
+          labels: dist.labels,
+          datasets: [
+            {
+              label: "Pass",
+              data: dist.passCounts,
+              backgroundColor: corAcento,
+            },
+            {
+              label: "Fail",
+              data: dist.failCounts,
+              backgroundColor: corPrimaria,
+            },
+          ],
+        };
 
-      return (
-        <div key={key} className="mb-5">
-          <h5 className="text-center" style={{ textTransform: "capitalize" }}>{key}</h5>
-          <Bar data={chartData} options={{ responsive: true }} />
-        </div>
-      );
-    });
+        return (
+          <div key={key} className="mb-5">
+            <h5 className="text-center" style={{ textTransform: "capitalize" }}>
+              {key}
+            </h5>
+            <Bar data={chartData} options={{ responsive: true }} />
+          </div>
+        );
+      }
+    );
   };
 
   return (
     <div className="page-wrapper d-flex flex-column min-vh-100">
+      
       <CustomNavbar />
+      {/* Hero Section */}
+      <section className="hero bg-primary text-white text-center py-5">
+          <h1>Relatório Geral</h1>
+          <p className="lead">
+            Visualização do desempenho de grupos.
+          </p>
+        </section>
       <Container className="mt-4 mb-4 flex-grow-1">
         <Row>
           {/* CARD HISTÓRICO */}
           <Col md={4}>
             <Card className="p-4 shadow rounded-4 mb-4">
-              <h2 className="mb-4 text-center" style={{ color: "var(--cor-primaria)" }}>
-                Histórico de Previsões
+              <h2
+                className="mb-4 text-center"
+                style={{ color: "var(--cor-primaria)" }}
+              >
+                Previsões Guardadas
               </h2>
               {loading ? (
                 <div className="text-center">
@@ -162,33 +193,36 @@ export default function PredictionHistoryPage() {
                 </div>
               ) : (
                 <Table striped bordered hover responsive>
-                  <thead>
-                    <tr>
-                      <th>Data/Hora</th>
-                      <th>Tipo</th>
-                      <th>Modelo</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {historico.length === 0 ? (
-                      <tr>
-                        <td colSpan="3" className="text-center">Nenhuma previsão realizada ainda.</td>
-                      </tr>
-                    ) : (
-                      historico.map((item, index) => (
-                        <tr
-                          key={index}
-                          onClick={() => handleShowDetails(index)}
-                          style={{ cursor: "pointer" }}
-                        >
-                          <td>{item.dataHora}</td>
-                          <td>{item.tipo}</td>
-                          <td>{item.modelo}</td>
-                        </tr>
-                      ))
-                    )}
-                  </tbody>
-                </Table>
+  <thead>
+    <tr>
+      <th>Data/Hora</th>
+      <th>Modelo</th>
+    </tr>
+  </thead>
+  <tbody>
+    {historico.length === 0 ? (
+      <tr>
+        <td colSpan="2" className="text-center">
+          Nenhuma previsão realizada ainda.
+        </td>
+      </tr>
+    ) : (
+        historico
+            .filter((item) => item.tipo === "ficheiro")
+            .map((item) => (
+                <tr
+  key={item.dataHora}
+  onClick={() => handleShowDetails(item.dataHora)}
+  style={{ cursor: "pointer" }}
+>
+  <td>{item.dataHora}</td>
+  <td>{item.modelo}</td>
+</tr>
+
+              ))
+    )}
+  </tbody>
+</Table>
               )}
             </Card>
           </Col>
@@ -197,7 +231,10 @@ export default function PredictionHistoryPage() {
           <Col md={8}>
             {detalhes.length > 0 && (
               <Card className="shadow rounded-4 p-4">
-                <h3 className="text-center" style={{ color: "var(--cor-primaria)" }}>
+                <h3
+                  className="text-center"
+                  style={{ color: "var(--cor-primaria)" }}
+                >
                   Análise Detalhada da Previsão
                 </h3>
                 <div className="mt-4">
@@ -205,7 +242,10 @@ export default function PredictionHistoryPage() {
                   <Pie data={pieChartData} options={{ responsive: true }} />
 
                   <h5 className="text-center mt-4">Score Médio</h5>
-                  <Bar data={scoreBarChartData} options={{ responsive: true }} />
+                  <Bar
+                    data={scoreBarChartData}
+                    options={{ responsive: true }}
+                  />
 
                   <div className="mt-5">{renderCategoryCharts()}</div>
                 </div>
@@ -214,7 +254,9 @@ export default function PredictionHistoryPage() {
           </Col>
         </Row>
       </Container>
-      <footer><CustomFooter /></footer>
+      <footer>
+        <CustomFooter />
+      </footer>
     </div>
   );
 }

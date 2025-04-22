@@ -3,8 +3,8 @@ import { FaGithub } from "react-icons/fa";
 import { Container, Row, Col, Card, Table } from "react-bootstrap";
 import "../App.css";
 
-import CustomNavbar from "./CustomNavBar";
-import CustomFooter from "./CustomFooter";
+import CustomNavbar from "../components/CustomNavBar";
+import CustomFooter from "../components/CustomFooter";
 
 export default function Sobre() {
   return (

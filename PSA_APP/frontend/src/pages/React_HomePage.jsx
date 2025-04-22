@@ -3,8 +3,8 @@ import { Container, Button, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../App.css";
 
-import CustomNavbar from "./CustomNavBar";
-import CustomFooter from "./CustomFooter";
+import CustomNavbar from "../components/CustomNavBar";
+import CustomFooter from "../components/CustomFooter";
 
 function HomePage() {
   return (

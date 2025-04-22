@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './components/React_HomePage';
-import PredictionForm from './components/React_PredictionForm';
-import PredictionFile from './components/React_PredictionFile';
-import FuncPage from'./components/React_FuncPage';
-import AboutPage from './components/React_AboutPage';
-import HistoryPage from './components/React_HistoryPage';
-import ChartsPage from './components/React_ChartsPage';
+import HomePage from './pages/React_HomePage';
+import PredictionForm from './pages/React_PredictionFormPage';
+import PredictionFile from './pages/React_PredictionFilePage';
+import FuncPage from'./pages/React_FuncPage';
+import AboutPage from './pages/React_AboutPage';
+import HistoryPage from './pages/React_HistoryPage';
+import ChartsPage from './pages/React_ChartsPage';
+import PersonalProgressPage from './pages/React_PersonProgresPage';
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about-page" element={<AboutPage />} />
         <Route path="/history-page" element={<HistoryPage />} />
         <Route path="/charts-page" element={<ChartsPage />} />
+        <Route path="/person-progress-page" element={<PersonalProgressPage />} />
       </Routes>
     </Router>
   );

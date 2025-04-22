@@ -114,7 +114,7 @@ def salvar_no_historico(resultados, modelo, tipo):
 
     resumo = f"{pass_percentage:.1f}% Pass __ {fail_percentage:.1f}% Fail"
     item = {
-        "dataHora": datetime.now().isoformat(),
+        "dataHora": datetime.now().strftime("%Y-%m-%d_%H-%M-%S-%f"),
         "tipo": tipo,
         "modelo": modelo,
         "total": total,
@@ -383,3 +383,18 @@ async def clear_item(index: int):
             raise HTTPException(status_code=404, detail="Índice inválido ou item não encontrado.")
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Erro ao excluir o item: {str(e)}")
+
+
+
+
+@app.get("/historico/timestamp/{id}")
+def get_detalhes_por_datahora(id: str):
+    print("ID:", id)
+    
+    historico = carregar_historico()
+
+    for item in historico:
+        if item["dataHora"] == id:
+            return item["dados"]
+
+    raise HTTPException(status_code=404, detail="Item não encontrado")

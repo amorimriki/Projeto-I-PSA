@@ -15,9 +15,9 @@ import {
   FormCheck,
 } from "react-bootstrap";
 import Papa from "papaparse";
-import CustomNavbar from "./CustomNavBar";
-import CustomFooter from "./CustomFooter";
-import ModelSelector from "./React_ModelSelector";
+import CustomNavbar from "../components/CustomNavBar";
+import CustomFooter from "../components/CustomFooter";
+import ModelSelector from "../components/React_ModelSelector";
 
 export default function CsvPredictionPage() {
   const [modeloSelecionado, setModeloSelecionado] = useState();
@@ -88,7 +88,14 @@ export default function CsvPredictionPage() {
       <div className="d-flex flex-column min-vh-100">
         <main className="flex-grow-1">
           <CustomNavbar />
-
+ {/* Hero Section */}
+ <section className="hero bg-primary text-white text-center py-5">
+          <h1>Análise Preditiva</h1>
+          <p className="lead">
+          Envie um ficheiro .csv e utilize algoritmos avançados para prever o desempenho do grupo
+              com base em dados passados.
+            </p>
+        </section>
           <Container className="mt-5">
             <Card className="p-4 shadow rounded-4">
               <h2

@@ -10,9 +10,9 @@ import {
   Card
 } from "react-bootstrap";
 import "../App.css";
-import CustomNavbar from "./CustomNavBar";
-import CustomFooter from "./CustomFooter";
-import ModelSelector from "./React_ModelSelector";
+import CustomNavbar from "../components/CustomNavBar";
+import CustomFooter from "../components/CustomFooter";
+import ModelSelector from "../components/React_ModelSelector";
 
 const initialFormState = {
   n_student: "",
@@ -138,7 +138,16 @@ export default function PredictionForm() {
   return (
     <>
       <CustomNavbar />
+       {/* Hero Section */}
+ <section className="hero bg-primary text-white text-center py-5">
+          <h1>Análise Preditiva</h1>
+          <p className="lead">
+          Utilize algoritmos avançados para prever seu desempenho
+              com base em dados passados.
+            </p>
+        </section>
       <Container className="mt-4 mb-4">
+       
         <Card className="p-4 shadow rounded-4">
           <h2
             style={{ color: "var(--cor-primaria)" }}
