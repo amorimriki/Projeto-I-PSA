@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { Container, Table, Card, Spinner, Row, Col } from "react-bootstrap";
 import CustomNavbar from "../components/CustomNavBar";
@@ -96,13 +95,12 @@ export default function PredictionHistoryPage() {
 
   const handleShowDetails = async (identificador) => {
     try {
-        
-        const response = await axios.get(
-            `http://localhost:8000/historico/timestamp/${identificador}`
-          );
-              
-        setDetalhes(response.data);
-        processPredictionData(response.data);
+      const response = await axios.get(
+        `http://localhost:8000/historico/timestamp/${identificador}`
+      );
+
+      setDetalhes(response.data);
+      processPredictionData(response.data);
     } catch (error) {
       console.error("Erro ao buscar detalhes:", error);
     }
@@ -167,15 +165,12 @@ export default function PredictionHistoryPage() {
 
   return (
     <div className="page-wrapper d-flex flex-column min-vh-100">
-      
       <CustomNavbar />
       {/* Hero Section */}
       <section className="hero bg-primary text-white text-center py-5">
-          <h1>Relatório Geral</h1>
-          <p className="lead">
-            Visualização do desempenho de grupos.
-          </p>
-        </section>
+        <h1>Relatório Geral</h1>
+        <p className="lead">Visualização do desempenho de grupos.</p>
+      </section>
       <Container className="mt-4 mb-4 flex-grow-1">
         <Row>
           {/* CARD HISTÓRICO */}
@@ -193,37 +188,39 @@ export default function PredictionHistoryPage() {
                 </div>
               ) : (
                 <Table striped bordered hover responsive>
-  <thead>
-    <tr>
-      <th>Data/Hora</th>
-      <th>Modelo</th>
-    </tr>
-  </thead>
-  <tbody>
-    {historico.length === 0 ? (
-      <tr>
-        <td colSpan="2" className="text-center">
-          Nenhuma previsão realizada ainda.
-        </td>
-      </tr>
-    ) : (
-        historico
-            .filter((item) => item.tipo === "ficheiro")
-            .map((item) => (
-                <tr
-  key={item.dataHora}
-  onClick={() => handleShowDetails(item.dataHora)}
-  style={{ cursor: "pointer" }}
->
-  <td>{item.dataHora}</td>
-  <td>{item.modelo}</td>
-</tr>
-
-              ))
-    )}
-  </tbody>
-</Table>
+                  
+                  <thead>
+                    <tr>
+                      <th>Data/Hora</th>
+                      <th>Modelo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {historico.length === 0 ? (
+                      <tr>
+                        <td colSpan="2" className="text-center">
+                          Nenhuma previsão realizada ainda.
+                        </td>
+                      </tr>
+                    ) : (
+                      historico
+                        .filter((item) => item.tipo === "ficheiro")
+                        .map((item) => (
+                          <tr
+                            key={item.dataHora}
+                            onClick={() => handleShowDetails(item.dataHora)}
+                            style={{ cursor: "pointer" }}
+                          >
+                            <td>{item.dataHora}</td>
+                            <td>{item.modelo}</td>
+                          </tr>
+                        ))
+                    )}
+                  </tbody>
+                </Table>
               )}
+              <h5 className="text-center">Previsão</h5>
+              <Pie data={pieChartData} options={{ responsive: true }} />
             </Card>
           </Col>
 
@@ -238,9 +235,6 @@ export default function PredictionHistoryPage() {
                   Análise Detalhada da Previsão
                 </h3>
                 <div className="mt-4">
-                  <h5 className="text-center">Previsão</h5>
-                  <Pie data={pieChartData} options={{ responsive: true }} />
-
                   <h5 className="text-center mt-4">Score Médio</h5>
                   <Bar
                     data={scoreBarChartData}

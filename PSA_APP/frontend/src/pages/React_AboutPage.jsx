@@ -94,7 +94,7 @@ export default function Sobre() {
                       <th>Tipo</th>
                       <th>Data</th>
                       <th>Modelo</th>
-
+                      <th>Transformador</th>
                       <th>Características</th>
                       <th>
                         Hyperparameter
@@ -110,7 +110,7 @@ export default function Sobre() {
                   <tbody>
                     <tr>
                       <td>SVM - Support Vector Machine</td>
-
+                      <td>N/A</td>
                       <td>N/A</td>
                       <td>N/A</td>
                       <td>N/A</td>
@@ -126,9 +126,12 @@ export default function Sobre() {
                       <td>
                         <strong>mlp_pipeline.pkl</strong>
                       </td>
+                      <td>
+                        Features Numéricas: StandardScaler. <br />
+                        Features Categóricas: OneHotEncoder.
+                      </td>
+                      <td>Pipeline (Transformer + MLP)</td>
 
-                      <td>Pipeline (Transformer + MLP)
-                        </td>
                       <td>GridSearchCV</td>
                       <td>99%</td>
                       <td>99%</td>
@@ -141,7 +144,10 @@ export default function Sobre() {
                       <td>
                         <strong>rf_pipeline.pkl</strong>
                       </td>
-
+                      <td>
+                        Features Numéricas: StandardScaler. <br />
+                        Features Categóricas: OneHotEncoder.
+                      </td>
                       <td>Pipeline (Transformer + RF)</td>
                       <td>GridSearchCV</td>
                       <td>96%</td>
@@ -158,6 +164,10 @@ export default function Sobre() {
                         <strong>ensemble_model_80-20.pkl</strong>
                       </td>
                       <td>
+                        Features Numéricas: StandardScaler. <br />
+                        Features Categóricas: LabelEncoder.
+                      </td>
+                      <td>
                         MLP
                         <br />
                         RF
@@ -171,6 +181,7 @@ export default function Sobre() {
                         <br />
                         N/A
                       </td>
+
                       <td>92%</td>
                       <td>99%</td>
                       <td>87%</td>
