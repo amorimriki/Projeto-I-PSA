@@ -1,0 +1,10 @@
+Melhor SVM:
+{'classifier__C': np.float64(4.085047343973734), 'classifier__gamma': 'auto', 'classifier__kernel': 'rbf'}
+              precision    recall  f1-score   support
+
+           0       0.79      0.24      0.37      6808
+           1       0.85      0.99      0.91     29701
+
+    accuracy                           0.85     36509
+   macro avg       0.82      0.61      0.64     36509
+weighted avg       0.84      0.85      0.81     36509

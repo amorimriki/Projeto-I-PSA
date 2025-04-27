@@ -109,15 +109,18 @@ export default function Sobre() {
                   <tbody>
                     <tr>
                       <td>SVM - Support Vector Machine</td>
-                      <td>N/A</td>
-                      <td>N/A</td>
-                      <td>N/A</td>
-                      <td>N/A</td>
-                      <td>N/A</td>
-                      <td>N/A</td>
-                      <td>N/A</td>
-                      <td>N/A</td>
-                      <td>N/A</td>
+                      <td>27/04/2025</td>
+                      <td>
+                      <strong>svm_pipeline.pkl</strong>                  
+                      </td>
+                      <td>Features Numéricas: StandardScaler. <br />
+                      Features Categóricas: OneHotEncoder.</td>
+                      <td>Pipeline (Transformer + SVM)</td>                      
+                      <td>HalvingRandomSearchCV</td>
+                      <td>91%</td>
+                      <td>99%</td>
+                      <td>85%</td>
+                      <td>85%</td>
                     </tr>
                     <tr>
                       <td>MLP - Redes Neuronais</td>
