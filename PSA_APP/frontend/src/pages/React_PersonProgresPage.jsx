@@ -1,25 +1,32 @@
 import React, { useEffect, useState } from "react";
-import { Container, Table, Card, Spinner, Row, Col } from "react-bootstrap";
+import {
+  Container,
+  Table,
+  Card,
+  Spinner,
+  Row,
+  Col,
+  Form,
+  Button,
+} from "react-bootstrap";
 import CustomNavbar from "../components/CustomNavBar";
 import CustomFooter from "../components/CustomFooter";
 import "../App.css";
 import axios from "axios";
-import { Bar, Pie } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
-ChartJS.register();
+import { Tooltip } from "chart.js";
 
-export default function PredictionHistoryPage() {
+ChartJS.register(Tooltip);
+
+export default function StudentProgressPage() {
   const [historico, setHistorico] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [detalhes, setDetalhes] = useState([]);
-
-  const [predictionData, setPredictionData] = useState({
-    passCount: 0,
-    failCount: 0,
-    scoreData: [],
-    meanScores: { Pass: 0, Fail: 0 },
-    categoricalDistributions: {},
-  });
+  const [selectedStudent, setSelectedStudent] = useState("");
+  const [studentRecords, setStudentRecords] = useState([]);
+  const [filterType, setFilterType] = useState(""); // Tipo de avaliação
+  const [startDate, setStartDate] = useState("");
+  const [endDate, setEndDate] = useState("");
 
   useEffect(() => {
     async function fetchHistorico() {
@@ -36,137 +43,120 @@ export default function PredictionHistoryPage() {
     fetchHistorico();
   }, []);
 
-  const processPredictionData = (data) => {
-    const passData = data.filter((item) => item.previsao === "Pass");
-    const failData = data.filter((item) => item.previsao === "Fail");
-
-    const passCount = passData.length;
-    const failCount = failData.length;
-
-    const scoreData = data.map((item) => item.score);
-    const meanScores = {
-      Pass: +(
-        passData.reduce((acc, cur) => acc + cur.score, 0) / passCount || 0
-      ).toFixed(2),
-      Fail: +(
-        failData.reduce((acc, cur) => acc + cur.score, 0) / failCount || 0
-      ).toFixed(2),
-    };
-
-    const categoricalFields = [
-      "gender",
-      "age_band",
-      "disability",
-      "highest_education",
-      "region",
-    ];
-    const distributions = {};
-
-    categoricalFields.forEach((field) => {
-      const passGroups = {};
-      const failGroups = {};
-
-      passData.forEach((item) => {
-        passGroups[item[field]] = (passGroups[item[field]] || 0) + 1;
-      });
-
-      failData.forEach((item) => {
-        failGroups[item[field]] = (failGroups[item[field]] || 0) + 1;
-      });
-
-      const allKeys = Array.from(
-        new Set([...Object.keys(passGroups), ...Object.keys(failGroups)])
+  const handleStudentSearch = async () => {
+    const allRecords = [];
+    const filteredHistorico = historico.filter((entry) => {
+      const entryDate = new Date(
+        entry.dataHora.replace("_", " ").replace(/-/g, ":")
       );
-      distributions[field] = {
-        labels: allKeys,
-        passCounts: allKeys.map((k) => passGroups[k] || 0),
-        failCounts: allKeys.map((k) => failGroups[k] || 0),
-      };
+      const validStartDate = startDate
+        ? entryDate >= new Date(startDate)
+        : true;
+      const validEndDate = endDate ? entryDate <= new Date(endDate) : true;
+      return validStartDate && validEndDate;
     });
 
-    setPredictionData({
-      passCount,
-      failCount,
-      scoreData,
-      meanScores,
-      categoricalDistributions: distributions,
-    });
-  };
+    for (let index = 0; index < filteredHistorico.length; index++) {
+      try {
+        const entry = filteredHistorico[index];
 
-  const handleShowDetails = async (identificador) => {
-    try {
-      const response = await axios.get(
-        `http://localhost:8000/historico/timestamp/${identificador}`
-      );
+        // Buscar os dados do histórico detalhado (usando o índice)
+        const response = await axios.get(
+          `http://localhost:8000/historico/${index}`
+        );
+        const dados = response.data;
 
-      setDetalhes(response.data);
-      processPredictionData(response.data);
-    } catch (error) {
-      console.error("Erro ao buscar detalhes:", error);
-    }
-  };
+        // Filtrar os dados pelo número do aluno e tipo de avaliação
+        const matches = dados.filter(
+          (item) =>
+            item.n_student.toString() === selectedStudent &&
+            (filterType ? item.assessment_type === filterType : true)
+        );
 
-  // Cores do CSS
-  const estilo = getComputedStyle(document.documentElement);
-  const corPrimaria = estilo.getPropertyValue("--cor-primaria").trim();
-  const corAcento = estilo.getPropertyValue("--cor-acento").trim();
-
-  const pieChartData = {
-    labels: ["Pass", "Fail"],
-    datasets: [
-      {
-        data: [predictionData.passCount, predictionData.failCount],
-        backgroundColor: [corAcento, corPrimaria],
-      },
-    ],
-  };
-
-  const scoreBarChartData = {
-    labels: ["Pass", "Fail"],
-    datasets: [
-      {
-        label: "Score Médio",
-        data: [predictionData.meanScores.Pass, predictionData.meanScores.Fail],
-        backgroundColor: [corAcento, corPrimaria],
-      },
-    ],
-  };
-
-  const renderCategoryCharts = () => {
-    return Object.entries(predictionData.categoricalDistributions).map(
-      ([key, dist]) => {
-        const chartData = {
-          labels: dist.labels,
-          datasets: [
-            {
-              label: "Pass",
-              data: dist.passCounts,
-              backgroundColor: corAcento,
-            },
-            {
-              label: "Fail",
-              data: dist.failCounts,
-              backgroundColor: corPrimaria,
-            },
-          ],
-        };
-
-        return (
-          <div key={key} className="mb-5">
-            <h5 className="text-center" style={{ textTransform: "capitalize" }}>
-              {key}
-            </h5>
-            <Bar data={chartData} options={{ responsive: true }} />
-          </div>
+        matches.forEach((match) => {
+          allRecords.push({
+            dataHora: entry.dataHora,
+            assessment_type: match.assessment_type,
+            previsao: match.previsao,
+            score: match.score,
+          });
+        });
+      } catch (error) {
+        console.error(
+          `Erro ao buscar detalhes do histórico (index ${index}):`,
+          error
         );
       }
-    );
+    }
+
+    allRecords.sort((a, b) => a.dataHora.localeCompare(b.dataHora)); // Ordenar por data
+    setStudentRecords(allRecords);
   };
 
+  const lineChartData = {
+    labels: studentRecords.map((record) => formatDateTime(record.dataHora)),
+    datasets: [
+      {
+        label: "Score",
+        data: studentRecords.map((record) => record.score),
+        borderColor: studentRecords.map((record) =>
+          record.previsao === "Pass" ? "#28a745" : "#dc3545"
+        ),
+        backgroundColor: "rgba(0, 123, 255, 0.2)",
+        tension: 0.3,
+        pointBackgroundColor: studentRecords.map((record) =>
+          record.previsao === "Pass" ? "#28a745" : "#dc3545"
+        ),
+        pointBorderColor: "white",
+        pointRadius: 5,
+      },
+    ],
+  };
+
+  function formatDateTime(dateTimeString) {
+    if (!dateTimeString) return "";
+
+    // Corrigir o formato: trocar _ por espaço e - por : na hora
+    const correctedString = dateTimeString.replace("_", " ");
+    console.log("String corrigida:", correctedString); // Verificar se a correção está funcionando
+
+    // Separar a data e a hora
+    const [datePart, timePart] = correctedString.split(" ");
+    console.log("Data:", datePart); // Verificar se a data está separada corretamente
+    console.log("Hora:", timePart); // Verificar se a hora está separada corretamente
+
+    const adjustedTimePart = timePart.slice(0, -7);
+    console.log("Hora ajustada (últimos 7 caracteres removidos):", adjustedTimePart);
+
+    // Reconstruir a string tipo "2025-04-22T01:53:52"
+    const properDateTime = `${datePart}T${adjustedTimePart.replace(/-/g, ":")}`;
+    console.log("Data final para conversão:", properDateTime); // Verificar a string formatada para a conversão
+
+    const date = new Date(properDateTime);
+    console.log("Objeto Date criado:", date); // Verificar o objeto Date criado
+
+    if (isNaN(date)) {
+      console.error("Data inválida:", dateTimeString); // Se a data for inválida
+      return dateTimeString; // Se der erro, mostra o original
+    }
+
+    // Formatar a data para o formato desejado
+    const day = String(date.getDate()).padStart(2, "0");
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const year = date.getFullYear();
+    const hours = String(date.getHours()).padStart(2, "0");
+    const minutes = String(date.getMinutes()).padStart(2, "0");
+
+    const formattedDate = `${day}/${month}/${year} ${hours}:${minutes}`;
+    console.log("Data formatada:", formattedDate); // Verificar a data final formatada
+
+    return formattedDate;
+  }
+
   return (
-    <div className="page-wrapper d-flex flex-column min-vh-100">
+    <div className="bg-light page-wrapper d-flex flex-column min-vh-100">
       <CustomNavbar />
-      {/* Hero Section */}
+
       <section className="hero bg-primary text-white text-center py-5">
         <h1>Progresso Individual</h1>
         <p className="lead">
@@ -174,6 +164,97 @@ export default function PredictionHistoryPage() {
           possíveis riscos académicos.
         </p>
       </section>
+
+      <Container className="my-5">
+        <Row className="mb-4">
+          <Col md={8} className="mx-auto">
+            <div className="input-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Número do Aluno"
+                value={selectedStudent}
+                onChange={(e) => setSelectedStudent(e.target.value)}
+              />
+              <button className="btn btn-primary" onClick={handleStudentSearch}>
+                Procurar
+              </button>
+            </div>
+            <div className="d-flex justify-content-between mb-3">
+              <Form.Select
+                aria-label="Tipo de Avaliação"
+                value={filterType}
+                onChange={(e) => setFilterType(e.target.value)}
+              >
+                <option value="">Selecione Tipo de Avaliação</option>
+                <option value="TMA">TMA</option>
+                <option value="CMA">CMA</option>
+                <option value="Exam">Exam</option>
+              </Form.Select>
+              <div className="d-flex">
+                <input
+                  type="date"
+                  className="form-control me-2"
+                  placeholder="Início"
+                  value={startDate}
+                  onChange={(e) => setStartDate(e.target.value)}
+                />
+                <input
+                  type="date"
+                  className="form-control"
+                  placeholder="Fim"
+                  value={endDate}
+                  onChange={(e) => setEndDate(e.target.value)}
+                />
+              </div>
+            </div>
+            <Button
+              variant="secondary"
+              onClick={handleStudentSearch}
+              className="w-100"
+            >
+              Aplicar Filtros
+            </Button>
+          </Col>
+        </Row>
+
+        {loading ? (
+          <Spinner animation="border" variant="primary" />
+        ) : (
+          studentRecords.length > 0 && (
+            <>
+              <Card className="p-3 mb-4">
+                <h5 className="text-center mb-3">Registos do Aluno</h5>
+                <Table striped bordered hover responsive>
+                  <thead>
+                    <tr>
+                      <th>Data Hora</th>
+                      <th>Tipo de Avaliação</th>
+                      <th>Previsão</th>
+                      <th>Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {studentRecords.map((record, idx) => (
+                      <tr key={idx}>
+                        <td>{formatDateTime(record.dataHora)}</td>
+                        <td>{record.assessment_type}</td>
+                        <td>{record.previsao}</td>
+                        <td>{record.score}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </Table>
+              </Card>
+
+              <Card className="p-3">
+                <h5 className="text-center mb-3">Evolução do Score</h5>
+                <Line data={lineChartData} options={{ responsive: true }} />
+              </Card>
+            </>
+          )
+        )}
+      </Container>
 
       <footer>
         <CustomFooter />

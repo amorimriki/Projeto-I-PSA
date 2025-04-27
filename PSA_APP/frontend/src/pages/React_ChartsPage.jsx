@@ -164,14 +164,14 @@ export default function PredictionHistoryPage() {
   };
 
   return (
-    <div className="page-wrapper d-flex flex-column min-vh-100">
+    <div className="bg-light page-wrapper d-flex flex-column min-vh-100">
       <CustomNavbar />
       {/* Hero Section */}
       <section className="hero bg-primary text-white text-center py-5">
         <h1>Relatório Geral</h1>
         <p className="lead">Visualização do desempenho de grupos.</p>
       </section>
-      <Container className="mt-4 mb-4 flex-grow-1">
+      <Container className="py-5">
         <Row>
           {/* CARD HISTÓRICO */}
           <Col md={4}>
@@ -188,7 +188,6 @@ export default function PredictionHistoryPage() {
                 </div>
               ) : (
                 <Table striped bordered hover responsive>
-                  
                   <thead>
                     <tr>
                       <th>Data/Hora</th>

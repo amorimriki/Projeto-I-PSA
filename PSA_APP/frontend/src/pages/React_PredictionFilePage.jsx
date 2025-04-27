@@ -85,7 +85,7 @@ export default function CsvPredictionPage() {
 
   return (
     <>
-      <div className="d-flex flex-column min-vh-100">
+      <div className="bg-light d-flex flex-column min-vh-100">
         <main className="flex-grow-1">
           <CustomNavbar />
  {/* Hero Section */}

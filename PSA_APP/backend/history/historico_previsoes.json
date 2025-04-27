@@ -30170,5 +30170,179 @@
         "previsao": "Pass"
       }
     ]
+  },
+  {
+    "dataHora": "2025-04-27_02-20-43-421391",
+    "tipo": "formulario",
+    "modelo": "mlp_model",
+    "total": 1,
+    "resultado": "0.0% Pass __ 100.0% Fail",
+    "dados": [
+      {
+        "n_student": "1",
+        "code_module": "AAA",
+        "gender": "M",
+        "region": "Scotland",
+        "highest_education": "A Level or Equivalent",
+        "imd_band": "10-20",
+        "age_band": "35-55",
+        "disability": "Y",
+        "assessment_type": "CMA",
+        "is_banked": "1",
+        "date_submitted": 17.0,
+        "num_of_prev_attempts": 3.0,
+        "sum_click": 2.0,
+        "date": 222.0,
+        "studied_credits": 100.0,
+        "weight": 96.0,
+        "score": 20.0,
+        "previsao": "Fail"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-04-27_02-20-46-344909",
+    "tipo": "formulario",
+    "modelo": "mlp_model",
+    "total": 1,
+    "resultado": "0.0% Pass __ 100.0% Fail",
+    "dados": [
+      {
+        "n_student": "1",
+        "code_module": "AAA",
+        "gender": "M",
+        "region": "Scotland",
+        "highest_education": "A Level or Equivalent",
+        "imd_band": "10-20",
+        "age_band": "35-55",
+        "disability": "Y",
+        "assessment_type": "CMA",
+        "is_banked": "1",
+        "date_submitted": 17.0,
+        "num_of_prev_attempts": 3.0,
+        "sum_click": 2.0,
+        "date": 222.0,
+        "studied_credits": 100.0,
+        "weight": 96.0,
+        "score": 20.0,
+        "previsao": "Fail"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-04-27_02-20-47-555917",
+    "tipo": "formulario",
+    "modelo": "mlp_model",
+    "total": 1,
+    "resultado": "0.0% Pass __ 100.0% Fail",
+    "dados": [
+      {
+        "n_student": "1",
+        "code_module": "AAA",
+        "gender": "M",
+        "region": "Scotland",
+        "highest_education": "A Level or Equivalent",
+        "imd_band": "10-20",
+        "age_band": "35-55",
+        "disability": "Y",
+        "assessment_type": "CMA",
+        "is_banked": "1",
+        "date_submitted": 17.0,
+        "num_of_prev_attempts": 3.0,
+        "sum_click": 2.0,
+        "date": 222.0,
+        "studied_credits": 100.0,
+        "weight": 96.0,
+        "score": 20.0,
+        "previsao": "Fail"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-04-27_02-20-50-509087",
+    "tipo": "formulario",
+    "modelo": "mlp_model",
+    "total": 1,
+    "resultado": "0.0% Pass __ 100.0% Fail",
+    "dados": [
+      {
+        "n_student": "1",
+        "code_module": "AAA",
+        "gender": "M",
+        "region": "Scotland",
+        "highest_education": "A Level or Equivalent",
+        "imd_band": "10-20",
+        "age_band": "35-55",
+        "disability": "Y",
+        "assessment_type": "CMA",
+        "is_banked": "1",
+        "date_submitted": 17.0,
+        "num_of_prev_attempts": 3.0,
+        "sum_click": 2.0,
+        "date": 222.0,
+        "studied_credits": 100.0,
+        "weight": 96.0,
+        "score": 29.0,
+        "previsao": "Fail"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-04-27_02-20-53-987504",
+    "tipo": "formulario",
+    "modelo": "mlp_model",
+    "total": 1,
+    "resultado": "0.0% Pass __ 100.0% Fail",
+    "dados": [
+      {
+        "n_student": "1",
+        "code_module": "AAA",
+        "gender": "M",
+        "region": "Scotland",
+        "highest_education": "A Level or Equivalent",
+        "imd_band": "10-20",
+        "age_band": "35-55",
+        "disability": "Y",
+        "assessment_type": "CMA",
+        "is_banked": "1",
+        "date_submitted": 17.0,
+        "num_of_prev_attempts": 3.0,
+        "sum_click": 2.0,
+        "date": 222.0,
+        "studied_credits": 100.0,
+        "weight": 96.0,
+        "score": 68.0,
+        "previsao": "Fail"
+      }
+    ]
+  },
+  {
+    "dataHora": "2025-04-27_02-20-57-442088",
+    "tipo": "formulario",
+    "modelo": "mlp_model",
+    "total": 1,
+    "resultado": "0.0% Pass __ 100.0% Fail",
+    "dados": [
+      {
+        "n_student": "1",
+        "code_module": "AAA",
+        "gender": "M",
+        "region": "Scotland",
+        "highest_education": "A Level or Equivalent",
+        "imd_band": "10-20",
+        "age_band": "35-55",
+        "disability": "Y",
+        "assessment_type": "CMA",
+        "is_banked": "1",
+        "date_submitted": 17.0,
+        "num_of_prev_attempts": 3.0,
+        "sum_click": 2.0,
+        "date": 222.0,
+        "studied_credits": 100.0,
+        "weight": 96.0,
+        "score": 86.0,
+        "previsao": "Fail"
+      }
+    ]
   }
 ]

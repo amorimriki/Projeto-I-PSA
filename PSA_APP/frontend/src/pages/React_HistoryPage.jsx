@@ -76,15 +76,16 @@ export default function PredictionHistoryPage() {
   };
 
   return (
-    <div className="page-wrapper d-flex flex-column min-vh-100">
+    <div className="bg-light page-wrapper d-flex flex-column min-vh-100">
       <CustomNavbar />
- {/* Hero Section */}
- <section className="hero bg-primary text-white text-center py-5">
-          <h1>Resultados</h1>
-          <p className="lead">
-            Visualização do registo dos resultados das previsões feitas anteriormente.
-          </p>
-        </section>
+      {/* Hero Section */}
+      <section className="hero bg-primary text-white text-center py-5">
+        <h1>Resultados</h1>
+        <p className="lead">
+          Visualização do registo dos resultados das previsões feitas
+          anteriormente.
+        </p>
+      </section>
       <Container className="mt-4 mb-4 flex-grow-1">
         <Card className="p-4 shadow rounded-4">
           <h2
@@ -107,10 +108,10 @@ export default function PredictionHistoryPage() {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  padding: "4px 8px", 
-                  fontSize: "14px", 
-                  height: "30px", 
-                  marginLeft: "auto", 
+                  padding: "4px 8px",
+                  fontSize: "14px",
+                  height: "30px",
+                  marginLeft: "auto",
                 }}
               >
                 <FaTrash style={{ marginRight: "4px", fontSize: "14px" }} />
@@ -171,12 +172,12 @@ export default function PredictionHistoryPage() {
             onClick={handleClearItem}
             className="mb-3"
             style={{
-                display: "flex",
-                alignItems: "center",
-                padding: "4px 8px", 
-                fontSize: "14px", 
-                height: "30px", 
-                marginLeft: "auto", 
+              display: "flex",
+              alignItems: "center",
+              padding: "4px 8px",
+              fontSize: "14px",
+              height: "30px",
+              marginLeft: "auto",
             }}
           >
             <FaTrash style={{ marginRight: "4px", fontSize: "14px" }} />

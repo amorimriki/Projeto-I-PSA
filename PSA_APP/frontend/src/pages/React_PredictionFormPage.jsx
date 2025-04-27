@@ -7,7 +7,7 @@ import {
   Col,
   Form,
   Spinner,
-  Card
+  Card,
 } from "react-bootstrap";
 import "../App.css";
 import CustomNavbar from "../components/CustomNavBar";
@@ -137,153 +137,156 @@ export default function PredictionForm() {
 
   return (
     <>
-      <CustomNavbar />
-       {/* Hero Section */}
- <section className="hero bg-primary text-white text-center py-5">
+      <div className="bg-light min-vh-100 d-flex flex-column justify-content-between">
+        <CustomNavbar />
+        {/* Hero Section */}
+        <section className="hero bg-primary text-white text-center py-5">
           <h1>Análise Preditiva</h1>
           <p className="lead">
-          Utilize algoritmos avançados para prever seu desempenho
-              com base em dados passados.
-            </p>
+            Utilize algoritmos avançados para prever seu desempenho com base em
+            dados passados.
+          </p>
         </section>
-      <Container className="mt-4 mb-4">
-       
-        <Card className="p-4 shadow rounded-4">
-          <h2
-            style={{ color: "var(--cor-primaria)" }}
-            className="mb-4 text-center"
-          >
-            Prever Resultado Final
-          </h2>
-          <Form onSubmit={handlePredict}>
-            <Row>
-              {/* Campos de data */}
-              <Col md={6} className="mb-3">
-                <Form.Group controlId="delivery_date">
-                  <Form.Label>Data de Entrega</Form.Label>
-                  <Form.Control
-                    type="date"
-                    name="delivery_date"
-                    value={form.delivery_date}
-                    onChange={handleDateChange}
-                    required
-                  />
-                  <Form.Text className="text-muted">
-                    Diferença de dias: {form.date_submitted}
-                  </Form.Text>
-                </Form.Group>
-              </Col>
-              <Col md={6} className="mb-3">
-                <Form.Group controlId="due_date">
-                  <Form.Label>Data Limite de Entrega</Form.Label>
-                  <Form.Control
-                    type="date"
-                    name="due_date"
-                    value={form.due_date}
-                    onChange={handleDateChange}
-                    required
-                  />
-                </Form.Group>
-              </Col>
+        <Container className="mt-4 mb-4">
+          <Card className="p-4 shadow rounded-4">
+            <h2
+              style={{ color: "var(--cor-primaria)" }}
+              className="mb-4 text-center"
+            >
+              Prever Resultado Final
+            </h2>
+            <Form onSubmit={handlePredict}>
+              <Row>
+                {/* Campos de data */}
+                <Col md={6} className="mb-3">
+                  <Form.Group controlId="delivery_date">
+                    <Form.Label>Data de Entrega</Form.Label>
+                    <Form.Control
+                      type="date"
+                      name="delivery_date"
+                      value={form.delivery_date}
+                      onChange={handleDateChange}
+                      required
+                    />
+                    <Form.Text className="text-muted">
+                      Diferença de dias: {form.date_submitted}
+                    </Form.Text>
+                  </Form.Group>
+                </Col>
+                <Col md={6} className="mb-3">
+                  <Form.Group controlId="due_date">
+                    <Form.Label>Data Limite de Entrega</Form.Label>
+                    <Form.Control
+                      type="date"
+                      name="due_date"
+                      value={form.due_date}
+                      onChange={handleDateChange}
+                      required
+                    />
+                  </Form.Group>
+                </Col>
 
-              {/* Demais campos */}
-              {Object.entries(initialFormState).map(([key]) => {
-                if (
-                  ["delivery_date", "due_date", "date_submitted"].includes(key)
-                )
-                  return null;
+                {/* Demais campos */}
+                {Object.entries(initialFormState).map(([key]) => {
+                  if (
+                    ["delivery_date", "due_date", "date_submitted"].includes(
+                      key
+                    )
+                  )
+                    return null;
 
-                return (
-                  <Col md={6} className="mb-3" key={key}>
-                    <Form.Group controlId={key}>
-                      <Form.Label className="text-capitalize">
-                        {key.replace(/_/g, " ")}
-                      </Form.Label>
-                      {options[key] ? (
-                        <Form.Select
-                          name={key}
-                          value={form[key]}
-                          onChange={handleChange}
-                          required
-                        >
-                          <option value="">Selecionar...</option>
-                          {options[key].map((opt) => (
-                            <option key={opt} value={opt}>
-                              {opt}
-                            </option>
-                          ))}
-                        </Form.Select>
-                      ) : key === "score" || key === "weight" ? (
-                        <>
-                          <Form.Range
+                  return (
+                    <Col md={6} className="mb-3" key={key}>
+                      <Form.Group controlId={key}>
+                        <Form.Label className="text-capitalize">
+                          {key.replace(/_/g, " ")}
+                        </Form.Label>
+                        {options[key] ? (
+                          <Form.Select
                             name={key}
                             value={form[key]}
-                            min={0}
-                            max={100}
-                            step={1}
                             onChange={handleChange}
+                            required
+                          >
+                            <option value="">Selecionar...</option>
+                            {options[key].map((opt) => (
+                              <option key={opt} value={opt}>
+                                {opt}
+                              </option>
+                            ))}
+                          </Form.Select>
+                        ) : key === "score" || key === "weight" ? (
+                          <>
+                            <Form.Range
+                              name={key}
+                              value={form[key]}
+                              min={0}
+                              max={100}
+                              step={1}
+                              onChange={handleChange}
+                            />
+                            <Form.Text className="text-muted">
+                              Valor atual: {form[key]}
+                            </Form.Text>
+                          </>
+                        ) : (
+                          <Form.Control
+                            type="number"
+                            name={key}
+                            value={form[key]}
+                            onChange={handleChange}
+                            required
                           />
-                          <Form.Text className="text-muted">
-                            Valor atual: {form[key]}
-                          </Form.Text>
-                        </>
-                      ) : (
-                        <Form.Control
-                          type="number"
-                          name={key}
-                          value={form[key]}
-                          onChange={handleChange}
-                          required
-                        />
-                      )}
-                    </Form.Group>
-                  </Col>
-                );
-              })}
-            </Row>
+                        )}
+                      </Form.Group>
+                    </Col>
+                  );
+                })}
+              </Row>
 
-            <div className="d-flex flex-column align-items-center mt-3">
-              <p className="fw-bold">Seleciona o modelo de previsão:</p>
-              <ModelSelector
-                modeloSelecionado={modeloSelecionado}
-                setModeloSelecionado={setModeloSelecionado}
-              />
-              <p className="text-muted">
-                Modelo atual: <strong>{modeloSelecionado}</strong>
-              </p>
-            </div>
+              <div className="d-flex flex-column align-items-center mt-3">
+                <p className="fw-bold">Seleciona o modelo de previsão:</p>
+                <ModelSelector
+                  modeloSelecionado={modeloSelecionado}
+                  setModeloSelecionado={setModeloSelecionado}
+                />
+                <p className="text-muted">
+                  Modelo atual: <strong>{modeloSelecionado}</strong>
+                </p>
+              </div>
 
-            <div className="text-center mt-3">
-              <Button
-                type="submit"
-                variant="success"
-                style={{
-                  backgroundColor: "var(--cor-acento)",
-                  borderColor: "var(--cor-acento)",
-                }}
-                disabled={loading || !modeloSelecionado}
-              >
-                {loading ? (
-                  <>
-                    <Spinner animation="border" size="sm" /> A processar...
-                  </>
-                ) : (
-                  "Fazer Previsão"
-                )}
-              </Button>
-            </div>
-          </Form>
+              <div className="text-center mt-3">
+                <Button
+                  type="submit"
+                  variant="success"
+                  style={{
+                    backgroundColor: "var(--cor-acento)",
+                    borderColor: "var(--cor-acento)",
+                  }}
+                  disabled={loading || !modeloSelecionado}
+                >
+                  {loading ? (
+                    <>
+                      <Spinner animation="border" size="sm" /> A processar...
+                    </>
+                  ) : (
+                    "Fazer Previsão"
+                  )}
+                </Button>
+              </div>
+            </Form>
 
-          {result && (
-            <div className="alert alert-info mt-4 text-center">
-              <strong>Resultado Previsto:</strong> {result}
-            </div>
-          )}
-        </Card>
-      </Container>
-      <footer>
-        <CustomFooter />
-      </footer>
+            {result && (
+              <div className="alert alert-info mt-4 text-center">
+                <strong>Resultado Previsto:</strong> {result}
+              </div>
+            )}
+          </Card>
+        </Container>
+        <footer>
+          <CustomFooter />
+        </footer>
+      </div>
     </>
   );
 }

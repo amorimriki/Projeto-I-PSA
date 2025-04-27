@@ -12,7 +12,6 @@ export default function Sobre() {
       <Container fluid className="p-0">
         {/* NavBar */}
         <CustomNavbar />
-
         {/* Seção Hero */}
         <section className="hero bg-primary text-white text-center py-5">
           <h1>Sobre o Projeto PSA</h1>
