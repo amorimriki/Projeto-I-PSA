@@ -244,15 +244,33 @@ export default function PredictionForm() {
                 })}
               </Row>
 
-              <div className="d-flex flex-column align-items-center mt-3">
-                <p className="fw-bold">Seleciona o modelo de previsão:</p>
-                <ModelSelector
-                  modeloSelecionado={modeloSelecionado}
-                  setModeloSelecionado={setModeloSelecionado}
-                />
-                <p className="text-muted">
-                  Modelo atual: <strong>{modeloSelecionado}</strong>
-                </p>
+              <div className="d-flex justify-content-center mt-5">
+                <div
+                  className=""
+                  style={{
+                    backgroundColor: "white",
+                    width: "100%",
+                    maxWidth: "600px",
+                  }}
+                >
+                  <Form.Label
+                    style={{
+                      color: "var(--cor-primaria)",
+                      fontSize: "1.2rem",
+                      display: "block", 
+                      //textAlign: "center",
+                    }}
+                  >
+                    <strong>Seleciona o modelo de previsão:</strong>
+                  </Form.Label>
+                  <ModelSelector
+                    modeloSelecionado={modeloSelecionado}
+                    setModeloSelecionado={setModeloSelecionado}
+                  />
+                  <p className="text-muted mt-3">
+                    Modelo atual: <strong>{modeloSelecionado}</strong>
+                  </p>
+                </div>
               </div>
 
               <div className="text-center mt-3">

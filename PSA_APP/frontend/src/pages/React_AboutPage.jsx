@@ -75,9 +75,8 @@ export default function Sobre() {
                   Modelos Desenvolvidos e Avaliação
                 </Card.Title>
                 <Card.Text className="text-muted mb-3">
-                  Abaixo estão os principais modelos de Machine Learning
-                  utilizados no projeto, juntamente com suas características e
-                  aplicações:
+                  Abaixo estão os modelos de Machine Learning utilizados no
+                  projeto, juntamente com suas características :
                 </Card.Text>
 
                 <Table
@@ -108,14 +107,54 @@ export default function Sobre() {
                   </thead>
                   <tbody>
                     <tr>
+                      <td>Ensemble by Majority Voting</td>
+
+                      <td>27/04/2025</td>
+                      <td>
+                        <strong>ensemble_model_2.pkl</strong>
+                      </td>
+                      <td>
+                        Features Numéricas: <br />
+                        StandardScaler. <br />
+                        Features Categóricas: <br />
+                        LabelEncoder + OneHotEncoder.
+                      </td>
+                      <td>
+                        Pipeline (Transformer + MLP)
+                        <br />
+                        Pipeline (Transformer + RF)
+                        <br />
+                        Pipeline (Transformer + SVM)
+                      </td>
+                      <td>
+                        GridSearchCV
+                        <br />
+                        GridSearchCV
+                        <br />
+                        HalvingRandomSearchCV
+                      </td>
+
+                      <td>96%</td>
+                      <td>99%</td>
+                      <td>94%</td>
+                      <td>94%</td>
+                    </tr>
+
+                    <tr>
                       <td>SVM - Support Vector Machine</td>
                       <td>27/04/2025</td>
                       <td>
-                      <strong>svm_pipeline.pkl</strong>                  
+                        <strong>svm_pipeline.pkl</strong>
                       </td>
-                      <td>Features Numéricas: StandardScaler. <br />
-                      Features Categóricas: OneHotEncoder.</td>
-                      <td>Pipeline (Transformer + SVM)</td>                      
+                      <td>
+                        Features Numéricas:
+                        <br />
+                        StandardScaler. <br />
+                        Features Categóricas:
+                        <br />
+                        LabelEncoder + OneHotEncoder.
+                      </td>
+                      <td>Pipeline (Transformer + SVM)</td>
                       <td>HalvingRandomSearchCV</td>
                       <td>91%</td>
                       <td>99%</td>
@@ -129,8 +168,12 @@ export default function Sobre() {
                         <strong>mlp_pipeline.pkl</strong>
                       </td>
                       <td>
-                        Features Numéricas: StandardScaler. <br />
-                        Features Categóricas: OneHotEncoder.
+                        Features Numéricas:
+                        <br />
+                        StandardScaler. <br />
+                        Features Categóricas:
+                        <br />
+                        LabelEncoder + OneHotEncoder.
                       </td>
                       <td>Pipeline (Transformer + MLP)</td>
 
@@ -147,8 +190,12 @@ export default function Sobre() {
                         <strong>rf_pipeline.pkl</strong>
                       </td>
                       <td>
-                        Features Numéricas: StandardScaler. <br />
-                        Features Categóricas: OneHotEncoder.
+                        Features Numéricas:
+                        <br />
+                        StandardScaler. <br />
+                        Features Categóricas:
+                        <br />
+                        LabelEncoder + OneHotEncoder.
                       </td>
                       <td>Pipeline (Transformer + RF)</td>
                       <td>GridSearchCV</td>
@@ -163,11 +210,15 @@ export default function Sobre() {
 
                       <td>03/04/2025</td>
                       <td>
-                        <strong>ensemble_model_80-20.pkl</strong>
+                        <strong>ensemble_model_1.pkl</strong>
                       </td>
                       <td>
-                        Features Numéricas: StandardScaler. <br />
-                        Features Categóricas: LabelEncoder.
+                        Features Numéricas:
+                        <br />
+                        StandardScaler. <br />
+                        Features Categóricas:
+                        <br />
+                        LabelEncoder.
                       </td>
                       <td>
                         MLP
@@ -183,7 +234,6 @@ export default function Sobre() {
                         <br />
                         N/A
                       </td>
-
                       <td>92%</td>
                       <td>99%</td>
                       <td>87%</td>
@@ -196,7 +246,7 @@ export default function Sobre() {
                   A avaliação foi feita com base em métricas como{" "}
                   <strong>F1-Score</strong>, <strong>Accuracy</strong>,{" "}
                   <strong>Precision</strong> e <strong>Recall</strong>, com foco
-                  no F1-Score para lidar com classes desbalanceadas.
+                  no F1-Score.
                 </Card.Text>
               </Card.Body>
             </Card>

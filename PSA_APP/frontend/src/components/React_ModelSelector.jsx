@@ -1,20 +1,37 @@
 import React from "react";
-import { Form } from "react-bootstrap";
+import { Form, Col } from "react-bootstrap";
 
-export default function ModeloSelector({ modeloSelecionado, setModeloSelecionado }) {
+export default function ModeloSelector({
+  modeloSelecionado,
+  setModeloSelecionado,
+}) {
   return (
     <Form className="mb-3">
-      <div className="d-flex gap-4 flex-wrap">
+      <div className="d-flex gap-4 flex-wrap" style={{ display: 'flex', justifyContent: 'center' }}>
+        <Col>
         <Form.Check
           type="radio"
-          id="modelo-ensamble"
-          label="Ensamble"
+          id="modelo-ensamble1"
+          label="Ensamble V1"
           name="tipo-modelo"
-          value="ensamble_model"
-          checked={modeloSelecionado === "ensamble_model"}
+          value="ensamble_model_1"
+          checked={modeloSelecionado === "ensamble_model_1"}
+          onChange={(e) => setModeloSelecionado(e.target.value)}
+          className="radio-estilo"
+          style={{  }}
+        />
+        <Form.Check
+          type="radio"
+          id="modelo-ensamble2"
+          label="Ensamble V2"
+          name="tipo-modelo"
+          value="ensamble_model_2"
+          checked={modeloSelecionado === "ensamble_model_2"}
           onChange={(e) => setModeloSelecionado(e.target.value)}
           className="radio-estilo"
         />
+       </Col>
+       <Col>
         <Form.Check
           type="radio"
           id="modelo-rf"
@@ -35,6 +52,17 @@ export default function ModeloSelector({ modeloSelecionado, setModeloSelecionado
           onChange={(e) => setModeloSelecionado(e.target.value)}
           className="radio-estilo"
         />
+        <Form.Check
+          type="radio"
+          id="modelo-svm"
+          label="SVM"
+          name="tipo-modelo"
+          value="svm_model"
+          checked={modeloSelecionado === "svm_model"}
+          onChange={(e) => setModeloSelecionado(e.target.value)}
+          className="radio-estilo"
+        />
+        </Col>
       </div>
     </Form>
   );

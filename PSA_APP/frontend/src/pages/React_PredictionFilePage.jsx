@@ -88,14 +88,14 @@ export default function CsvPredictionPage() {
       <div className="bg-light d-flex flex-column min-vh-100">
         <main className="flex-grow-1">
           <CustomNavbar />
- {/* Hero Section */}
- <section className="hero bg-primary text-white text-center py-5">
-          <h1>Análise Preditiva</h1>
-          <p className="lead">
-          Envie um ficheiro .csv e utilize algoritmos avançados para prever o desempenho do grupo
-              com base em dados passados.
+          {/* Hero Section */}
+          <section className="hero bg-primary text-white text-center py-5">
+            <h1>Análise Preditiva</h1>
+            <p className="lead">
+              Envie um ficheiro .csv e utilize algoritmos avançados para prever
+              o desempenho do grupo com base em dados passados.
             </p>
-        </section>
+          </section>
           <Container className="mt-5">
             <Card className="p-4 shadow rounded-4">
               <h2
@@ -133,11 +133,15 @@ export default function CsvPredictionPage() {
                     />
                   </Form.Group>
                   <div className="mt-3">
-                    <p className="fw-bold">Seleciona o modelo de previsão:</p>
-                    <ModelSelector
-                      modeloSelecionado={modeloSelecionado}
-                      setModeloSelecionado={setModeloSelecionado}
-                    />
+                    <Form.Label style={{ color: "var(--cor-primaria)" }}>
+                      <strong>Seleciona o modelo de previsão:</strong>
+                    </Form.Label>
+            
+                      <ModelSelector
+                        modeloSelecionado={modeloSelecionado}
+                        setModeloSelecionado={setModeloSelecionado}
+                      />
+                 
                     <p className="text-muted">
                       Modelo atual: <strong>{modeloSelecionado}</strong>
                     </p>
@@ -150,24 +154,25 @@ export default function CsvPredictionPage() {
                   )}
 
                   {csvData.length > 0 && (
-                   <Button
-                   variant="success"
-                   block="true"
-                   onClick={handlePredict}
-                   disabled={loading || !modeloSelecionado} // Desabilita se não houver modelo selecionado
-                   style={{
-                     backgroundColor: "var(--cor-acento)",
-                     borderColor: "var(--cor-acento)",
-                   }}
-                 >
-                   {loading ? (
-                     <>
-                       <Spinner animation="border" size="sm" /> A processar...
-                     </>
-                   ) : (
-                     "Fazer Previsões"
-                   )}
-                 </Button>
+                    <Button
+                      variant="success"
+                      block="true"
+                      onClick={handlePredict}
+                      disabled={loading || !modeloSelecionado} // Desabilita se não houver modelo selecionado
+                      style={{
+                        backgroundColor: "var(--cor-acento)",
+                        borderColor: "var(--cor-acento)",
+                      }}
+                    >
+                      {loading ? (
+                        <>
+                          <Spinner animation="border" size="sm" /> A
+                          processar...
+                        </>
+                      ) : (
+                        "Fazer Previsões"
+                      )}
+                    </Button>
                   )}
                 </Col>
               </Row>

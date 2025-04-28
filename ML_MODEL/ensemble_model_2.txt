@@ -1,0 +1,12 @@
+Avaliação Ensemble Model
+Confusion matrix
+[[ 7244  2959]
+ [  301 44260]]
+              precision    recall  f1-score   support
+
+           0       0.96      0.71      0.82     10203
+           1       0.94      0.99      0.96     44561
+
+    accuracy                           0.94     54764
+   macro avg       0.95      0.85      0.89     54764
+weighted avg       0.94      0.94      0.94     54764
