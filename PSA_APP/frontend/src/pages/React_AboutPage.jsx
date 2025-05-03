@@ -33,10 +33,10 @@ export default function Sobre() {
                   Objetivo do Projeto
                 </Card.Title>
                 <Card.Text className="text-muted">
-                  O <strong>Projeto PSA (Previsão de Sucesso Acadêmico)</strong>{" "}
+                  O <strong>Projeto PSA (Previsão de Sucesso Académico)</strong>{" "}
                   visa apoiar instituições de ensino na identificação precoce de
                   estudantes em risco, usando <strong>Machine Learning</strong>{" "}
-                  para análise de dados acadêmicos, comportamentais e
+                  para análise de dados académicos, comportamentais e
                   demográficos. Assim, são fornecidos insights para decisões
                   pedagógicas mais eficazes e personalizadas.
                 </Card.Text>

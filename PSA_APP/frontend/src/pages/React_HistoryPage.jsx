@@ -115,7 +115,7 @@ export default function PredictionHistoryPage() {
                 }}
               >
                 <FaTrash style={{ marginRight: "4px", fontSize: "14px" }} />
-                Limpar Todo o Histórico
+                Limpar Histórico Todo
               </Button>
               <Table striped bordered hover responsive>
                 <thead>
@@ -123,7 +123,7 @@ export default function PredictionHistoryPage() {
                     <th>Data/Hora</th>
                     <th>Tipo de Pedido</th>
                     <th>Modelo</th>
-                    <th>Nº de Registros</th>
+                    <th>Nº de Registos</th>
                     <th>Resultado(s)</th>
                   </tr>
                 </thead>

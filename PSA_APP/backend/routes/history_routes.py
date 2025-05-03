@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import JSONResponse
+import json
 from PSA_APP.backend.utils.history import carregar_historico
 
 router = APIRouter()
