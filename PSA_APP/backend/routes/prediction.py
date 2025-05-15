@@ -23,8 +23,8 @@ async def predict_file(file: UploadFile = File(...), encoded: bool = Query(False
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Erro ao ler CSV: {str(e)}")
 
-    if 'final_result' in df.columns:
-        df = df.drop(columns=['final_result'])
+    #if 'final_result' in df.columns:
+    #    df = df.drop(columns=['final_result'])
 
     df_novos_dados = preprocess_data_file(df.copy(), encoded)
 
