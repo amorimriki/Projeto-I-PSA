@@ -15,7 +15,6 @@ router = APIRouter()
 async def predict_file(file: UploadFile = File(...), encoded: bool = Query(False), modelo: str = Form()):
     if not file.filename.endswith('.csv'):
         raise HTTPException(status_code=400, detail="O ficheiro deve ser um CSV.")
-
     try:
         content = await file.read()
         df = pd.read_csv(io.StringIO(content.decode('utf-8')))
@@ -35,7 +34,6 @@ async def predict_file(file: UploadFile = File(...), encoded: bool = Query(False
     predicoes = model.predict(X_novos)
     resultados_convertidos = substituir_resultados(predicoes)
     df['previsao'] = resultados_convertidos
-
     salvar_no_historico(df, modelo, tipo="ficheiro")
     return JSONResponse(content=df.to_dict(orient='records'))
 
@@ -48,8 +46,6 @@ def predict_json(data: list[StudentInput], modelo: str = Query()):
     predicoes = model.predict(df)
     labels = substituir_resultados(predicoes)
     df_decoded['previsao'] = labels
-
-
     resultados = pd.DataFrame({'n_student': df['n_student'], 'previsao': labels})
     salvar_no_historico(df_decoded, modelo, tipo="formulario")
     return JSONResponse(content=resultados.to_dict(orient='records'))

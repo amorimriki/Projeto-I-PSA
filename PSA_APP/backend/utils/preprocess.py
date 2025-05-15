@@ -7,13 +7,12 @@ encoders = joblib.load(f"{base_path}/PSA_APP/backend/predict_model_encoders/enco
 scaler = joblib.load(f"{base_path}/PSA_APP/backend/predict_model_encoders/scaler.pkl")
 
 def preprocess_data(df):
-    print(df)
+
     for col in coluna_ordem_segura:
         if col == 'date' and df[col].isnull().any():
             df[col].fillna(222.0, inplace=True)
         if col == 'code_module' and df[col].isnull().any():
             df[col].fillna("AAA", inplace=True)
-    print(df)
     for col in coluna_ordem_segura:
         if col not in df.columns:
             df[col] = pd.NA
@@ -22,8 +21,6 @@ def preprocess_data(df):
         encoder = encoders[col]
         df[col] = encoder.transform(df[col])
     df[numerical_features] = scaler.transform(df[numerical_features])
-    print("df Seguro:")
-    print(df)
     return df
 
 
@@ -33,7 +30,6 @@ def preprocess_data_file(df, isRaw):
             encoder = encoders[col]
             df[col] = encoder.fit_transform(df[col])
         df[numerical_features] = scaler.transform(df[numerical_features])
-
     if 'n_student' in df.columns:
         coluna_ordem_segura.append('n_student')
     df = df[[col for col in coluna_ordem_segura if col in df.columns]]
