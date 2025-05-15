@@ -20,7 +20,7 @@ numerical_features = [
     'date', 'studied_credits', 'weight', 'score'
 ]
 coluna_ordem_segura = [
-    'code_module', 'gender', 'region', 'highest_education', 'imd_band', 'age_band',
+    'n_student','code_module', 'gender', 'region', 'highest_education', 'imd_band', 'age_band',
     'num_of_prev_attempts', 'studied_credits', 'disability',
     'date_submitted', 'is_banked', 'score', 'assessment_type',
     'date', 'weight', 'sum_click',
