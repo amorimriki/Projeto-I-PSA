@@ -1,20 +1,16 @@
 .
+├── .DS_Store
+├── .git
+├── .gitattributes
+├── .venv
 ├── DATASET
-│   ├── ...
+│   ├── .DS_Store
+│   ├── .Untitled.ipynb.layout
 │   ├── OULAD_MERGE
 │   │   ├── .DS_Store
 │   │   ├── merge
-│   │   │   ├── student_data_merge_processed.csv
-│   │   │   └── student_data_merge_raw.csv
-│   │   ├── ...
+│   │   ├── React App.html
 │   │   └── synthetic
-│   │       ├── student_data_sampled.csv
-│   │       ├── student_data_sampled2.csv
-│   │       ├── synthetic_student_data_500.csv
-│   │       ├── synthetic_student_data_balanced.csv
-│   │       ├── synthetic_student_data_cleaned.csv
-│   │       ├── synthetic_student_data_processed.csv
-│   │       └── synthetic_student_data_raw.csv
 │   └── OULAD_ORIGINAL
 │       ├── assessments.csv
 │       ├── courses.csv
@@ -45,69 +41,55 @@
 │   │   ├── launch_predict_model-checkpoint.ipynb
 │   │   ├── predict_model-checkpoint.ipynb
 │   │   └── predict_model-checkpoint.py
-│   ├── model_for_GoogleColab.ipynb
-│   └── predict_model.ipynb
+│   ├── EDA_Notebook.ipynb
+│   ├── encoders.pkl
+│   ├── GoogleColab_Notebook.ipynb
+│   ├── predict_model.ipynb
+│   └── scaler.pkl
+├── LICENSE
 ├── ML_MODEL
 │   ├── .DS_Store
 │   ├── .gitattributes
-│   ├── ensemble_model_80-20.pkl
-│   ├── ensemble_model_80-20.txt
+│   ├── ensemble_model_1.pkl
+│   ├── ensemble_model_1.txt
+│   ├── ensemble_model_2.pkl
+│   ├── ensemble_model_2.txt
 │   ├── mlp_pipeline.pkl
 │   ├── mlp_pipeline.txt
 │   ├── rf_pipeline.pkl
-│   └── rf_pipeline.txt
+│   ├── rf_pipeline.txt
+│   ├── svm_pipeline.pkl
+│   └── svm_pipeline.txt
 ├── PSA_APP
+│   ├── .DS_Store
 │   ├── backend
-│   │   ├── app.py
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   ├── .DS_Store
+│   │   ├── config.py
 │   │   ├── history
-│   │   │   └── historico_previsoes.json
+│   │   ├── main.py
+│   │   ├── models
 │   │   ├── predict_model_encoders
-│   │   │   ├── encoders.pkl
-│   │   │   └── scaler.pkl
 │   │   ├── requirements.txt
-│   │   ├── utils scripts
-│   │   │   ├── index_dataset.py
-│   │   │   └── ml_test.py
+│   │   ├── routes
+│   │   ├── utils
 │   │   └── venv
-│   │       ├── bin
-│   │       │   └── ...
+│   ├── estrutura.txt
 │   ├── frontend
 │   │   ├── .gitignore
 │   │   ├── node_modules
-│   │   │   ├── .bin
-│   │   │   ├── ...
 │   │   ├── package-lock.json
 │   │   ├── package.json
 │   │   ├── public
-│   │   │   └── ...
 │   │   └── src
-│   │       ├── App.css
-│   │       ├── App.js
-│   │       ├── App.test.js
-│   │       ├── components
-│   │       │   ├── CustomFooter.js
-│   │       │   ├── CustomNavBar.js
-│   │       │   └── React_ModelSelector.jsx
-│   │       ├── index.css
-│   │       ├── index.js
-│   │       ├── logo.svg
-│   │       ├── pages
-│   │       │   ├── React_AboutPage.jsx
-│   │       │   ├── React_ChartsPage.jsx
-│   │       │   ├── React_FuncPage.jsx
-│   │       │   ├── React_HistoryPage.jsx
-│   │       │   ├── React_HomePage.jsx
-│   │       │   ├── React_PersonProgresPage.jsx
-│   │       │   ├── React_PredictionFilePage.jsx
-│   │       │   └── React_PredictionFormPage.jsx
-│   │       ├── reportWebVitals.js
-│   │       ├── services
-│   │       │   └── api.js
-│   │       └── setupTests.js
+│   ├── node_modules
 │   ├── package-lock.json
+│   ├── package.json
 │   ├── README.md
 │   └── start.sh
 ├── Plano_de_Testes_WebApp_Sucesso_Academico.xlsx
-└── LICENSE
+└── venv
+    
 
-
+402 directories, 119 files

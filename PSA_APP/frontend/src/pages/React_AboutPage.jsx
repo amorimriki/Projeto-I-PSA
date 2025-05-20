@@ -100,9 +100,6 @@ export default function Sobre() {
                         Tuning
                       </th>
                       <th>F1-Score</th>
-                      <th>Recall</th>
-                      <th>Precision</th>
-                      <th>Acuracy</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -133,13 +130,8 @@ export default function Sobre() {
                         <br />
                         HalvingRandomSearchCV
                       </td>
-
-                      <td>96%</td>
-                      <td>99%</td>
-                      <td>94%</td>
-                      <td>94%</td>
+                      <td>82%</td>
                     </tr>
-
                     <tr>
                       <td>SVM - Support Vector Machine</td>
                       <td>27/04/2025</td>
@@ -156,10 +148,7 @@ export default function Sobre() {
                       </td>
                       <td>Pipeline (Transformer + SVM)</td>
                       <td>HalvingRandomSearchCV</td>
-                      <td>91%</td>
-                      <td>99%</td>
-                      <td>85%</td>
-                      <td>85%</td>
+                      <td>37%</td>
                     </tr>
                     <tr>
                       <td>MLP - Redes Neuronais</td>
@@ -176,12 +165,8 @@ export default function Sobre() {
                         LabelEncoder + OneHotEncoder.
                       </td>
                       <td>Pipeline (Transformer + MLP)</td>
-
                       <td>GridSearchCV</td>
-                      <td>99%</td>
-                      <td>99%</td>
-                      <td>98%</td>
-                      <td>98%</td>
+                      <td>94%</td>
                     </tr>
                     <tr>
                       <td>RF - Random Forest</td>
@@ -199,15 +184,10 @@ export default function Sobre() {
                       </td>
                       <td>Pipeline (Transformer + RF)</td>
                       <td>GridSearchCV</td>
-                      <td>96%</td>
-                      <td>99%</td>
-                      <td>94%</td>
-                      <td>94%</td>
+                      <td>81%</td>
                     </tr>
-
                     <tr>
                       <td>Ensemble by Majority Voting</td>
-
                       <td>03/04/2025</td>
                       <td>
                         <strong>ensemble_model_1.pkl</strong>
@@ -234,10 +214,7 @@ export default function Sobre() {
                         <br />
                         N/A
                       </td>
-                      <td>92%</td>
-                      <td>99%</td>
-                      <td>87%</td>
-                      <td>87%</td>
+                      <td>49%</td>
                     </tr>
                   </tbody>
                 </Table>

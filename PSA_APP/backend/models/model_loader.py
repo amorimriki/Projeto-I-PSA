@@ -6,7 +6,7 @@ def setModel(model_name):
         path = model_path_mlp
     elif model_name == 'svm_model':
         path = model_path_svm
-    elif model_name == 'svm_model':
+    elif model_name == 'rf_model':
         path = model_path_rf
     elif model_name == 'ensamble_model_1':
         path = model_path_ensamble1

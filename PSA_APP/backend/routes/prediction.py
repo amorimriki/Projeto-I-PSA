@@ -39,13 +39,16 @@ async def predict_file(file: UploadFile = File(...), encoded: bool = Query(False
 
 @router.post("/predict-json")
 def predict_json(data: list[StudentInput], modelo: str = Query()):
+    model = setModel(modelo)
     df = pd.DataFrame([d.dict() for d in data])
     df_decoded = df.copy()
-    model = setModel(modelo)
-    df = preprocess_data(df)
-    predicoes = model.predict(df)
+    dfs = preprocess_data(df)
+  
+    dfs_process = dfs.drop(columns=['n_student'])
+    print(dfs_process.dtypes)
+    predicoes = model.predict(dfs_process)
     labels = substituir_resultados(predicoes)
     df_decoded['previsao'] = labels
-    resultados = pd.DataFrame({'n_student': df['n_student'], 'previsao': labels})
+    resultados = pd.DataFrame({'n_student': df_decoded['n_student'], 'previsao': labels})
     salvar_no_historico(df_decoded, modelo, tipo="formulario")
     return JSONResponse(content=resultados.to_dict(orient='records'))

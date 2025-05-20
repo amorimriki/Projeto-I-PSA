@@ -98,7 +98,6 @@ export default function PredictionHistoryPage() {
       const response = await axios.get(
         `http://localhost:8000/historico/timestamp/${identificador}`
       );
-
       setDetalhes(response.data);
       processPredictionData(response.data);
     } catch (error) {
@@ -106,7 +105,84 @@ export default function PredictionHistoryPage() {
     }
   };
 
-  // Cores do CSS
+  const exportToCSV = () => {
+    if (detalhes.length === 0) return;
+
+    const csvHeader = Object.keys(detalhes[0]).join(",") + "\n";
+    const csvRows = detalhes
+      .map((row) => Object.values(row).join(","))
+      .join("\n");
+
+    const blob = new Blob([csvHeader + csvRows], {
+      type: "text/csv;charset=utf-8;",
+    });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.setAttribute("download", "relatorio_previsao.csv");
+    link.style.visibility = "hidden";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+ const handlePrint = () => {
+  const originalContent = document.getElementById("relatorio-completo");
+  const clone = originalContent.cloneNode(true);
+
+  const originalCanvases = originalContent.querySelectorAll("canvas");
+  const clonedCanvases = clone.querySelectorAll("canvas");
+
+  originalCanvases.forEach((canvas, index) => {
+    const image = new Image();
+    image.src = canvas.toDataURL(); // converte canvas em imagem
+    image.style.maxWidth = "100%";
+    image.style.marginBottom = "20px";
+    clonedCanvases[index].replaceWith(image);
+  });
+
+  const style = `
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        color: #212529;
+      }
+      h3, h5 {
+        text-align: center;
+        color: #0056b3;
+        margin-bottom: 20px;
+      }
+      img {
+        display: block;
+        margin: 0 auto 40px auto;
+        max-width: 0%;
+        page-break-inside: avoid;
+      }
+      .no-print {
+        display: none !important;
+      }
+    </style>
+  `;
+
+  const win = window.open("", "_blank");
+  win.document.write("<html><head><title>Relatório de Previsão</title>");
+  win.document.write(
+    `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">`
+  );
+  win.document.write(style);
+  win.document.write("</head><body>");
+  win.document.write(clone.innerHTML);
+  win.document.write("</body></html>");
+  win.document.close();
+
+  setTimeout(() => {
+    win.focus();
+    win.print();
+    win.close();
+  }, 1000);
+};
+
   const estilo = getComputedStyle(document.documentElement);
   const corPrimaria = estilo.getPropertyValue("--cor-primaria").trim();
   const corAcento = estilo.getPropertyValue("--cor-acento").trim();
@@ -152,7 +228,7 @@ export default function PredictionHistoryPage() {
         };
 
         return (
-          <div key={key} className="mb-5">
+          <div key={key} className="mb-5 chart-container">
             <h5 className="text-center" style={{ textTransform: "capitalize" }}>
               {key}
             </h5>
@@ -166,14 +242,12 @@ export default function PredictionHistoryPage() {
   return (
     <div className="bg-light page-wrapper d-flex flex-column min-vh-100">
       <CustomNavbar />
-      {/* Hero Section */}
       <section className="hero bg-primary text-white text-center py-5">
         <h1>Relatório Geral</h1>
         <p className="lead">Visualização do desempenho de grupos.</p>
       </section>
       <Container className="py-5">
         <Row>
-          {/* CARD HISTÓRICO */}
           <Col md={4}>
             <Card className="p-4 shadow rounded-4 mb-4">
               <h2
@@ -223,28 +297,34 @@ export default function PredictionHistoryPage() {
             </Card>
           </Col>
 
-          {/* CARD ANÁLISE */}
-          <Col md={8}>
-            {detalhes.length > 0 && (
-              <Card className="shadow rounded-4 p-4">
-                <h3
-                  className="text-center"
-                  style={{ color: "var(--cor-primaria)" }}
-                >
-                  Análise Detalhada da Previsão
-                </h3>
-                <div className="mt-4">
-                  <h5 className="text-center mt-4">Score Médio</h5>
-                  <Bar
-                    data={scoreBarChartData}
-                    options={{ responsive: true }}
-                  />
+         <Col md={8}>
+  {detalhes.length > 0 && (
+    <div id="relatorio-completo">
+      <Card className="shadow rounded-4 p-4" id="relatorio-analise">
+        <h3 className="text-center" style={{ color: "var(--cor-primaria)" }}>
+          Relatório de Previsão
+        </h3>
+        <p className="text-center">Análise detalhada dos resultados previstos</p>
 
-                  <div className="mt-5">{renderCategoryCharts()}</div>
-                </div>
-              </Card>
-            )}
-          </Col>
+        <div className="d-flex justify-content-end gap-2 mt-2 mb-3 no-print">
+          <button className="btn btn-outline-primary" onClick={exportToCSV}>
+            Exportar CSV
+          </button>
+          <button className="btn btn-outline-secondary" onClick={handlePrint}>
+            Imprimir Relatório
+          </button>
+        </div>
+
+        <div className="mt-4">
+          <h5 className="text-center mt-4">Score Médio</h5>
+          <Bar data={scoreBarChartData} options={{ responsive: true }} />
+          <div className="mt-5">{renderCategoryCharts()}</div>
+        </div>
+      </Card>
+    </div>
+  )}
+</Col>
+
         </Row>
       </Container>
       <footer>

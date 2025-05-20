@@ -486,3 +486,30 @@ footer {
   color: var(--cor-primaria);
   margin-top: 2rem;
 }
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #relatorio-analise,
+  #relatorio-analise * {
+    visibility: visible;
+  }
+  #relatorio-analise {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    color: black;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  canvas {
+    page-break-inside: avoid;
+  }
+}

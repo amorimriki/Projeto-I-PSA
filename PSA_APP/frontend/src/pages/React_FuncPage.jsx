@@ -29,8 +29,8 @@ function HomePage() {
     
 
           {/* Secção Individual */}
-          <div className="mb-5">
-            <div className="text-center mb-4">
+          <div className="">
+            <div className="text-center">
               <h4 className=" section-title">Individual</h4>
               <hr className="w-50 mx-auto border-2 border-primary" />
             </div>
@@ -65,7 +65,7 @@ function HomePage() {
 
           {/* Secção Grupo */}
           <div>
-            <div className="text-center mb-4">
+            <div className="text-center">
               <h4 className=" section-title">Grupo</h4>
               <hr className="w-50 mx-auto border-2 border-primary" />
             </div>
