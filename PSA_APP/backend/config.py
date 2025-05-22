@@ -5,6 +5,9 @@ base_path = "/Users/amorimriki/Documents/GitHub/Projeto-I-PSA"
 
 HISTORICO_PATH = Path(os.path.join(base_path, "PSA_APP/backend/history/historico_previsoes.json"))
 
+# Download modelos 
+# https://drive.google.com/drive/folders/1sTfjg-YEA8vSAq1PLq3XCnAR_QfunJFG?usp=sharing
+
 model_path_svm = os.path.join(base_path, "ML_MODEL/svm_pipeline.pkl")
 model_path_mlp = os.path.join(base_path, "ML_MODEL/mlp_pipeline.pkl")
 model_path_rf = os.path.join(base_path, "ML_MODEL/rf_pipeline.pkl")

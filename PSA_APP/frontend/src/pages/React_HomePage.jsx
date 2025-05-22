@@ -16,7 +16,7 @@ function HomePage() {
         <section className="hero bg-primary text-white text-center py-5">
           <h1>Previsão de Sucesso Académico</h1>
           <p className="lead">
-            Obtenha insights sobre seu desempenho acadêmico com base em dados
+            Obtenha insights sobre o seu desempenho académico com base em dados
             históricos e tendências.
           </p>
           {/* Botão que chama a função para navegar e substituir a página */}
@@ -38,8 +38,8 @@ function HomePage() {
             <Carousel.Caption>
               <h3>Análise de Resultados</h3>
               <p>
-                Explore como suas notas e comportamento afetam seu sucesso
-                acadêmico futuro.
+                Explore como as suas notas afetam o seu sucesso
+                académico.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -52,8 +52,8 @@ function HomePage() {
             <Carousel.Caption>
               <h3>Previsões Personalizadas</h3>
               <p>
-                Receba previsões precisas e personalizadas com base em seus
-                dados acadêmicos.
+                Receba previsões precisas e personalizadas com base nos seus
+                dados académicos.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
